@@ -1,7 +1,7 @@
 >>>define TITLE         朔 - P2P匿名掲示板
 >>>define DESCRIPTION   新月のPython向けの実装「朔」の配布ページです。
 >>>include "head.ja.h"
-<!-- $Id: index.ht 22 2008-03-20 13:52:21Z fuktommy $ -->
+<!-- $Id$ -->
 
 <p>朔は<a href="/">新月</a>の<a href="http://www.python.jp/Zope/">Python</a>用の新月の実装です。
 Windows版と共通版(Pythonスクリプト版)があります。</p>

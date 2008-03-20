@@ -2,7 +2,7 @@
 >>>define DESCRIPTION   P2Pを利用したサービス/ソフトウェアに関するガイドライン(第1版)案に基く表示
 >>>define SECTION       朔
 >>>include "head.ja.h"
-<!-- $Id: guideline.ht 22 2008-03-20 13:52:21Z fuktommy $ -->
+<!-- $Id$ -->
 
 <p>新月の実装の1つである<a href="/saku/">朔</a>について
 <a href="http://www.fmmc.or.jp/P2P/about.htm">Ｐ２Ｐネットワーク実験協議会</a>が発表した

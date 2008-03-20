@@ -1,7 +1,7 @@
 >>>define TITLE         朔 3.5.0 リリース
 >>>define DESCRIPTION   朔はP2P掲示板「新月」のPythonによる実装です。
 >>>include "head.ja.h"
-<!-- $Id: saku-3.5.0.ht 22 2008-03-20 13:52:21Z fuktommy $ -->
+<!-- $Id$ -->
 
 <p class="date">2007-12-16</p>
 

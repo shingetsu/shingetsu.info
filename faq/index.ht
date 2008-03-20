@@ -1,7 +1,7 @@
 >>>define TITLE         FAQ
 >>>define DESCRIPTION   よくある質問と解答。
 >>>include "head.ja.h"
-<!-- $Id: index.ht 22 2008-03-20 13:52:21Z fuktommy $ -->
+<!-- $Id$ -->
 
 <dl>
   <dt id="p2p"><a href="#p2p">新月はWinnyのようなものなのですか？</a></dt>

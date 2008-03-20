@@ -1,7 +1,7 @@
 >>>define TITLE         ニュース
 >>>define DESCRIPTION   新月の最新情報です。
 >>>include "head.ja.h"
-<!-- $Id: index.ht 22 2008-03-20 13:52:21Z fuktommy $ -->
+<!-- $Id$ -->
 
 <ul>
   <li>2008-02-24 <a href="member">メンバー募集</a></li>

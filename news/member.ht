@@ -1,7 +1,7 @@
 >>>define TITLE         メンバー募集
 >>>define DESCRIPTION   開発者や企画系メンバーを募集しています
 >>>include "head.ja.h"
-<!-- $Id: member.ht 22 2008-03-20 13:52:21Z fuktommy $ -->
+<!-- $Id$ -->
 
 <p class="date">2008-02-24</p>
 

@@ -3,7 +3,7 @@
 >>>define BASE          index
 >>>define TOPPAGE       1
 >>>include "head.en.h"
-<!-- $Id: index.en.ht 22 2008-03-20 13:52:21Z fuktommy $ -->
+<!-- $Id$ -->
 
 <ul class="navi">
   <li><a href="#intro" id="link_intro" name="link_intro">What's shinGETsu</a></li>

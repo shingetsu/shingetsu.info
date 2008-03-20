@@ -3,7 +3,7 @@
 >>>define TOPPAGE       1
 >>>define BASE          index
 >>>include "head.ja.h"
-<!-- $Id: index.ja.ht 22 2008-03-20 13:52:21Z fuktommy $ -->
+<!-- $Id$ -->
 
 <ul class="navi">
   <li><a href="#intro" id="link_intro" name="link_intro">新月とは？</a></li>
