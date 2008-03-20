@@ -1,0 +1,87 @@
+>>>define TITLE         朔設定ガイド
+>>>define DESCRIPTION   主にUnixを想定した朔の設定ガイドです。
+>>>include "head.ja.h"
+
+<p>主にUnixを想定した朔の設定ガイドです。
+<a href="/saku/">朔 2.3.0以降</a>に対応しています。
+簡単な使い方は<a href="/tutorial/">チュートリアル</a>をご覧ください。</p>
+
+<h2>設定ファイル</h2>
+<p>次の設定ファイルが順に読み込まれます。
+後で設定したものが優先されます。
+書式は同じです。
+file/sample.iniをご覧ください。</p>
+
+<ol>
+  <li>file/saku.ini</li>
+  <li>/usr/local/etc/saku/saku.ini</li>
+  <li>/etc/saku/saku.ini</li>
+  <li>~/.saku/saku.ini</li>
+</ol>
+
+<p>shingetsu/config.py で設定する項目もありますが、
+ほとんどの場合は変更する必要はないと思います。</p>
+
+<h2>Apacheと組み合わせるときの設定</h2>
+<p><a href="/manage/apache">Apacheと朔を組み合わせて使う方法</a>をご覧ください。
+Apacheの設定サンプル、各種スクリプトは朔に同梱されています。
+スクリプトは通常 /usr/local/lib/saku/mkrss です。</p>
+
+<p>Apacheと組み合わせるには server_name の設定が必要です。
+server_name は bbs.shingetsu.info や bbs.shingetsu.info:8000 のように設定します。
+スクリプトを動かすにはさらに proxy_destination, apache_docroot の設定が必要です。</p>
+<pre>[Gateway]
+server_name: bbs.shingetsu.info
+[Path]
+apache_docroot: %(var)s/www/shingetsu</pre>
+
+<h2>保管庫との連携</h2>
+<p>ここでいう<a href="/archive/">保管庫</a>はmkarchive.pyで生成された、
+静的なHTMLで作られた保管庫です。
+これもまたApacheとの組み合わせです。</p>
+
+<p>保管庫を生成するmkarchive.pyは朔に同梱されています。
+不適切な書き込みがないことを確認のうえ、このスクリプトを動かしてください。
+不適切な書き込みがあれば、それを削除してから動かしてください。
+スクリプトは通常 /usr/local/lib/saku/mkarchive です。</p>
+
+<p>朔では次のような設定が必要です。
+Apacheで archive_dir をドキュメントルートとするような archive_uri を設定してください。</p>
+<pre>[Path]
+archive_dir: %(var)s/www/archive
+[Gateway]
+archive_uri: http://archive.shingetsu.info/</pre>
+
+<h2>古い書き込みの定期的削除</h2>
+<p>古い書き込みが不要だという方は定期的に削除することをお勧めします。
+save_record の値を秒単位で指定し、
+save_size の値を整数で指定してください。
+save_record の時間が経過し、
+最近の save_size 件には含まれないレコードが削除されます。
+例の2678400は1ヶ月の秒数です。</p>
+<pre>[Application Thread]
+save_record: 2678400
+save_size: 100</pre>
+
+<h2>古い書き込みの取得</h2>
+<p>逆にできるだけ古い書き込みも集めたいという方は
+ダウンロードの条件を緩くしてください。
+しかし転送量が増えることから、あまりお勧めはできません。</p>
+
+<p>get_range は初回取得時、sync_rangeは定期的な取得時の条件です。
+指定した秒数が経っていない書き込みだけを取得します。
+0を指定すると無限大を意味します。</p>
+<pre>[Application Thread]
+get_range: 0
+sync_range: 0</pre>
+
+<h2>スパムフィルタ</h2>
+<p>spam.txtにスパムの条件を正規表現で列挙します。
+spam.txtの位置は設定ファイルで変更できます。
+重要なのは書き込みがレコード形式に変換された状態でのマッチだということです。
+レコード形式は書き込みの削除時に確認画面で見ることができます。
+スパムを削除しながら、その条件を記述することができます。</p>
+
+<p>1行目でファイルの文字コードを指定してください。</p>
+
+>>>include "foot.ja.h"

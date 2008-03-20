@@ -1,0 +1,36 @@
+#!/usr/bin/python
+
+import re
+from time import time, strptime, mktime
+from fileinput import input
+
+range = 31*24*60*60
+
+class Article:
+    pass
+
+def main():
+    links = []
+    now = time()
+    for line in input():
+        found = re.search(
+                    r'^  <li>([-0-9]+) <a href="([^"]+)">([^<>]+)</a></li>',
+                    line)
+        if found:
+            a = Article()
+            a.date = found.group(1)
+            a.link = found.group(2)
+            a.title = found.group(3)
+            a.time = mktime(strptime(a.date, '%Y-%m-%d'))
+            if (not links) or (now <= a.time + range):
+                links.append(a)
+
+    print "document.write('<ul class=\"news\">');"
+    for a in links:
+        print "document.write('%s');" % \
+              ("<li>%s <a href=\"/news/%s\">%s</a></li>" %
+               (a.date, a.link, a.title))
+    print "document.write('</ul>');"
+
+if __name__ == "__main__":
+    main()

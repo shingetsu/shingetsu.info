@@ -1,0 +1,25 @@
+body {
+    background-color: #efefef;
+}
+
+img {
+    border-width: 0px;
+}
+
+p.sitename {
+    background-color: #afa;
+    font-weight: bold;
+}
+
+p.sitename a {
+    text-decoration: none;
+}
+
+address {
+    clear: both;
+    text-align: center;
+}
+
+strong {
+    color: red;
+}

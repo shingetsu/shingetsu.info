@@ -1,0 +1,91 @@
+>>>define TITLE         朔のテンプレート
+>>>define DESCRIPTION   朔で表示をカスタマイズする方法
+>>>define SECTION       朔
+>>>include "head.ja.h"
+
+<p><a href="/saku/">朔 3.0.0以降</a>では
+<a href="http://cheetahtemplate.org/">Cheetah</a>
+というテンプレートエンジンを使って、出力するHTMLを生成しています
+(一部例外があります)。
+一般的な書式は
+<a href="http://cheetahtemplate.org/docs/users_guide_html_multipage/">Cheetah Users' Guide</a>
+を見てもらうとして、
+どんな変数を定義しているのかを説明します。</p>
+
+<p>テンプレートは template ディレクトリにあります。
+書き換えると朔の再起動なしに反映します。</p>
+
+<h2>どのテンプレートでも使える変数</h2>
+
+<dl>
+  <dt>cgi (オブジェクト)</dt>
+  <dd>呼び出し側のLightCGIオブジェクト。</dd>
+
+  <dt>environ (文字列の辞書)</dt>
+  <dd>LightCGIの環境変数。</dd>
+
+  <dt>ua (文字列)</dt>
+  <dd>UserAgentの文字列。携帯電話ではこれを見て分岐を書くことになるかも。</dd>
+
+  <dt>message (文字列の辞書)</dt>
+  <dd>file/message-*.txtで指定するメッセージの辞書。</dd>
+
+  <dt>lang (文字列)</dt>
+  <dd>どの言語で出力するか。デフォルトではja(日本語)とen(英語)のみ。</dd>
+
+  <dt>config (オブジェクト)</dt>
+  <dd>設定ファイルによる設定項目。</dd>
+
+  <dt>appli (文字列の辞書)</dt>
+  <dd>アプリケーションとCGIの対応表。
+      現在は {'thread': '/thread.cgi'} のみ。</dd>
+
+  <dt>gateway_cgi, thread_cgi, admin_cgi, mobile_cgi (文字列)</dt>
+  <dd>各種CGIのURLのパス部分。'/thread.cgi' など。</dd>
+
+  <dt>root_path (文字列)</dt>
+  <dd>ルートのURLのパス部分。
+      デフォルトでは / 。</dd>
+
+  <dt>archive_uri (文字列)</dt>
+  <dd>保管庫のURL。設定していなければ空文字列。
+      gateway.cgi等では保管庫のルート、
+      thread.cgi等ではそのスレッドの保管庫を指す。</dd>
+
+  <dt>types (文字列の配列)</dt>
+  <dd>どんなアプリケーションがあるか。現在はthreadのみ。</dd>
+
+  <dt>isadmin, isfriend, isvisitor (bool変数)</dt>
+  <dd>アクセスした人がその権限を持つかどうか。</dd>
+
+  <dt>localtime (関数)</dt>
+  <dd>整数を YYYY-mm-dd HH:MM 形式に整形する。</dd>
+
+  <dt>str_encode (関数)</dt>
+  <dd>URLエンコード。</dd>
+
+  <dt>file_decode (関数)</dt>
+  <dd>ファイル名→タイトルの変換。</dd>
+
+  <dt>escape (関数)</dt>
+  <dd>タグ等のHTMLエスケープ。
+      &amp;hearts;はそのままなど、ちょっと特殊。</dd>
+
+  <dt>escape_simple (関数)</dt>
+  <dd>タグ等のHTMLエスケープ。</dd>
+
+  <dt>escape_space (関数)</dt>
+  <dd>タグ等のHTMLエスケープに加え、
+      連続するスペースが表示されるようにする。</dd>
+
+  <dt>make_list_item (関数)</dt>
+  <dd>gateway.cgi で各スレッドへのリンクを生成する。</dd>
+
+  <dt>gateway_link (関数)</dt>
+  <dd>gateway.cgi で最終更新等へのリンクを生成する。</dd>
+</dl>
+
+<h2>各テンプレートに固有の変数</h2>
+<p>各テンプレートを見てください。</p>
+
+>>>include "foot.ja.h"

@@ -1,0 +1,21 @@
+>>>define TITLE         py2exeの情報
+>>>define DESCRIPTION   朔のWindows版をコンパイルします。
+>>>include "head.ja.h"
+
+<p class="date">2006-12-18</p>
+
+<p><a href="/saku/">朔</a>のWindows版を作る
+<a href="http://www.py2exe.org/">py2exe</a>についての情報です。
+ダウンロードは<a href="http://sourceforge.net/projects/py2exe/">SF.netのプロジェクト</a>からどうぞ。</p>
+
+<h2>py2exe-0.6.5 + Python2.5 でエラーが起こる件</h2>
+<p>py2exe-0.6.5 と Python2.5 の組み合わせでは
+<samp>TypeError: fake_getline() takes exactly 2 arguments (3 given)</samp>
+というエラーが出ることがあります。
+<cite><a href="http://aspn.activestate.com/ASPN/Mail/Message/py2exe-users/3216424">[Py2exe-users] Python 2.5 issues with get_fakeline</a></cite>によると
+<code>def fake_getline(filename, lineno):</code>とあるのを
+<code>def fake_getline(filename, lineno, module_globals=None):</code>
+と修正すればようようです。
+これは Lib/site-packages/py2exe/boot_common.py のことだと思います。</p>
+
+>>>include "foot.ja.h"

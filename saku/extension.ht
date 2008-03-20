@@ -1,0 +1,20 @@
+>>>define TITLE         朔の拡張機能
+>>>define DESCRIPTION   朔はJavaScriptで簡単に拡張できます。
+>>>include "head.ja.h"
+
+<p><a href="/saku/">朔</a>はJavaScriptで簡単に拡張できます。
+拡張はまだ開発途中の機能なので、仕様の変更があるかもしれません。</p>
+
+<h2>拡張機能の仕様</h2>
+<ul>
+  <li>www/*.js や www/*.css は朔のHTML出力のhead部分から読み込まれる。</li>
+  <li>ファイル名が . または _ で始まる場合には無視される。</li>
+  <li>読み込まれる順序はファイル名の文字コード順。</li>
+  <li>initFunc 配列に関数を追加するとbodyのonloadで呼び出される。</li>
+  <li>uiLang 変数で出力の言語がわかる。en, jaなど。</li>
+  <li>ファイルの文字コードはUTF-8とする。</li>
+</ul>
+
+<p>ダウンロードはこちら: <a href="/extension/">拡張機能</a></p>
+
+>>>include "foot.ja.h"

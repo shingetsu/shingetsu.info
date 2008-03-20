@@ -1,0 +1,18 @@
+>>>define TITLE         Apollo - 新月用署名モジュール
+>>>define DESCRIPTION   署名というのは2chでいうところのトリップです。
+>>>include "head.ja.h"
+
+<p>署名というのは2chでいうところのトリップです。
+ソフトにはこのモジュールが含まれています。</p>
+
+<h2>ダウンロード</h2>
+<ul>
+  <li><a href="apollo.2004-08-17.tar.gz">Apollo ver 0.4.0 (修正版)/ (for gcc) ver 0.0.1</a></li>
+  <li><a href="moon_tripper.2004-08-14.zip">新月トリッパー「月の国のとりっぱー」</a></li>
+  <li><a href="apollo.2004-08-14.zip">Apollo ver 0.4.0 / (for gcc) ver 0.0.1</a></li>
+  <li><a href="apollo_2004-06-09.zip">Apollo ver 0.3.1 / (for gcc) ver 0.0.0</a></li>
+  <li><a href="apollo-cmd-0.3.1.zip">Apollo ver 0.3.1 Delphiコマンドライン版</a></li>
+  <li><a href="apollo-0.2.0.zip">Apollo ver 0.2.0</a></li>
+</ul>
+
+>>>include "foot.ja.h"

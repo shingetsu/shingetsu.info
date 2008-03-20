@@ -1,0 +1,157 @@
+>>>define TITLE         新月 - P2P匿名掲示板
+>>>define DESCRIPTION   新月(shinGETsu)はさまざまなプラットフォーム上で動くP2P掲示板です。
+>>>define TOPPAGE       1
+>>>define BASE          index
+>>>include "head.ja.h"
+<!-- $Id: index.ja.ht 22 2008-03-20 13:52:21Z fuktommy $ -->
+
+<ul class="navi">
+  <li><a href="#intro" id="link_intro" name="link_intro">新月とは？</a></li>
+  <li><a href="#join" id="link_join" name="link_join">参加する</a></li>
+  <li><a href="#download" id="link_download" name="link_download">ダウンロード</a></li>
+  <li><a href="#manage" id="link_manage" name="link_manage">管理者に</a></li>
+  <li><a href="#develop" id="link_develop" name="link_develop">開発者に</a></li>
+</ul>
+
+<div id="intro" class="menupanel">
+<h2>新月とは？</h2>
+<p>新月(shinGETsu)はさまざまなプラットフォーム上で動くP2P掲示板です。
+<a href="http://slashdot.jp/articles/05/05/09/1022258.shtml">Internet Relay BBS</a>と呼ばれることもあります。
+主に<a href="http://sourceforge.net">SourceForge.net</a>の
+<a href="http://sourceforge.net/projects/shingetsu/">shinGETsu Project</a>で開発されています。</p>
+
+<ul>
+  <li><a href="/intro/">新月の紹介</a></li>
+  <li><a href="/news/">ニュース</a></li>
+  <li><a href="/ref/">新月への言及</a></li>
+  <li><a href="/faq/">FAQ</a></li>
+  <li><a href="http://ja.wikipedia.org/wiki/%E6%96%B0%E6%9C%88_%28%E6%8E%B2%E7%A4%BA%E6%9D%BF%29">新月 (掲示板) - Wikipedia</a></li>
+</ul>
+<p class="logo">
+  <img src="logo.gif" width="271" height="181" alt="ロゴ" class="logo" />
+</p>
+</div>
+
+<div id="join" class="menupanel">
+<h2>参加する</h2>
+<ul>
+  <li><a href="http://bbs.shingetsu.info/">bbs.shingetsu.info</a></li>
+  <li><a href="http://pushare.zenno.info/">pushare.zenno.info</a></li>
+  <li><a href="http://p2p-bbs.hopto.org/">p2p-bbs.hopto.org</a></li>
+  <li><a href="http://rep4649.ddo.jp/">rep4649.ddo.jp</a></li>
+  <li><a href="http://bbs.shingetsu.info/gw">ランダムゲートウェイ</a></li>
+  <li><a href="http://b.hatena.ne.jp/mutumin/">新月 - P2P匿名掲示板 暫定メニュー</a></li>
+  <li><a href="/wiki/">Wiki</a></li>
+  <li><a href="http://archive.shingetsu.info/">過去ログ保管庫</a></li>
+  <li><a href="http://archive.mutely.net/">過去ログ保管庫(2)</a></li>
+  <li><a href="http://mutumin.ddo.jp:1978/node/archive.shingetsu.info/search_ui">過去ログ検索</a></li>
+  <li><a href="jump">JavaScriptによるリダイレクタ</a></li>
+  <li><a href="http://bbs.shingetsu.info/mobile.cgi"><img src="/mobileqrcode.gif" width="148" height="148" alt="モバイルサイト" title="モバイルサイト" /></a></li>
+</ul>
+</div>
+
+<div id="download" class="menupanel">
+<h2>ダウンロード</h2>
+<p>新月はさまざまなプラットフォームで動きます。
+あなたの環境に合ったものをダウンロードしてください。</p>
+
+<table summary="新月の実装" id="client">
+  <thead><tr>
+    <td>実装</td>
+    <td>OS・環境</td>
+    <td>備考</td>
+  </tr></thead>
+  <tr>
+    <td><a href="/saku/">朔</a></td>
+    <td><a href="http://www.python.jp/Zope/">Python</a></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="/saku/">朔 Windows版</a></td>
+    <td><a href="http://www.microsoft.com/">Windows</a></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Hoven</td>
+    <td><a href="http://www.microsoft.com/">Windows</a></td>
+    <td>開発中</td>
+  </tr>
+  <tr>
+    <td>NanaSHI</td>
+    <td><a href="http://www.microsoft.com/">Windows</a></td>
+    <td>開発中</td>
+  </tr>
+  <tr>
+    <td>Selene</td>
+    <td><a href="http://jp.sun.com/java/">Java</a></td>
+    <td>開発中</td>
+  </tr>
+</table>
+
+<p>朔やその古いバージョン、PerlやJavaによる古い実装は
+<a href="http://sourceforge.net/project/showfiles.php?group_id=97083">SF.netからもダウンロード</a>することができます。</p>
+</div>
+
+<div id="manage" class="menupanel">
+<h2>管理者のための情報</h2>
+<p>新月のインストールを考えている方や実際に動かしている方は
+こちらをご覧ください。</p>
+<ul>
+  <li><a href="/tutorial/">チュートリアル</a></li>
+  <li><a href="/extension/">拡張機能</a></li>
+  <li><a href="/manage/">管理者向け情報</a></li>
+</ul>
+</div>
+
+<div id="develop" class="menupanel">
+<h2>開発者のための情報</h2>
+<p>新月の仕組みに興味のある方や新月のプログラムを書こうという方は
+こちらをご覧ください。</p>
+<ul>
+  <li><a href="/trac/">Trac</a></li>
+  <li><a href="/protocol/">プロトコル</a></li>
+  <li><a href="/tech/">技術情報</a></li>
+  <li><a href="/saku/api">朔API</a></li>
+  <li><a href="/saku/extension">朔の拡張機能</a></li>
+  <li><a href="/hoven/">Hoven</a> (参考までに)</li>
+  <li><a href="/nanashi/">NanaSHI</a> (参考までに)</li>
+  <li><a href="/apollo/">署名モジュール</a> (参考までに)</li>
+  <li><a href="/crescent/">Crescent</a> (参考までに)</li>
+  <li><a href="/launch/">導入パッケージ</a> (参考までに)</li>
+</ul>
+</div>
+
+<h2>検索</h2>
+<script type="text/javascript">
+// <![CDATA[
+    var searchbox_engines = [
+        ['ウェブから', 'Google 検索', false,
+         'http://www.google.co.jp/search?ie=UTF-8&domains=shingetsu.info&q='],
+        ['新月から', 'Google 検索', true,
+         'http://www.google.co.jp/search?ie=UTF-8&' +
+         'domains=shingetsu.info&sitesearch=shingetsu.info&q=']
+    ];
+    var searchbox_poweredby = [
+        ['Google', 'http://www.google.co.jp/']
+    ];
+// ]]>
+</script>
+<script type="text/javascript" src="/searchbox.js"></script>
+
+<script type="text/javascript" src="/news.js"></script>
+
+<h2>バナー</h2>
+<p id="banners">
+<a href="http://sourceforge.net/"><img src="http://sourceforge.net/sflogo.php?group_id=97083&amp;type=1" width="88" height="31" alt="SourceForge.net Logo" /></a>
+<a href="http://sourceforge.net/donate/index.php?group_id=97083"><img src="/project-support.jpg" width="88" height="32" alt="Support This Project" /></a>
+<a rel="license" href="http://creativecommons.org/licenses/by/2.1/jp/" title="This work is licensed under a Creative Commons Attribution 2.1 Japan License."><img alt="Creative Commons License" src="/cc-by-88x31.png" width="88" height="31" /></a>
+</p>
+
+<script type="text/javascript" src="/menu.js"></script>
+<script type="text/javascript">
+  var menuIDs = ["intro", "join", "download", "manage", "develop"];
+  show("");
+  hideH2();
+</script>
+
+>>>include "foot.ja.h"

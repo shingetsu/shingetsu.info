@@ -1,0 +1,54 @@
+>>>define TITLE         Apacheと朔を組み合わせて使う方法
+>>>define DESCRIPTION   リバースプロキシ機能を使います。
+>>>include "head.ja.h"
+
+<p class="date">2005-11-25, 2007-01-05</p>
+
+<p><a href="http://www.apache.jp/">Apache</a>のリバースプロキシ機能を使って、
+<a href="/saku/">朔</a>のURIからポート番号を消してかっこよくします。
+RSSを静的生成するので負荷を低くする効果も期待できます。</p>
+
+<p>この例ではDNS名が bbs.shingetsu.info 、
+Apacheでのドキュメントルートが /srv/www/shingetsu です。
+LAN上のIPアドレスは 192.168.1.2 です。</p>
+
+<p>朔では server_name 等を設定してください。</p>
+<pre>[Gateway]
+server_name: bbs.shingetsu.info
+proxy_destination: 192.168.1.2:8000
+
+[Path]
+apache_docroot: /srv/www/shingetsu</pre>
+
+
+<h2>Apacheの設定</h2>
+<p>プロキシモジュールとリライトモジュールを読み込みます:</p>
+<pre>LoadModule cache_module /usr/lib/apache2/modules/mod_cache.so
+LoadModule disk_cache_module /usr/lib/apache2/modules/mod_disk_cache.so
+LoadModule proxy_module /usr/lib/apache2/modules/mod_proxy.so
+LoadModule proxy_http_module /usr/lib/apache2/modules/mod_proxy_http.so
+
+LoadModule rewrite_module /usr/lib/apache2/modules/mod_rewrite.so</pre>
+
+<p>プロキシとリライトの設定はこんな感じ:</p>
+>>>textpre "apache.txt"
+
+<p>この例ではbbs.shingetsu.infoへのアクセスを朔に飛ばします。
+ただしRSSは飛ばしません。
+server.cgiは見せません。</p>
+
+<p>aclというのは次のようなファイルです。
+Spamを送ってくる相手を手作業でブラックリストに入れます。</p>
+<pre>Order Allow,Deny
+Allow from All
+Deny from 10.0.0.0/8
+Deny from 192.168.0.0/16</pre>
+
+<p>これらの設定例は<a href="/saku/">朔</a>の2.0.0以降に同梱されています。</p>
+
+<h2>RSSとサイトマップの静的生成</h2>
+<p><a href="/saku/">朔</a>の2.0.0以降に同梱されている
+mkrss.pyをcronで定期的(1時間に1回くらい)に動かします。
+デフォルトでは /usr/local/lib/saku/mkrss にインストールされます。</p>
+
+>>>include "foot.ja.h"

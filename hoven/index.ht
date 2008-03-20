@@ -1,0 +1,33 @@
+>>>define TITLE         Hoven
+>>>define DESCRIPTION   新月ブラウザ
+>>>include "head.ja.h"
+
+<p>Hovenは、Windows用の新月UIです。
+朔(TkSaku.exe)の起動制御機能や、シンプルなタブブラウザ機能を持っています。
+詳しくは<a href="http://www.rootshell.be/~kienzan/hoven/">Hovenリンク集</a>をご覧ください。</p>
+
+<p>2006年12月31日現在ではメンテナンスされておらず、
+最新の<a href="/saku/">朔</a>と組み合わせた場合には
+正しく動かない可能性が高いです。
+開発者を募集中です。</p>
+
+<h2>ダウンロード</h2>
+<dl>
+  <dt><a href="hoven_a0.14_winsaku_2.0.b1.zip">a0.14 with winsaku2.0.b1</a></dt>
+  <dd>朔を含むものです。
+      これはオリジナル版ではなく、
+      <a href="http://fuktommy.com/">Fuktommy</a>がパッケージしたものです。
+      すでに朔を持っている方はダウンロードの量を削減するため
+      本体のみ版を使用してください。</dd>
+  <dd>一部のスレッドが読めないかも…。</dd>
+
+  <dt><a href="hoven_a0.14.zip">a0.14 (本体のみ版)</a></dt>
+  <dd>Hovenのみです。
+      <a href="/saku/">別途朔を入手する</a>か公開ゲートウェイを使う方用です。
+  </dd>
+
+  <dt><a href="hoven_a0.14_src.zip">a0.14 (ソースコード)</a></dt>
+  <dd>「The MIT License 日本語版」に基くオープンソースソフトウェアです。</dd>
+</dl>
+
+>>>include "foot.ja.h"

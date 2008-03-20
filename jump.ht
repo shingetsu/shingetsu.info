@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<head>
+  <title>新月リダイレクタ</title>
+  <link rev="made" href="http://shingetsu.sourceforge.net/" />
+  <link rel="contents" href="/" />
+  <link rel="stylesheet" type="text/css" href="common.css" />
+  <script type="text/javascript" src="shingetsu.js"></script>
+</head>
+<body>
+<h1>新月リダイレクタ(JavaScript版)</h1>
+
+<script type="text/javascript">printBody();</script>
+
+<noscript>
+  <p>JavaScriptを有効にすると、ここにジャンプのためのフォームが表示されます。</p>
+</noscript>
+
+<p><a href="shingetsu.js">リダイレクタのソース</a>です。
+リダイレクタはコピーしたり、設定を書き換えて使うことができます。
+例えばデフォルトのホスト名をあなたのゲートウェイに書き換えるなど。</p>
+
+<h2>リダイレクタ活用例 - フォームだけ表示</h2>
+<p>ページ末尾に配置するようなデザインです。</p>
+
+<script type="text/javascript">
+  printForm("今日食べたものを報告するスレ", "/thread.cgi/%E4%BB%8A%E6%97%A5%E9%A3%9F%E3%81%B9%E3%81%9F%E3%82%82%E3%81%AE%E3%82%92%E5%A0%B1%E5%91%8A%E3%81%99%E3%82%8B%E3%82%B9%E3%83%AC");
+</script>
+
+<noscript>
+  <p><a href="http://bbs.shingetsu.info/thread.cgi/%E4%BB%8A%E6%97%A5%E9%A3%9F%E3%81%B9%E3%81%9F%E3%82%82%E3%81%AE%E3%82%92%E5%A0%B1%E5%91%8A%E3%81%99%E3%82%8B%E3%82%B9%E3%83%AC">今日食べたものを報告するスレ</a></p>
+</noscript>
+
+<h2>リダイレクタ活用例 - 表示が切り替えられるリンク</h2>
+<p>これなら文章中に書いても邪魔になりません。</p>
+
+<ul>
+  <li><a id="fuktommy" href="http://bbs.shingetsu.info/thread.cgi/Fuktommy%E3%81%AE%E6%97%A5%E8%A8%98">Fuktommyの日記</a></li>
+  <li><a id="p2ptoday" href="http://bbs.shingetsu.info/thread.cgi/P2Ptoday">P2Ptoday</a></li>
+  <li><a id="devel" href="http://bbs.shingetsu.info/thread.cgi/%E6%96%B0%E6%9C%88%E9%96%8B%E7%99%BA%E4%BD%9C%E6%88%A6%E4%BC%9A%E8%AD%B0%E5%AE%A4">新月開発作戦会議室</a></li>
+</ul>
+
+<script type="text/javascript">
+  readCookie();
+
+  linkForm("fuktommy", "bbs_form");
+  hiddenForm("bbs_form", "Fuktommyの日記",
+	"/thread.cgi/Fuktommy%E3%81%AE%E6%97%A5%E8%A8%98");
+
+  linkForm("p2ptoday", "p2ptoday_form");
+  hiddenForm("p2ptoday_form", "P2Ptoday",
+	"/thread.cgi/P2Ptoday");
+
+  linkForm("devel", "devel_form");
+  hiddenForm("devel_form", "新月開発作戦会議室",
+	"/thread.cgi/%E6%96%B0%E6%9C%88%E9%96%8B%E7%99%BA%E4%BD%9C%E6%88%A6%E4%BC%9A%E8%AD%B0%E5%AE%A4");
+</script>
+
+<div class="adsfoot">
+<script type="text/javascript"><!--
+google_ad_client = "pub-0908882948816599";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_type = "text";
+google_ad_channel ="";
+google_color_border = "808080";
+google_color_bg = "EFEFEF";
+google_color_link = "0000FF";
+google_color_url = "008000";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<noscript><p>
+<a href="http://img.xrea.com/ad_click.fcg?site=fuktommy.s64.xrea.com"><img src="http://img.xrea.com/ad_img.fcg?site=fuktommy.s64.xrea.com" width="480" height="60" alt="広告" /></a>
+</p></noscript>
+</div>
+</body>
+</html>

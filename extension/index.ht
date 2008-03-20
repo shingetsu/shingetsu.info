@@ -1,0 +1,62 @@
+>>>define TITLE         拡張機能
+>>>define DESCRIPTION   朔の拡張機能。
+>>>include "head.ja.h"
+
+<p><a href="/saku/">朔</a>はJavaScriptやCSSで簡単に拡張できます。
+例えば「&gt;&gt;0123abcd」のようなリンクにポインタを乗せると
+リンク先を表示しますが、これも拡張機能の1つです。
+ここでは追加の拡張機能をダウンロードすることができます。</p>
+
+<h3>使い方</h3>
+<p>共通版、Windows版、<a href="/hoven/">Hoven</a>に内蔵される朔の3つで
+共通して使うことができます。
+ダウンロードした拡張機能を朔のディレクトリの
+wwwディレクトリに保存してください。
+最初からいくつかの拡張機能が入っているはずです。</p>
+
+<h3>拡張機能の作り方</h3>
+<p><a href="/saku/extension">拡張機能の仕様</a>をご覧ください。</p>
+
+<h3 id="tag">フィルタ・タグ</h3>
+<dl>
+  <dt><a href="30filterlink.js">30filterlink.js</a></dt>
+  <dd>”最終更新””新着情報”に「フィルタ」へのリンクを追加します。
+　    中身を直感で書き換えて御使用ください。</dd>
+
+  <dt><a href="40incfilter.js">40incfilter.js</a></dt>
+  <dd>「フィルタ」と「タグ」をインクリメンタルに表示する拡張機能です。
+      いちいちボタン押さなくて良くなります。</dd>
+</dl>
+
+<h3 id="input">入力支援</h3>
+<dl>
+  <dt><a href="40textarea.js">40textarea.js</a></dt>
+  <dd>テキストエリアの右下をドラッグして拡大・縮小出来るようにする拡張機能です。</dd>
+</dl>
+
+<h3 id="admin">管理</h3>
+<dl>
+  <dt><a href="30admin.js">30admin.js</a></dt>
+  <dd>”状態”の隣接ノード、検索ノードをそのノードへのリンクにします。</dd>
+
+  <dt><a href="30filename.js">30filename.js</a></dt>
+  <dd>スレッドのページ下部にそのスレッドのキャッシュフォルダ名を表示します。
+　    (スレッド名/レス数/ファイルサイズ) と書かれている行をクリックすると
+      ディスプレイされます。</dd>
+</dl>
+
+
+<h3 id="design">表示</h3>
+<dl>
+  <dt><a href="30addlinks.js">30addlinks.js</a></dt>
+  <dd>トップページや各スレッドの上下に付いているリンクを書き換えます。
+　    中身を直感で書き換えて御使用ください。</dd>
+
+  <dt><a href="30idres.js">30idres.js</a></dt>
+  <dd>ID に通し番号を割り当てます。また、書き込みフォームでの &gt;&gt;番号 を &gt;&gt;ID に変換します。</dd>
+
+  <dt><a href="30ytplayer.js">30ytplayer.js</a></dt>
+  <dd>YouTubeのURLにカーソルを当てたときに動画をインラインで表示できるようになります。</dd>
+</dl>
+
+>>>include "foot.ja.h"

@@ -1,0 +1,78 @@
+>>>define TITLE         朔のUPnP対応状況
+>>>define DESCRIPTION   対応ルータなら設定作業が省略できます。
+>>>include "head.ja.h"
+
+<table summary="UPnP対応状況">
+  <thead><tr>
+    <td>OS</td>
+    <td>Python</td>
+    <td>ルータ</td>
+    <td>動作</td>
+    <td><a href="/nanashi/">NanaSHI</a>の動作</td>
+    <td>備考</td>
+  </tr></thead>
+  <tr>
+    <td>WindowsXP Pro SP2</td>
+    <td>2.4 (Windows)</td>
+    <td><a href="http://www.ntt-east.co.jp/ced/goods/adsl-nv/">NTT-NV</a></td>
+    <td>正常</td>
+    <td>正常</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>WindowsXP Pro SP2</td>
+    <td>2.4 (Cygwin)</td>
+    <td>NTT-NV</td>
+    <td>正常</td>
+    <td>正常</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Knoppix 4.0.2</td>
+    <td>2.4</td>
+    <td>NTT-NV</td>
+    <td>正常</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Debian GNU/Linux 3.1</td>
+    <td>2.3</td>
+    <td>NTT-NV</td>
+    <td>正常</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Windows2000 SP4</td>
+    <td>2.3.4</td>
+    <td><a href="http://www.access.fujitsu.com/products/anet/adsl/w4/">FA11-W4</a></td>
+    <td>正常</td>
+    <td>正常</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>WindowsXP Home SP2</td>
+    <td>2.4 (Windows)</td>
+    <td><a href="http://buffalo.melcoinc.co.jp/products/catalog/item/w/wzr-hp-g54/">BUFFALO AirStation WZR-HP-G54</a></td>
+    <td>動作</td>
+    <td>動作せず</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Debian GNU/Linux testing</td>
+    <td>2.3</td>
+    <td>BUFFALO AirStation WZR-HP-G54</td>
+    <td>upnp timed out</td>
+    <td></td>
+    <td>調査中</td>
+  </tr>
+</table>
+
+<p>この他にわかったことですが、ファイアウォールを厳しく設定しているときには、
+ルータからの返事を遮断してしまう場合があります。
+例えばLinuxのiptableを使っている場合ですね。</p>
+
+<p>関連ページ:  <a href="http://fuktommy.s64.xrea.com/upnp/">UPnPを利用したポート解放ツール</a></p>
+
+>>>include "foot.ja.h"

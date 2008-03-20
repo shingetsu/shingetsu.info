@@ -1,0 +1,14 @@
+>>>define TITLE         技術情報
+>>>define DESCRIPTION   新月の仕組みなどを解説します。
+>>>include "head.ja.h"
+
+<ul>
+  <li><a href="py2exe">py2exeの情報</a></li>
+  <li><a href="history">新月のできるまで</a></li>
+  <li><a href="remove">削除に関する仕様</a></li>
+  <li><a href="diffperl">新月Perl版0.4と朔0.6の差異</a></li>
+  <li><a href="cache">朔のキャッシュ構造</a></li>
+  <li><a href="namespace">名前空間</a></li>
+</ul>
+
+>>>include "foot.ja.h"
