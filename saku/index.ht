@@ -43,7 +43,7 @@ Windows版は単独で動きますが、ファイルサイズが大きいです�
 
 <h2 id="usage">共通版の簡単な使い方</h2>
 <ol>
-  <li><a href="http://www.python.org/download/">Pythonをダウンロード</a>して
+  <li><a href="http://www.python.jp/Zope/download/pythoncore">Pythonをダウンロード</a>して
       インストールしておく(2.3以降)。</li>
   <li>このページから朔のプログラムをダウンロードする。</li>
   <li>アーカイブを展開する。
