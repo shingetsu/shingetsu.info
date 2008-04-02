@@ -1,6 +1,7 @@
 >>>define TITLE         新月への言及
 >>>define DESCRIPTION   新月を紹介してくださったウェブページ、新月を参考文献に挙げた学術論文など。
 >>>include "head.ja.h"
+<!-- $Id$ -->
 
 <h2 id="web">紹介記事</h2>
 <ul>
@@ -21,8 +22,9 @@
 <h2 id="magazine">雑誌</h2>
 <ul>
   <li><a href="http://www.itmedia.co.jp/internet/runner/0403/special/spe01.html">ネットランナー 2004年3月号</a>, pp.64--65</li>
-  <li><a href="http://www.shinyusha.co.jp/~top/ip.html">iP!</a> 2005年3月号, p.63</li>
+  <li><a href="http://ip-web.jp/">iP!</a> 2005年3月号, p.63</li>
   <li><a href="http://www.unixuser.jp/magazine/2006/200602.html">オープンソースマガジン 2006年2月号</a>, p.37</li>
+  <li><a href="http://ip-web.jp/">iP!</a> 2008年5月号, pp.60--63</li>
 </ul>
 
 <h2 id="paper">学術論文等</h2>
