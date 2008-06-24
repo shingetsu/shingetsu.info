@@ -14,6 +14,6 @@
 >>>endif
   <link rev="made" href="mailto:webmaster@shingetsu.info" />
   <link rel="contents" href="/" />
-  <link rel="meta" type="application/rdf+xml" title="licenese" href="/licenese" />
+  <link rel="meta" type="application/rdf+xml" title="license" href="/license" />
   <link rel="alternate" type="application/rdf+xml" title="RSS" href="/rss" />
   <script type="text/javascript" src="/shingetsu.js" charset="utf-8"></script>
