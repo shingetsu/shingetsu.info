@@ -2,6 +2,7 @@
 <div id="sidebar">
 >>>ifndef TOPPAGE
 >>>include "adsmini.h"
+>>>include "amazonbanner.h"
 <form method="get" id="searchbar" action="http://www.google.co.jp/search"><p>
   <input type="hidden" name="ie" value="utf-8" />
   <input type="hidden" name="hl" value="ja" />
