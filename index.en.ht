@@ -127,8 +127,8 @@ read following documents.</p>
         ['WWW', 'Google Search', false,
          'http://www.google.com/search?ie=UTF-8&domains=shingetsu.info&q='],
         ['shinGETsu', 'Google Search', true,
-         'http://www.google.com/search?ie=UTF-8&' +
-         'domains=shingetsu.info&sitesearch=shingetsu.info&q=']
+         'http://www.google.com/cse?cx=003570941829906538055:gaatkcz2xxo'
+         + '&ie=UTF-8&q='],
     ];
     var searchbox_poweredby = [
         ['Google', 'http://www.google.com/']

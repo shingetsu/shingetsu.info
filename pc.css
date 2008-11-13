@@ -53,7 +53,7 @@ form#searchbar p {
     width: 180px;
 }
 
-form#searchbar input#q {
+form#searchbar input#searchbox {
     width: 100%;
 }
 

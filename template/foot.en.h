@@ -2,13 +2,13 @@
 <div id="sidebar">
 >>>ifndef TOPPAGE
 >>>include "adsmini.h"
-<form method="get" id="searchbar" action="http://www.google.com/search"><p>
-  <input type="hidden" name="ie" value="utf-8" />
-  <input type="hidden" name="domains" value="shingetsu.info" />
-  <input type="hidden" name="sitesearch" value="shingetsu.info" />
-  <input type="text" id="q" name="q" value="" size="20" maxlength="255" />
-  <input type="submit" name="btnG" value="Site Search" />
+<form action="http://www.google.com/cse" id="searchbar"><p>
+  <input type="hidden" name="cx" value="003570941829906538055:gaatkcz2xxo" />
+  <input type="hidden" name="ie" value="UTF-8" />
+  <input type="text" name="q" size="31" id="searchbox" />
+  <input type="submit" value="Search" />
 </p></form>
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=searchbar&amp;lang=en"></script>
 >>>endif
 
 
