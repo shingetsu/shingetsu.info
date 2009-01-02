@@ -72,6 +72,7 @@ Windows版はファイルサイズが大きいので、
 </p>
 
 <ul>
+  <li><a href="winsaku.2009-01-02.zip">2009-01-02 Windows版</a> (2008-11-29をPython2.6でビルド)</li>
   <li><a href="saku.2008-11-29.tar.gz">2008-11-29 共通版</a> (sudo の SECURE_PATH 対応)</li>
   <li><a href="saku.2008-11-16.tar.gz">2008-11-16 共通版</a> (Corega BAR EX 対応)</li>
   <li><a href="saku.2008-10-19.tar.gz">2008-10-19 共通版</a> (Python2.6対応)</li>
