@@ -1,0 +1,21 @@
+>>>define TITLE         朔 3.6.0 リリース
+>>>define DESCRIPTION   朔はP2P掲示板「新月」のPythonによる実装です。
+>>>include "head.ja.h"
+<!-- $Id$ -->
+
+<p class="date">2009-02-15</p>
+
+<p>朔 3.6.0 をリリースします。</p>
+
+<h2>3.5.3 からの変更点</h2>
+<ul>
+  <li>Apacheの設定ファイルの脆弱性を修正。詳しくは「<a href="vulnerability-php">公式ゲートウェイにPHPを実行する脆弱性</a>」をご覧ください。</li>
+  <li>Python2.6対応。</li>
+  <li>Corega BAR EX 対応。</li>
+  <li>sudo の SECURE_PATH 対応。</li>
+  <li>apache の設定ファイルの脆弱性修正。</li>
+</ul>
+
+<p>ダウンロード: <a href="/saku/#stable">朔 - P2P匿名掲示板</a></p>
+
+>>>include "foot.ja.h"

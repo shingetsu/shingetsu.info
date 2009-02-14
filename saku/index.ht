@@ -12,12 +12,12 @@ Windows版と共通版(Pythonスクリプト版)があります。</p>
 Windows版は単独で動きますが、ファイルサイズが大きいです。</p>
 
 <ul>
-  <li>2008-09-06
-      <a href="http://downloads.sourceforge.net/shingetsu/winsaku-3.5.2.zip">Saku 3.5.2 Windows版</a>
-      <a href="winsaku-3.5.2.zip">ミラーからダウンロード</a></li>
-  <li>2008-09-06
-      <a href="http://downloads.sourceforge.net/shingetsu/saku-3.5.2.tar.gz">Saku 3.5.2 共通版</a>
-      <a href="saku-3.5.2.tar.gz">ミラーからダウンロード</a></li>
+  <li>2009-02-15
+      <a href="http://downloads.sourceforge.net/shingetsu/winsaku-3.6.0.zip">Saku 3.6.0 Windows版</a>
+      <a href="winsaku-3.6.0.zip">ミラーからダウンロード</a></li>
+  <li>2009-02-15
+      <a href="http://downloads.sourceforge.net/shingetsu/saku-3.6.0.tar.gz">Saku 3.6.0 共通版</a>
+      <a href="saku-3.6.0.tar.gz">ミラーからダウンロード</a></li>
 </ul>
 
 <p>You can download Saku from <a href="http://sourceforge.net/project/showfiles.php?group_id=97083">SF.net</a>, too.</p>
@@ -72,11 +72,7 @@ Windows版はファイルサイズが大きいので、
 </p>
 
 <ul>
-  <li><a href="winsaku.2009-01-02.zip">2009-01-02 Windows版</a> (2008-11-29をPython2.6でビルド)</li>
-  <li><a href="saku.2008-11-29.tar.gz">2008-11-29 共通版</a> (sudo の SECURE_PATH 対応)</li>
-  <li><a href="saku.2008-11-16.tar.gz">2008-11-16 共通版</a> (Corega BAR EX 対応)</li>
-  <li><a href="saku.2008-10-19.tar.gz">2008-10-19 共通版</a> (Python2.6対応)</li>
-  <li><a href="saku.2008-09-06.tar.gz">2008-09-06 共通版</a> (3.5.2相当)</li>
+  <li><a href="saku.2009-02-15.tar.gz">2009-02-15 共通版</a> (3.6.0相当)</li>
   <li><a href="rss">アップロード監視用RSS</a></li>
 </ul>
 
