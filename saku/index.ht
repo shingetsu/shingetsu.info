@@ -41,6 +41,14 @@ Windows版は単独で動きますが、ファイルサイズが大きいです�
   <li>テンプレートの設定方法は<a href="template">朔のテンプレート</a>を参照。</li>
 </ol>
 
+<p><q>このアプリケーションの構成が正しくないため、アプリケーションを開始できませんでした。
+アプリケーションを再度インストールすることにより問題が解決する場合があります。</q>
+というエラーが出る場合は
+「<a href="http://www.microsoft.com/downloads/details.aspx?displaylang=ja&amp;FamilyID=a5c84275-3b97-4ab7-a40d-3802b2af5fc2">Visual C++ 2008 SP1 再頒布可能パッケージ</a>」
+をインストールすることで改善する可能性があります
+(<a href="http://d.hatena.ne.jp/AMENOHI/20090202/1233575464">Python 2.6でpy2exe 0.6.9を使ったときの問題 - 雨からの伝言</a>より)。
+Pythonをインストールして、<a href="#usage">共通版</a>を使うのもおすすめです。</p>
+
 <h2 id="usage">共通版の簡単な使い方</h2>
 <ol>
   <li><a href="http://www.python.jp/Zope/download/pythoncore">Pythonをダウンロード</a>して
@@ -72,6 +80,7 @@ Windows版はファイルサイズが大きいので、
 </p>
 
 <ul>
+  <li><a href="saku.2009-02-22.1.tar.gz">2009-02-22r1 共通版</a> (文字変換に失敗しても文字化けするだけで致命的にならないようにする)</li>
   <li><a href="saku.2009-02-22.tar.gz">2009-02-22 共通版</a> (tksakuで文字化けを解消)</li>
   <li><a href="saku.2009-02-15.tar.gz">2009-02-15 共通版</a> (3.6.0相当)</li>
   <li><a href="rss">アップロード監視用RSS</a></li>
