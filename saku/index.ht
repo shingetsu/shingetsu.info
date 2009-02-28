@@ -80,6 +80,7 @@ Windows版はファイルサイズが大きいので、
 </p>
 
 <ul>
+  <li><a href="winsaku.2009-02-28.zip">2009-02-28 Windows版</a> (tclのencodingディレクトリを保存して、tzdataを削除するよう変更)</li>
   <li><a href="saku.2009-02-22.1.tar.gz">2009-02-22r1 共通版</a> (文字変換に失敗しても文字化けするだけで致命的にならないようにする)</li>
   <li><a href="saku.2009-02-22.tar.gz">2009-02-22 共通版</a> (tksakuで文字化けを解消)</li>
   <li><a href="saku.2009-02-15.tar.gz">2009-02-15 共通版</a> (3.6.0相当)</li>
