@@ -1,10 +1,6 @@
 @import "common.css";
 @import "pc.css";
 
-body {
-    overflow: scroll;
-}
-
 div#maincolumn {
     border: none;
     width: 100%;

@@ -125,7 +125,7 @@
          'http://www.google.co.jp/search?ie=UTF-8&domains=shingetsu.info&q='],
         ['新月から', 'Google 検索', true,
          'http://www.google.com/cse?cx=003570941829906538055:gaatkcz2xxo'
-         + '&ie=UTF-8&q='],
+         + '&ie=UTF-8&q=']
     ];
     var searchbox_poweredby = [
         ['Google', 'http://www.google.co.jp/']
