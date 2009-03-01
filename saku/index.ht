@@ -12,12 +12,12 @@ Windows版と共通版(Pythonスクリプト版)があります。</p>
 Windows版は単独で動きますが、ファイルサイズが大きいです。</p>
 
 <ul>
-  <li>2009-02-15
-      <a href="http://downloads.sourceforge.net/shingetsu/winsaku-3.6.0.zip">Saku 3.6.0 Windows版</a>
-      <a href="winsaku-3.6.0.zip">ミラーからダウンロード</a></li>
-  <li>2009-02-15
-      <a href="http://downloads.sourceforge.net/shingetsu/saku-3.6.0.tar.gz">Saku 3.6.0 共通版</a>
-      <a href="saku-3.6.0.tar.gz">ミラーからダウンロード</a></li>
+  <li>2009-03-01
+      <a href="http://downloads.sourceforge.net/shingetsu/winsaku-3.6.1.zip">Saku 3.6.1 Windows版</a>
+      <a href="winsaku-3.6.1.zip">ミラーからダウンロード</a></li>
+  <li>2009-03-01
+      <a href="http://downloads.sourceforge.net/shingetsu/saku-3.6.1.tar.gz">Saku 3.6.1 共通版</a>
+      <a href="saku-3.6.1.tar.gz">ミラーからダウンロード</a></li>
 </ul>
 
 <p>You can download Saku from <a href="http://sourceforge.net/project/showfiles.php?group_id=97083">SF.net</a>, too.</p>
@@ -80,10 +80,7 @@ Windows版はファイルサイズが大きいので、
 </p>
 
 <ul>
-  <li><a href="winsaku.2009-02-28.zip">2009-02-28 Windows版</a> (tclのencodingディレクトリを保存して、tzdataを削除するよう変更)</li>
-  <li><a href="saku.2009-02-22.1.tar.gz">2009-02-22r1 共通版</a> (文字変換に失敗しても文字化けするだけで致命的にならないようにする)</li>
-  <li><a href="saku.2009-02-22.tar.gz">2009-02-22 共通版</a> (tksakuで文字化けを解消)</li>
-  <li><a href="saku.2009-02-15.tar.gz">2009-02-15 共通版</a> (3.6.0相当)</li>
+  <li><a href="saku.2009-03-01.tar.gz">2009-03-01 共通版</a> (3.6.1相当)</li>
   <li><a href="rss">アップロード監視用RSS</a></li>
 </ul>
 
