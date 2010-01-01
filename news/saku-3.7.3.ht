@@ -1,4 +1,4 @@
->>>define TITLE         朔 3.7.3 リリース(緊急度の高い脆弱性の修正)
+>>>define TITLE         朔 3.7.3 リリース (緊急度の高い脆弱性の修正)
 >>>define DESCRIPTION   朔はP2P掲示板「新月」のPythonによる実装です。
 >>>include "head.ja.h"
 <!-- $Id$ -->
