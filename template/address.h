@@ -1,4 +1,4 @@
-<address>Copyright&copy; 2003-2009
+<address>Copyright&copy; 2003-2010
 <a href="http://sourceforge.net/projects/shingetsu/">shinGETsu Project</a>.
 All Rights Reserved.<br />
 <a href="mailto:webmaster@shingetsu.info">webmaster@shingetsu.info</a>
