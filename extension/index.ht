@@ -52,7 +52,7 @@ wwwディレクトリに保存してください。
   <dd>トップページや各スレッドの上下に付いているリンクを書き換えます。
 　    中身を直感で書き換えて御使用ください。</dd>
 
-  <dt><a href="30idres.js">30idres.js</a></dt>
+  <dt><a href="10default.js">10default.js</a>, <a href="30idres.js">30idres.js</a></dt>
   <dd>ID に通し番号を割り当てます。また、書き込みフォームでの &gt;&gt;番号 を &gt;&gt;ID に変換します。</dd>
 
   <dt><a href="30ytplayer.js">30ytplayer.js</a></dt>
