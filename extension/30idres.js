@@ -67,7 +67,7 @@ function res_id() {
     var form = $('postarticle');
     var form_split = form.body.value.split(">>");
     var form_name = form.name.value;
-    for (var i=0; i<form_split.length; i++) {
+    for (var i=1; i<form_split.length; i++) {
         if (form_split[i]) {
             if (form_split[i].match("^([0-9]+)(( )|(\n)|(\r)|($)|([^0-9a-z]))")) {
                 var m = form_split[i].match("^([0-9]+)(( )|(\n)|(\r)|($)|([^0-9a-z]))");
