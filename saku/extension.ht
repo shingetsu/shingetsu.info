@@ -10,8 +10,11 @@
   <li>www/*.js や www/*.css は朔のHTML出力のhead部分から読み込まれる。</li>
   <li>ファイル名が . または _ で始まる場合には無視される。</li>
   <li>読み込まれる順序はファイル名の文字コード順。</li>
-  <li>initFunc 配列に関数を追加するとbodyのonloadで呼び出される。</li>
-  <li>uiLang 変数で出力の言語がわかる。en, jaなど。</li>
+  <li>shingetsu.addInitializer() に関数を登録すると、ドキュメントが読み込まれたタイミングで実行される。(不安定版の場合)</li>
+  <li>initFunc 配列に関数を追加するとbodyのonloadで呼び出される。(安定版の場合)</li>
+  <li>shingetsu.uiLang 変数で出力の言語がわかる。en, jaなど。(不安定版の場合)</li>
+  <li>uiLang 変数で出力の言語がわかる。en, jaなど。(安定版の場合)</li>
+  <li>拡張機能全体で使いたい関数はshingetsu.pluginsの下に、shingetsu.plugins.fooのような名前で作る。(不安定版の場合)</li>
   <li>ファイルの文字コードはUTF-8とする。</li>
 </ul>
 

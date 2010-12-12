@@ -6,9 +6,7 @@
  * 
  */
 
-
-initFunc[initFunc.length] = function () 
-{
+shingetsu.addInitializer(function () {
     // initialize
     
     var g_ytplayer;
@@ -297,19 +295,4 @@ initFunc[initFunc.length] = function ()
         var ytplayer = createYTPlayer(id);
         showYTPlayer(coordinate, [ytplayer]);
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+});
