@@ -14,6 +14,7 @@ rsync -Cacv --delete \
     --exclude="*.zip" \
     --exclude="*.pdf" \
     --exclude="README.html" \
+    --exclude="- /head.txt" \
     --exclude="- /setup.sh" \
     --exclude="- /tool" \
     --exclude="- /template" \
