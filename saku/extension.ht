@@ -1,6 +1,7 @@
 >>>define TITLE         朔の拡張機能
 >>>define DESCRIPTION   朔はJavaScriptで簡単に拡張できます。
 >>>include "head.ja.h"
+<!-- $Id$ -->
 
 <p><a href="/saku/">朔</a>はJavaScriptで簡単に拡張できます。
 拡張はまだ開発途中の機能なので、仕様の変更があるかもしれません。</p>
