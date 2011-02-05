@@ -10,6 +10,7 @@
   <li><a href="cache">朔のキャッシュ構造</a></li>
   <li><a href="namespace">名前空間</a></li>
   <li><a href="network">新月のネットワーク</a></li>
+  <li><a href="not_implemented">新月にない・なかった機能</a></li>
 </ul>
 
 >>>include "foot.ja.h"
