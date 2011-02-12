@@ -1,1 +1,0 @@
-../../fuktommy.com/template/adsmini.h
