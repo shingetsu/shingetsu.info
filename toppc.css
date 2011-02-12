@@ -1,6 +1,10 @@
 @import "common.css";
 @import "pc.css";
 
+h1 {
+    background-color: #fff;
+}
+
 div#maincolumn {
     border: none;
     width: 100%;

@@ -1,5 +1,5 @@
 body {
-    background-color: #efefef;
+    background-color: #fff;
 }
 
 img {
@@ -7,11 +7,12 @@ img {
 }
 
 p.sitename {
-    background-color: #afa;
+    background-color: #33a;
     font-weight: bold;
 }
 
 p.sitename a {
+    color: #fff;
     text-decoration: none;
 }
 
