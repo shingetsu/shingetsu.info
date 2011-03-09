@@ -61,15 +61,21 @@ def public_gateway(uri):
     except (IOError, socket.timeout):
         return False
 
+def get_path():
+    path = os.environ.get('PATH_INFO', '/')
+    found = re.match(r'/thread/(.+)', path)
+    if found:
+        return 'thread.cgi/' + urllib.quote(found.group(1))
+    else:
+        return ''
+
 def main():
-    path = os.environ.get('PATH_INFO', '/').replace('/', '', 1)
-    path = re.sub(r'\s', '', path)
     for n in nodes():
         if public_gateway(n):
-            print 'Location: %s%s' % (n, path)
+            print 'Location: %s%s' % (n, get_path())
             print
             return
-    print 'Location: http://bbs.shingetsu.info/' + path
+    print 'Location: http://bbs.shingetsu.info/' + get_path()
     print
 
 if __name__ == '__main__':
