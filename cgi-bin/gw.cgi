@@ -2,7 +2,7 @@
 '''Gateway Guide.
 '''
 #
-# Copyright (c) 2007,2011 shinGETsu Project.
+# Copyright (c) 2007 shinGETsu Project.
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -27,12 +27,12 @@
 # SUCH DAMAGE.
 #
 
-import os
 import re
+import sys
 import socket
-import urllib
 from random import shuffle
 from urllib import urlopen
+from sets import Set
 
 from shingetsu.node import NodeList, SearchList
 
@@ -48,7 +48,7 @@ def gateway(node):
 def nodes():
     n = [gateway(i) for i in NodeList()]
     s = [gateway(i) for i in SearchList()]
-    buf = list(set(n).union(s))
+    buf = list(Set(n).union(s))
     shuffle(buf)
     return buf
 
@@ -61,21 +61,13 @@ def public_gateway(uri):
     except (IOError, socket.timeout):
         return False
 
-def get_path():
-    path = os.environ.get('PATH_INFO', '/')
-    found = re.match(r'/thread/(.+)', path)
-    if found:
-        return 'thread.cgi/' + urllib.quote(found.group(1))
-    else:
-        return ''
-
 def main():
     for n in nodes():
         if public_gateway(n):
-            print 'Location: %s%s' % (n, get_path())
+            print 'Location: %s' % n
             print
-            return
-    print 'Location: http://bbs.shingetsu.info/' + get_path()
+            sys.exit()
+    print 'Location: http://bbs.shingetsu.info/'
     print
 
 if __name__ == '__main__':
