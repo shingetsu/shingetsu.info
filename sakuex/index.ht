@@ -1,0 +1,90 @@
+>>>define TITLE         朔(Extreme版) - P2P匿名掲示板
+>>>define DESCRIPTION   新月のPython向けの実装「朔ex」の配布ページです
+>>>include "head.ja.h"
+<!-- $Id$ -->
+
+<p>朔exは<a href="/">新月</a>の<a href="http://www.python.jp/Zope/">Python</a>用の新月の実装です。
+<a href="/saku/">朔</a>よりも尖ったところを目指していく予定で、そのためには機能を削ることも躊躇しないつもりです。</p>
+
+<h2 id="download">ダウンロード</h2>
+<p>基本的にはSubversionで配布しています。</p>
+<ol>
+  <li>まずは次のコマンドを入力してください。
+<pre>% <kbd>svn co https://shingetsu.svn.sourceforge.net/svnroot/shingetsu/saku-ex/trunk/ saku</kbd></pre></li>
+  <li>2回目からは次のコマンドを入力してください。
+<pre>% <kbd>cd saku</kbd>
+% <kbd>svn up</kbd></pre></li>
+</ol>
+
+<p>更新履歴は<a href="http://shingetsu.info/trac/browser/mirror/sf.net/saku/trunk">Trac</a>でも
+見ることができます。</p>
+
+<p>また、ある程度安定していそうなリビジョンはアーカイブパッケージとしても配布しています。</p>
+<ul>
+  <li><a href="sakuex-svn1561.tar.gz">svn1561</a></li>
+  <li><a href="rss">アップロード監視用RSS</a></li>
+</ul>
+
+>>># <p>You can download Saku from <a href="http://sourceforge.net/projects/shingetsu/files/">SF.net</a>, too.</p>
+
+<h2 id="usage">簡単な使い方</h2>
+<ol>
+  <li><a href="http://www.python.jp/Zope/download/pythoncore">Pythonをダウンロード</a>して
+      インストールしておく(2.5以降)。</li>
+  <li>このページから朔exのプログラムをダウンロードする。</li>
+  <li>saku.pyをダブルクリックするか、コマンドラインから <kbd>python saky.py -v</kbd> を実行する。</li>
+  <li><a href="http://localhost:8000/">http://localhost:8000/</a>を
+      ブラウザで表示。</li>
+  <li>しばらく待っても掲示板が表示されなければ8000/tcpのポートを空ける。
+      ルータやファイアウォールのマニュアルを参照。</li>
+  <li>掲示板の使い方は<a href="/tutorial/">チュートリアル</a>を参照。</li>
+  <li>設定方法は file/sample.ini を見て file/saku.ini を編集する。
+      設定項目によっては shingetsu/config.py を編集する。</li>
+</ol>
+
+<h2 id="update">アップデートの方法</h2>
+<p>svn で更新できます。<kbd>svn up</kbd> を実行してください。</p>
+
+<p>新しくダウンロードした場合には、
+特に告知がなければ以前のフォルダにある
+cache, log, runの3つのフォルダを新しいフォルダに移動してください。
+以前のデータを引き継ぐことができます。</p>
+
+<h2 id="install">Unix等にインストールする場合の手順</h2>
+<ol>
+  <li><a href="http://www.cheetahtemplate.org/">Cheetah</a>
+      をインストールしてください。
+      同梱されているCheetahディレクトリをコピーしてもいいですが、
+      本家のものをインストールした方が処理速度が速いはずです。
+      Linuxディストリビューションでパッケージを提供しているときは
+      それを使うのをお勧めします。</li>
+  <li>モデム、ルータまたはファイアウォールを設定して
+      8000/tcpを開けてください。</li>
+  <li>コンパイルとインストールをします。
+<pre># <kbd>make install</kbd>
+あるいは
+# <kbd>make install PREFIX=/path/to/insall/dir</kbd></pre>
+      デフォルトでは /usr/local にインストールしますが、
+      環境によってはここにインストールしたモジュールは読み込まれません。
+      その場合は
+<pre># <kbd>ln -s /usr/local/lib/python2.5/site-packages/shingetsu /usr/lib/python2.5/site-packages</kbd></pre>
+      のようにリンクを張ってください。</li>
+  <li>設定ファイルの雛型は /usr/local/share/doc/saku/sample にインストールされています。
+      saku.ini は /usr/local/etc/saku.ini, /etc/saku.ini, ~/.saku/saku.ini の順に読み込まれ、
+      後のものが優先されます。
+      起動スクリプトは saku.init で、これを /etc/init.d/saku のようにコピーしてください。
+      その他の設定ファイルは saku.ini で指定します。</li>
+  <li>起動と終了は次のコマンドです。
+      その後 <a href="http://localhost:8000/">http://localhost:8000/</a>
+      を表示してください。
+<pre># <kbd>/etc/init.d/saku start</kbd>
+# <kbd>/etc/init.d/saku stop</kbd></pre></li>
+  <li>掲示板の使い方は<a href="/tutorial/">チュートリアル</a>を参照。</li>
+  <li>設定方法は file/sample.ini を見て file/saku.ini を編集する。
+      設定項目によっては shingetsu/config.py を編集する。</li>
+</ol>
+
+<p>注: インストールしなくても使うことができます。
+<a href="#usage">簡単な使い方</a>をご覧ください。</p>
+
+>>>include "foot.ja.h"

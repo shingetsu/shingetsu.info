@@ -15,7 +15,7 @@
 
 <div id="intro" class="menupanel">
 <h2>新月とは？</h2>
-<p>新月(shinGETsu)はさまざまなプラットフォーム上で動くP2P掲示板です。
+<p>新月(shinGETsu)はP2P掲示板を実現するための<a href="/protocol/">プロトコル</a>といくつかの実装の総称です。
 <a href="http://slashdot.jp/articles/05/05/09/1022258.shtml">Internet Relay BBS</a>と呼ばれることもあります。
 主に<a href="http://sourceforge.net">SourceForge.net</a>の
 <a href="http://sourceforge.net/projects/shingetsu/">shinGETsu Project</a>で開発されています。</p>
@@ -69,19 +69,9 @@
     <td></td>
   </tr>
   <tr>
-    <td>Hoven</td>
-    <td><a href="http://www.microsoft.com/">Windows</a></td>
-    <td>開発中</td>
-  </tr>
-  <tr>
-    <td>NanaSHI</td>
-    <td><a href="http://www.microsoft.com/">Windows</a></td>
-    <td>開発中</td>
-  </tr>
-  <tr>
-    <td>Selene</td>
-    <td><a href="http://jp.sun.com/java/">Java</a></td>
-    <td>開発中</td>
+    <td><a href="/sakuex/">朔(Extreme版)</a></td>
+    <td><a href="http://www.python.jp/Zope/">Python</a></td>
+    <td></td>
   </tr>
 </table>
 
