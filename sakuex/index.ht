@@ -21,6 +21,7 @@
 
 <p>また、ある程度安定していそうなリビジョンはアーカイブパッケージとしても配布しています。</p>
 <ul>
+  <li><a href="sakuex-svn1562.tar.gz">svn1562</a></li>
   <li><a href="sakuex-svn1561.tar.gz">svn1561</a></li>
   <li><a href="rss">アップロード監視用RSS</a></li>
 </ul>
@@ -32,11 +33,9 @@
   <li><a href="http://www.python.jp/Zope/download/pythoncore">Pythonをダウンロード</a>して
       インストールしておく(2.5以降)。</li>
   <li>このページから朔exのプログラムをダウンロードする。</li>
+  <li>モデム、ルータまたはファイアウォールを設定して8000/tcpを開ける。</li>
   <li>saku.pyをダブルクリックするか、コマンドラインから <kbd>python saky.py -v</kbd> を実行する。</li>
-  <li><a href="http://localhost:8000/">http://localhost:8000/</a>を
-      ブラウザで表示。</li>
-  <li>しばらく待っても掲示板が表示されなければ8000/tcpのポートを空ける。
-      ルータやファイアウォールのマニュアルを参照。</li>
+  <li><a href="http://localhost:8000/">http://localhost:8000/</a>をブラウザで表示。</li>
   <li>掲示板の使い方は<a href="/tutorial/">チュートリアル</a>を参照。</li>
   <li>設定方法は file/sample.ini を見て file/saku.ini を編集する。
       設定項目によっては shingetsu/config.py を編集する。</li>
@@ -58,8 +57,7 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
       本家のものをインストールした方が処理速度が速いはずです。
       Linuxディストリビューションでパッケージを提供しているときは
       それを使うのをお勧めします。</li>
-  <li>モデム、ルータまたはファイアウォールを設定して
-      8000/tcpを開けてください。</li>
+  <li>モデム、ルータまたはファイアウォールを設定して8000/tcpを開けてください。</li>
   <li>コンパイルとインストールをします。
 <pre># <kbd>make install</kbd>
 あるいは
