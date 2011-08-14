@@ -16,13 +16,13 @@
 % <kbd>svn up</kbd></pre></li>
 </ol>
 
-<p>更新履歴は<a href="http://shingetsu.info/trac/browser/mirror/sf.net/saku/trunk">Trac</a>でも
+<p>更新履歴は<a href="http://shingetsu.info/trac/log/mirror/sf.net/saku-ex/trunk">Trac</a>でも
 見ることができます。</p>
 
 <p>また、ある程度安定していそうなリビジョンはアーカイブパッケージとしても配布しています。</p>
 <ul>
+  <li><a href="sakuex-svn1573.tar.gz">svn1573</a></li>
   <li><a href="sakuex-svn1562.tar.gz">svn1562</a></li>
-  <li><a href="sakuex-svn1561.tar.gz">svn1561</a></li>
   <li><a href="rss">アップロード監視用RSS</a></li>
 </ul>
 

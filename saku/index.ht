@@ -80,6 +80,7 @@ Windows版はファイルサイズが大きいので、
 </p>
 
 <ul>
+  <li><a href="saku-svn1573.tar.gz">svn1573 共通版</a> (miniUPnP サポート)</li>
   <li><a href="saku-svn1555.tar.gz">svn1555 共通版</a> (svnのリビジョンでパッケージを作る機能)</li>
   <li><a href="saku.2011-02-26.tar.gz">2011-02-26 共通版</a> (3.10.1相当)</li>
   <li><a href="rss">アップロード監視用RSS</a></li>
@@ -95,7 +96,7 @@ Windows版はファイルサイズが大きいので、
 % svn update</pre></li>
 </ol>
 
-<p>更新履歴は<a href="http://shingetsu.info/trac/browser/mirror/sf.net/saku/trunk">Trac</a>でも
+<p>更新履歴は<a href="http://shingetsu.info/trac/log/mirror/sf.net/saku/trunk">Trac</a>でも
 見ることができます。</p>
 
 <p>Windows版のコンパイルは<a href="/tech/py2exe">py2exe</a>を使い、
