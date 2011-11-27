@@ -21,8 +21,8 @@
 
 <p>また、ある程度安定していそうなリビジョンはアーカイブパッケージとしても配布しています。</p>
 <ul>
+  <li><a href="sakuex-svn1579.tar.gz">svn1579</a></li>
   <li><a href="sakuex-svn1573.tar.gz">svn1573</a></li>
-  <li><a href="sakuex-svn1562.tar.gz">svn1562</a></li>
   <li><a href="rss">アップロード監視用RSS</a></li>
 </ul>
 

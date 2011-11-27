@@ -12,12 +12,12 @@ Windows版と共通版(Pythonスクリプト版)があります。</p>
 Windows版は単独で動きますが、ファイルサイズが大きいです。</p>
 
 <ul>
-  <li>2011-03-06
-      <a href="http://downloads.sourceforge.net/shingetsu/winsaku-3.10.1.zip">Saku 3.10.1 Windows版</a>
-      <a href="winsaku-3.10.1.zip">ミラーからダウンロード</a></li>
-  <li>2011-03-06
-      <a href="http://downloads.sourceforge.net/shingetsu/saku-3.10.1.tar.gz">Saku 3.10.1 共通版</a>
-      <a href="saku-3.10.1.tar.gz">ミラーからダウンロード</a></li>
+  <li>2011-11-27
+      <a href="http://downloads.sourceforge.net/shingetsu/winsaku-3.11.0.zip">Saku 3.11.0 Windows版</a>
+      <a href="winsaku-3.11.0.zip">ミラーからダウンロード</a></li>
+  <li>2011-11-27
+      <a href="http://downloads.sourceforge.net/shingetsu/saku-3.11.0.tar.gz">Saku 3.11.0 共通版</a>
+      <a href="saku-3.11.0.tar.gz">ミラーからダウンロード</a></li>
 </ul>
 
 <p>You can download Saku from <a href="http://sourceforge.net/projects/shingetsu/files/">SF.net</a>, too.</p>
@@ -80,9 +80,7 @@ Windows版はファイルサイズが大きいので、
 </p>
 
 <ul>
-  <li><a href="saku-svn1573.tar.gz">svn1573 共通版</a> (miniUPnP サポート)</li>
-  <li><a href="saku-svn1555.tar.gz">svn1555 共通版</a> (svnのリビジョンでパッケージを作る機能)</li>
-  <li><a href="saku.2011-02-26.tar.gz">2011-02-26 共通版</a> (3.10.1相当)</li>
+  <li><a href="saku-svn1582.tar.gz">2011-02-26 共通版</a> (3.11.0相当)</li>
   <li><a href="rss">アップロード監視用RSS</a></li>
 </ul>
 
