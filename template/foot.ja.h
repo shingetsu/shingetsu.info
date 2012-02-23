@@ -25,7 +25,7 @@
 >>>endif
   <li><a href="/news/">ニュース</a></li>
   <li><a href="/wiki/">Wiki</a></li>
-  <li><a id="bbs_foot" name="bbs_foot" href="http://bbs.shingetsu.info/">掲示板</a></li>
+  <li><a id="bbs_foot" href="http://bbs.shingetsu.info/">掲示板</a></li>
   <li><a href="http://bbs.shingetsu.info/" id="shingetsu_link" title="関連する新月の掲示板">新月</a></li>
 </ul>
 <script type="text/javascript">

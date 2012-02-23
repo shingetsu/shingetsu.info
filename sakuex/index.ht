@@ -7,26 +7,22 @@
 <a href="/saku/">朔</a>よりも尖ったところを目指していく予定で、そのためには機能を削ることも躊躇しないつもりです。</p>
 
 <h2 id="download">ダウンロード</h2>
-<p>基本的にはSubversionで配布しています。</p>
+<p>基本的には<a href="https://github.com/fuktommy/saku-ex">GitHub</a>で配布しています。</p>
 <ol>
   <li>まずは次のコマンドを入力してください。
-<pre>% <kbd>svn co https://shingetsu.svn.sourceforge.net/svnroot/shingetsu/saku-ex/trunk/ saku</kbd></pre></li>
+<pre>% <kbd>git clone git://github.com/fuktommy/saku-ex.git</kbd></pre></li>
   <li>2回目からは次のコマンドを入力してください。
-<pre>% <kbd>cd saku</kbd>
-% <kbd>svn up</kbd></pre></li>
+<pre>% <kbd>cd saku-ex</kbd>
+% <kbd>git pull</kbd></pre></li>
 </ol>
-
-<p>更新履歴は<a href="http://shingetsu.info/trac/log/mirror/sf.net/saku-ex/trunk">Trac</a>でも
-見ることができます。</p>
 
 <p>また、ある程度安定していそうなリビジョンはアーカイブパッケージとしても配布しています。</p>
 <ul>
+  <li><a href="sakuex-20120223-2140.tar.gz">2012-02-23 24:40</a></li>
   <li><a href="sakuex-svn1579.tar.gz">svn1579</a></li>
   <li><a href="sakuex-svn1573.tar.gz">svn1573</a></li>
   <li><a href="rss">アップロード監視用RSS</a></li>
 </ul>
-
->>># <p>You can download Saku from <a href="http://sourceforge.net/projects/shingetsu/files/">SF.net</a>, too.</p>
 
 <h2 id="usage">簡単な使い方</h2>
 <ol>
@@ -42,7 +38,7 @@
 </ol>
 
 <h2 id="update">アップデートの方法</h2>
-<p>svn で更新できます。<kbd>svn up</kbd> を実行してください。</p>
+<p>git 経由で入手した場合には <kbd>git pull</kbd> で更新できます。</p>
 
 <p>新しくダウンロードした場合には、
 特に告知がなければ以前のフォルダにある

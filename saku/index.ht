@@ -13,17 +13,13 @@ Windows版は単独で動きますが、ファイルサイズが大きいです�
 
 <ul>
   <li>2011-11-27
-      <a href="http://downloads.sourceforge.net/shingetsu/winsaku-3.11.0.zip">Saku 3.11.0 Windows版</a>
-      <a href="winsaku-3.11.0.zip">ミラーからダウンロード</a></li>
+      <a href="winsaku-3.11.0.zip">Saku 3.11.0 Windows版</a></li>
   <li>2011-11-27
-      <a href="http://downloads.sourceforge.net/shingetsu/saku-3.11.0.tar.gz">Saku 3.11.0 共通版</a>
-      <a href="saku-3.11.0.tar.gz">ミラーからダウンロード</a></li>
+      <a href="saku-3.11.0.tar.gz">Saku 3.11.0 共通版</a></li>
 </ul>
 
-<p>You can download Saku from <a href="http://sourceforge.net/projects/shingetsu/files/">SF.net</a>, too.</p>
-
 <ul>
-  <li><a href="changelog.ja">更新履歴はこちら。</a></li>
+  <li><a href="https://github.com/fuktommy/saku/commits/master/">更新履歴はこちら。</a></li>
   <li><a href="guideline">P2Pガイドラインに基く表示はこちら。</a></li>
 </ul>
 
@@ -80,22 +76,20 @@ Windows版はファイルサイズが大きいので、
 </p>
 
 <ul>
+  <li><a href="saku-git20120223-2209.tar.gz">2012-02-23 共通版</a> (svnからgitに移行)</li>
   <li><a href="saku-svn1582.tar.gz">2011-02-26 共通版</a> (3.11.0相当)</li>
   <li><a href="rss">アップロード監視用RSS</a></li>
 </ul>
 
-<p>Subversionを使って入手することもできます。</p>
+<p><a href="https://github.com/fuktommy/saku">GitHub</a>から入手することもできます。</p>
 
 <ol>
   <li>まずは次のコマンドを入力してください。
-<pre>% svn co https://shingetsu.svn.sourceforge.net/svnroot/shingetsu/saku/trunk/ saku</pre></li>
+<pre>%git clone git://github.com/fuktommy/saku.git</pre></li>
   <li>2回目からは次のコマンドを入力してください。
 <pre>% cd saku
-% svn update</pre></li>
+% git pull</pre></li>
 </ol>
-
-<p>更新履歴は<a href="http://shingetsu.info/trac/log/mirror/sf.net/saku/trunk">Trac</a>でも
-見ることができます。</p>
 
 <p>Windows版のコンパイルは<a href="/tech/py2exe">py2exe</a>を使い、
 こんな感じのスクリプトで行っています:

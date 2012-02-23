@@ -24,3 +24,10 @@ address {
 strong {
     color: red;
 }
+
+div.address {
+    clear: both;
+    text-align: center;
+    font-style: italic;
+    padding-top: 1em;
+}

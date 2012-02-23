@@ -24,7 +24,7 @@
 >>>endif
   <li><a href="/news/">News</a></li>
   <li><a href="/wiki/">Wiki</a></li>
-  <li><a id="bbs_foot" name="bbs_foot" href="http://bbs.shingetsu.info/">BBS</a></li>
+  <li><a id="bbs_foot" href="http://bbs.shingetsu.info/">BBS</a></li>
   <li><a href="http://bbs.shingetsu.info/" id="shingetsu_link" title="Relayed BBS">shinGETsu</a></li>
 </ul>
 <script type="text/javascript">
