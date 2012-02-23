@@ -16,7 +16,7 @@
 <div id="intro" class="menupanel">
 <h2>新月とは？</h2>
 <p>新月(shinGETsu)はP2P掲示板を実現するための<a href="/protocol/">プロトコル</a>といくつかの実装の総称です。
-主に<a href="https://github.com/">GitHub</a>で開発されています。</p>
+主に<a href="https://github.com/shingetsu">GitHub</a>で開発されています。</p>
 
 <ul>
   <li><a href="/intro/">新月の紹介</a></li>

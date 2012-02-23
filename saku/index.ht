@@ -19,7 +19,7 @@ Windows版は単独で動きますが、ファイルサイズが大きいです�
 </ul>
 
 <ul>
-  <li><a href="https://github.com/fuktommy/saku/commits/master/">更新履歴はこちら。</a></li>
+  <li><a href="https://github.com/shingetsu/saku/commits/master/">更新履歴はこちら。</a></li>
   <li><a href="guideline">P2Pガイドラインに基く表示はこちら。</a></li>
 </ul>
 
@@ -81,11 +81,11 @@ Windows版はファイルサイズが大きいので、
   <li><a href="rss">アップロード監視用RSS</a></li>
 </ul>
 
-<p><a href="https://github.com/fuktommy/saku">GitHub</a>から入手することもできます。</p>
+<p><a href="https://github.com/shingetsu/saku">GitHub</a>から入手することもできます。</p>
 
 <ol>
   <li>まずは次のコマンドを入力してください。
-<pre>%git clone git://github.com/fuktommy/saku.git</pre></li>
+<pre>%git clone git://github.com/shingetsu/saku.git</pre></li>
   <li>2回目からは次のコマンドを入力してください。
 <pre>% cd saku
 % git pull</pre></li>

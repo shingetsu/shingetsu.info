@@ -7,10 +7,10 @@
 <a href="/saku/">朔</a>よりも尖ったところを目指していく予定で、そのためには機能を削ることも躊躇しないつもりです。</p>
 
 <h2 id="download">ダウンロード</h2>
-<p>基本的には<a href="https://github.com/fuktommy/saku-ex">GitHub</a>で配布しています。</p>
+<p>基本的には<a href="https://github.com/shingetsu/saku-ex">GitHub</a>で配布しています。</p>
 <ol>
   <li>まずは次のコマンドを入力してください。
-<pre>% <kbd>git clone git://github.com/fuktommy/saku-ex.git</kbd></pre></li>
+<pre>% <kbd>git clone git://github.com/shingetsu/saku-ex.git</kbd></pre></li>
   <li>2回目からは次のコマンドを入力してください。
 <pre>% <kbd>cd saku-ex</kbd>
 % <kbd>git pull</kbd></pre></li>
