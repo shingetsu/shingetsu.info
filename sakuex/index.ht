@@ -18,9 +18,9 @@
 
 <p>また、ある程度安定していそうなリビジョンはアーカイブパッケージとしても配布しています。</p>
 <ul>
-  <li><a href="sakuex-20120223-2140.tar.gz">2012-02-23 24:40</a></li>
+  <li><a href="sakuex-20120301-0148.tar.gz">2012-03-01 01:48 UTC</a></li>
+  <li><a href="sakuex-20120223-2140.tar.gz">2012-02-23 21:40 JST</a></li>
   <li><a href="sakuex-svn1579.tar.gz">svn1579</a></li>
-  <li><a href="sakuex-svn1573.tar.gz">svn1573</a></li>
   <li><a href="rss">アップロード監視用RSS</a></li>
 </ul>
 
