@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="content-script-type" content="text/javascript" />
+  <title>新月リダイレクタ</title>
+  <link rev="made" href="http://shingetsu.sourceforge.net/" />
+  <link rel="contents" href="/" />
+  <link rel="stylesheet" type="text/css" href="/common.css" />
+  <script type="text/javascript" src="/shingetsu.js"></script>
+</head>
+<body>
+<h1>新月リダイレクタ(JavaScript版)</h1>
+
+<script type="text/javascript">printBody();</script>
+
+<p><a href="/shingetsu.js">リダイレクタのソース</a>です。
+リダイレクタはコピーしたり、設定を書き換えて使うことができます。
+例えばデフォルトのホスト名をあなたのゲートウェイに書き換えるなど。</p>
+</body>
+</html>

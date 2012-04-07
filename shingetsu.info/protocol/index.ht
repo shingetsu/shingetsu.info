@@ -1,0 +1,17 @@
+>>>define TITLE         新月プロトコル
+>>>define DESCRIPTION   新月プロトコルの文書化計画です。
+>>>include "head.ja.h"
+
+<p>新月のプロトコルを文書化する計画が進行中です。
+まだこれは最終的なものではなく、修正される予定です。</p>
+
+<ul>
+  <li><a href="protocol-0.7.d1">0.7 ドラフト#1</a></li>
+  <li><a href="protocol-0.6.d3">0.6 ドラフト#3</a></li>
+  <li><a href="protocol-0.6.d2">0.6 ドラフト#2</a></li>
+  <li><a href="comment">コメント</a></li>
+  <li><a href="protocol-0.5-2.pdf">0.5 ドラフト#2 PDF</a></li>
+  <li><a href="protocol-0.5-2.tar.gz">0.5 ドラフト#2 データ一式</a></li>
+</ul>
+
+>>>include "foot.ja.h"

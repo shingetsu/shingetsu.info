@@ -1,0 +1,6 @@
+title: 新月 - P2P匿名掲示板
+uri: http://shingetsu.info/rss
+link: http://shingetsu.info/
+parent: http://shingetsu.info/
+description: 新月のソフトウェアやドキュメント
+xsl: /rss1.xsl

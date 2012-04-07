@@ -1,0 +1,33 @@
+body {
+    background-color: #fff;
+}
+
+img {
+    border-width: 0px;
+}
+
+p.sitename {
+    background-color: #33a;
+    font-weight: bold;
+}
+
+p.sitename a {
+    color: #fff;
+    text-decoration: none;
+}
+
+address {
+    clear: both;
+    text-align: center;
+}
+
+strong {
+    color: red;
+}
+
+div.address {
+    clear: both;
+    text-align: center;
+    font-style: italic;
+    padding-top: 1em;
+}

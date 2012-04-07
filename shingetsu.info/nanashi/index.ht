@@ -1,0 +1,30 @@
+>>>define TITLE         NanaSHI - P2P匿名掲示板
+>>>define DESCRIPTION   新月のWindows向けの実装「NanaSHI」の配布ページです。
+>>>include "head.ja.h"
+
+<p>NanaSHIは<a href="/">新月</a>のWindows向けの実装(<a href="http://www.borland.co.jp/delphi/">Delphi6</a>)です。</p>
+
+<p>2006年12月31日現在ではメンテナンスされておらず、
+新月プロトコル0.6には未対応です。
+プロトコル0.5と0.6にはある程度の互換性があるので一応使えます。
+開発者を募集中です。</p>
+
+<h2>ダウンロード</h2>
+<ul>
+  <li>2005-11-03 <a href="nanashi-0.0.70.13.zip">NanaSHI 0.0.70.13 実行ファイル</a></li>
+  <li>2004-09-20 <a href="NanaSHI_0.0.60.5.zip">NanaSHI 0.0.60.5 実行ファイル</a></li>
+  <li>2004-09-19 <a href="NanaSHI_0.0.60.4S.zip">NanaSHI 0.0.60.4 ソース</a></li>
+</ul>
+
+<h2>インストール</h2>
+<ul>
+  <li>httpd.exeを実行してください。</li>
+  <li>File→Startを選択してください。</li>
+  <li>ブラウザで <a href="http://localhost:9000/">http://localhost:9000/</a>を表示してください。</li>
+  <li>しばらく待っても掲示板が表示されなければモデム、ルータまたはファイアウォールを設定して9000/tcpを開けてください。</li>
+</ul>
+
+<h2>スクリーンショット</h2>
+<p><img src="nanashi.png" width="678" height="384" alt="スクリーンショット" /></p>
+
+>>>include "foot.ja.h"

@@ -1,0 +1,14 @@
+>>>define TITLE         NanaSHI 0.0.70.13 リリース
+>>>define DESCRIPTION   NanaSHIはWindows版新月です。
+>>>include "head.ja.h"
+
+<p class="date">2005-11-03</p>
+
+<ul>
+  <li>Stopメニュー追加。サーバーを停止し起動直後の状態に戻ります。再Start可能。</li>
+  <li>default_node.txt更新。</li>
+</ul>
+
+<p>ダウンロード: <a href="/nanashi/">NanaSHI - P2P匿名掲示板</a></p>
+
+>>>include "foot.ja.h"

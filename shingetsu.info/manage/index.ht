@@ -1,0 +1,21 @@
+>>>define TITLE         管理者向け情報
+>>>define DESCRIPTION   ノード管理者や管理者になりたい人向けの情報です。
+>>>include "head.ja.h"
+
+<ul>
+  <li><a href="/saku/template">朔のテンプレート</a></li>
+  <li><a href="/saku/config">朔設定ガイド</a></li>
+  <li><a href="tag">タグ</a></li>
+  <li><a href="suggest">おすすめリンク</a></li>
+  <li><a href="/archive/">保管庫について</a></li>
+  <li><a href="apache">Apacheと朔を組み合わせて使う方法</a></li>
+  <li><a href="post">書き込みすると何が起こるのか</a></li>
+  <li><a href="server">新月はサーバ？</a></li>
+  <li><a href="tcpip4226">WindowsXP SP2 の同時接続制限について</a></li>
+  <li><a href="upnp">朔のUPnP対応状況</a></li>
+  <li><a href="merit">新月をインストールするメリット</a></li>
+  <li><a href="cache">キャッシュの溜め方・溜まり方</a></li>
+  <li><a href="type">新月は2ちゃんねる型？ teacup.型？</a></li>
+</ul>
+
+>>>include "foot.ja.h"

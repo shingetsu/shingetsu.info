@@ -1,0 +1,30 @@
+>>>define TITLE         Introduction for shinGETsu
+>>>define DESCRIPTION   shinGETsu has strong points of home server and P2P.
+>>>define BASE          index
+>>>include "head.en.h"
+
+<p>There are bulletin board system (a.k.a. BBS) in the web.
+shinGETsu is the software make BBS in your PC and
+ make them be able to access it.</p>
+
+<p><img src="csbbs.en.png" width="450" height="200" alt="Traditional C/S BBS" />
+<img src="irbbs.en.png" width="450" height="200" alt="Interent Relay BBS" /></p>
+
+<p>Rental BBS service has existes already.
+You can rent a server and install BBS tools.
+But they are limited for capacity, load or expression.
+You can install BBS tools your PC for capacity, load or expression.
+But you should run your PC for visiters always,
+and care for telephone wire load.</p>
+
+<p>shinGETsu makes BBS synchronizing many PCs.
+The software runs in your PC,
+ so you should not care for capacity, load or expression.
+Many PSs share BBS data using P2P technology,
+ so the BBS is available when your PC is sleeping.
+The visiters disperse many PCs, so
+ telephone wire load is lightened.</p>
+
+<p>shinGETsu has strong points of home server and P2P.</p>
+
+>>>include "foot.en.h"

@@ -1,0 +1,113 @@
+>>>define TITLE         朔API
+>>>define DESCRIPTION   朔の3つのAPI。
+>>>include "head.ja.h"
+
+<p><a href="/saku/">朔</a>には3つのAPIがあります。
+あまり洗練されたものではありませんが…。</p>
+
+<h2>キャッシュファイル</h2>
+<p>キャッシュファイルを直接読み書きすることができます。
+Perl版開発の頃から、
+キャッシュファイルへのアクセスが簡単にできるよう設計してきました。
+詳しくは<a href="/tech/cache">朔のキャッシュ構造</a>をご覧ください。</p>
+
+<h2>Pythonライブラリ</h2>
+<p><code>from shingetsu.cache import *</code>としてライブラリを読み込み、
+それを経由してキャッシュを読み書きすることができます。
+キャッシュファイルを直接読むのとの合わせ技の使用例を挙げます:
+<a href="/archive/mkarchive.py">レコードから朔のキャッシュを生成するスクリプト</a></p>
+
+<h2>HTTP経由のAPI</h2>
+<p>これが本題です。
+「(新月ネットワーク)-(朔本体)-(UI)-(ユーザ)」のような
+システムを作ることができます。
+現在の朔では過去の書き込みを1ヶ月を目安にして消していますが、
+これはもし長期間書き込みを保存したいのであれば、
+上のようなシステムを自分にとって使い易いように作ってほしいからです。
+「(新月ネットワーク)-(1ヶ月分のキャッシュ)-(全ての書き込み)-(ユーザ)」
+という形です。
+こうすることによって、新月について最初に考えていたように、
+新月はデータの通信部分であり、その上のソフトウェアは多様である、
+という構造になることを期待しています。</p>
+
+<h3>gateway.cgi</h3>
+<p><code>/gateway.cgi/csv/index/file,stamp,date,path,uri,type,title,records,size</code>
+のように呼び出すことによって、掲示板の一覧をCSV形式で得ることができます。</p>
+
+<p>indexの部分は次のどれかです。</p>
+<dl>
+  <dt>index</dt>
+  <dd>一覧(文字コード順)。</dd>
+  <dt>changes</dt>
+  <dd>一覧(最終書き込み時刻順)。</dd>
+  <dt>recent</dt>
+  <dd>最近の書き込み一覧。</dd>
+</dl>
+
+<p>file,stamp... の部分は次のうちから取捨選択できます。</p>
+<dl>
+  <dt>file</dt>
+  <dd>ファイル名。</dd>
+  <dt>stamp</dt>
+  <dd>最終書き込み時刻(Unix時刻)。</dd>
+  <dt>date</dt>
+  <dd>最終書き込み時刻(人間向け形式)。</dd>
+  <dt>path</dt>
+  <dd>URIのパス部分。</dd>
+  <dt>uri</dt>
+  <dd>プロトコル、ホスト名も含めたURI。</dd>
+  <dt>type</dt>
+  <dd>掲示板の種類。</dd>
+  <dt>title</dt>
+  <dd>掲示板のタイトル。</dd>
+  <dt>records</dt>
+  <dd>書き込み数。</dd>
+  <dt>size</dt>
+  <dd>ファイルサイズ。</dd>
+</dl>
+
+<h3>server.cgi</h3>
+<p>server.cgiはノード間の通信だけではなく、
+ノードとUIの間のインタフェースとしても機能します。
+例えば<code>/server.cgi/get/thread_66726565/1147012194-</code>のようにすると、
+指定時刻以降の書き込みを一覧出力します。</p>
+
+<p>詳しくは<a href="/protocol/">プロトコル</a>をご覧ください。</p>
+
+<h3>thread.cgi</h3>
+<p><code>/gateway.cgi/掲示板タイトル</code>として
+キャッシュにない掲示板を
+新月ネットワークからダウンロードすることができます。</p>
+
+<p>書き込みフォームを埋めるようなデータを作ってPOSTすれば
+書き込みをすることができます。
+cmd以外は任意ですが、
+name,mail,attach,bodyのどれか1つはデータがなければなりません。
+通常のPOSTのほかにmultipart/form-dataが使えます。</p>
+
+<dl>
+  <dt>cmd</dt>
+  <dd>常に"post"。</dd>
+  <dt>file</dt>
+  <dd>掲示板のファイル名。</dd>
+  <dt>dopost</dt>
+  <dd>書き込みを伝播するかどうか。</dd>
+  <dt>error</dt>
+  <dd>書き込み時刻に誤差を入れるかどうか。</dd>
+  <dt>name</dt>
+  <dd>投稿者の名前。</dd>
+  <dt>mail</dt>
+  <dd>投稿者のメールアドレス。</dd>
+  <dt>password</dt>
+  <dd>署名のためのパスワード。2chでいうトリップ。</dd>
+  <dt>file</dt>
+  <dd>添付ファイル。
+      これを使うときはmultipart/form-dataでなければならない。</dd>
+  <dt>suffix</dt>
+  <dd>添付ファイルの拡張子(最初のドットも含める)。
+      "AUTO"にしておくと添付ファイルの名前から自動で生成する。</dd>
+  <dt>body</dt>
+  <dd>書き込み本文。</dd>
+</dl>
+
+>>>include "foot.ja.h"

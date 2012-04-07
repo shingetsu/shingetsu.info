@@ -1,0 +1,30 @@
+>>>define TITLE         朔 3.5.2 リリース
+>>>define DESCRIPTION   朔はP2P掲示板「新月」のPythonによる実装です。
+>>>include "head.ja.h"
+<!-- $Id$ -->
+
+<p class="date">2008-09-06</p>
+
+<p>朔 3.5.2 をリリースします。</p>
+
+<h2>3.5.1 からの変更点</h2>
+<ul>
+  <li>Apacheの設定ファイル(サンプル)でループになっている箇所を修正。</li>
+  <li>携帯電話用のテンプレートでレスを表示するときにはレスのリンクを出さない。</li>
+  <li>CSVに引用符が入ったときのsuggest.jsの挙動の修正。</li>
+  <li>Aterm DL180V-C でUPnPが動作しない不具合の修正。</li>
+  <li>テンプレートの署名のところの修正。</li>
+</ul>
+
+<h2>3.5.0 からの変更点</h2>
+<ul>
+  <li>DoCoMo端末からメールで書き込めないバグの修正。</li>
+  <li>README.jaのtypo修正。</li>
+  <li>添付ファイルはダウンロードさせる。</li>
+  <li>Accept-Languageがfoo-barで、foo-bar用のリソースファイルがなく、
+      foo用のリソースがある場合にはそれを利用する。</li>
+</ul>
+
+<p>ダウンロード: <a href="/saku/#stable">朔 - P2P匿名掲示板</a></p>
+
+>>>include "foot.ja.h"

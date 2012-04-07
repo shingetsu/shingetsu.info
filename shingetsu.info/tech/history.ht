@@ -1,0 +1,46 @@
+>>>define TITLE         新月のできるまで
+>>>define DESCRIPTION   新月を作ることになったきっかけについてです。
+>>>include "head.ja.h"
+
+<p>2005年10月10日頃、<a href="http://2ch.net/">2ちゃんねる</a>と動物病院との裁判の結果が出たようです(<a href="http://www.asahi.com/national/update/1007/TKY200510070278.html">「２ちゃんねる」側の敗訴確定　動物病院中傷書き込み</a>をご覧ください)。実際にどんな中傷があったのはか知りませんが、これは<a href="/">新月</a>の開発のきっかけになった事件なのです。どんな形であれ一区切りですので、ここで新月の歴史や開発意図について改めて書いておこうと思います。</p>
+
+<p>手元にある資料で一番古いのが<a href="http://www.sbcr.jp/netrunner/magazine/detail.asp?magid=506">ネットランナー 2002年7月号</a>です。先行者のプラモがついてたので買いました。<a href="http://blog.livedoor.jp/hirox1492/">ひろゆき</a>のコラムで<a href="http://www.wdic.org/?word=zigumo+%3ATECH">zigumo</a>が紹介されてたのでP2P掲示板に興味を持ったわけです。<a href="http://winny.info/" title="winny.info">Winny</a>が最初に紹介されたのもこの号みたいですね。ちなみにzigumoは<a href="http://store.sbpnet.jp/bm_detail.asp?sku=1050200202">ネットランナー 2002年6月号</a>の特集でも取り上げられています。</p>
+
+<p>それで2chの各種スレに出入りするようになりました。</p>
+<ul>
+  <li><a href="http://pc8.2ch.net/test/read.cgi/tech/999431595/l50">2chのような掲示板システムってP2Pで part.2</a>(2001-09-02)</li>
+  <li><a href="http://pc2.2ch.net/test/read.cgi/tech/1014643673/">P2P匿名掲示板zigumoスレッド</a>(2002-02-25)</li>
+  <li><a href="http://pc5.2ch.net/test/read.cgi/software/1014650252/">Vojta計画</a>(2002-02-26)</li>
+</ul>
+
+<p>だいたいこれらのスレでは<a href="http://www.media-k.co.jp/jiten/wiki.cgi?%A1%E3%B5%AD%B9%E6%A1%A6%BF%F4%BB%FA%A1%E4#i114">8月危機</a>をきっかけに、サーバだと負荷や転送量が大変だからP2Pにして分散しようという雰囲気でした。</p>
+
+<p>そこに動物病院のニュースが飛び込んできました(<a href="http://news.2ch.net/test/read.cgi/newsplus/1025067254/">【もうだめぽ？】ひろゆき敗訴【400万円】</a>)。動物病院がひろゆきに500万円の損害賠償を求めてた裁判で、東京地裁が400万円の支払いを命じたというものでした(スレが立ったのが2002年6月26日)。こんな調子で裁判を連続して起こされたら2chも潰れてしまうんじゃないかと本気で心配したものです。</p>
+
+<p>この頃の2ch発の掲示板はzigumoの他に<a href="http://www.wdic.org/?word=Vojta+%3ATECH">Vojta</a>、<a href="http://www.wdic.org/?word=Tiara+%3ATECH">Tiara</a>がありまして、WinnyにもBBS機能がありました。僕はLinuxを使ってましたので、<a href="http://www.java.com/ja/">Java</a>で動くVojtaを導入し、バグ報告などを行なっていました。</p>
+
+<p>Tiaraはなぜかあまり話題にならなかったので、よく知りませんでした。zigumoはいつの間にか開発中止の気配(正式に終了したのは2003年12月頃？)。Vojtaは面白かったのですが、作者氏が仕様やソースを公開するのに消極的だったことに不満を持ち、別の掲示板を作ることにしました。「飛行機に乗るんですか？　墜落したときに備えてソースを公開してくださいよ」とか言ったような記憶があります。その後Vojtaもいつの間にか開発停止(2004年3月頃？　<a href="http://pc5.2ch.net/test/read.cgi/software/1063423558/">Vojta計画2</a>)。</p>
+
+<p>新月は技術的にはVojtaを簡単にしたものとして設計されました。</p>
+
+<ul>
+  <li>板ごとの設定(名無しさん、画像の添付の有無など)はしない。</li>
+  <li>板ごとの管理人は置かない。</li>
+  <li>データやプロトコルは単純で、人が読めるものにする。</li>
+  <li>一般に広く知られた手法(HTTPやCGI等)を使う。</li>
+</ul>
+
+<p>後でわかったことですが、Winnyからも大きな影響を受けていました。中継・転送によって匿名性を得るというのがそれです。</p>
+
+<p>思想の上では動物病院の裁判から大きな影響を受けていました。この事件は動物病院側は記事の削除を求め、2ch側は削除できない立場だからこじれた、と解釈しました。そこで投稿者、管理者、話題になった人の三者に利益があるようにしました。</p>
+
+<ul>
+  <li>匿名性によって投稿者のプライバシーを守る。</li>
+  <li>管理者は投稿者の情報を渡せと迫られることがない。</li>
+  <li>管理者は自由に削除できるから削除しないことで訴えられる危険性がない。</li>
+  <li>素早く削除されるので、話題になった人は被害を受けにくい。</li>
+</ul>
+
+<p>そして2chに発表したのが2003年08月29日のことでした(<a href="http://pc8.2ch.net/test/read.cgi/tech/999431595/572">2chのような掲示板システムってP2Pで part.2の572</a>)。</p>
+
+>>>include "foot.ja.h"

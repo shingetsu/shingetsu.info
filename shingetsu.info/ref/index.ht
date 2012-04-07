@@ -1,0 +1,53 @@
+>>>define TITLE         新月への言及
+>>>define DESCRIPTION   新月を紹介してくださったウェブページ、新月を参考文献に挙げた学術論文など。
+>>>include "head.ja.h"
+<!-- $Id$ -->
+
+<h2 id="web">紹介記事</h2>
+<ul>
+  <li><a href="http://strangeworld.cc/~bbsnews/log/040103.html">P2Pファイル貼り付け掲示板『新月』＠BBS NEWS!</a></li>
+  <li><a href="http://slashdot.jp/articles/05/05/09/1022258.shtml?topic=104">スラッシュドット ジャパン  | 新月プロジェクト、朔-0.3.2リリース</a></li>
+  <li><a href="http://oss.moongift.jp/intro/i-582.html">MOONGIFT - 新月 - オープンソースによるIT戦略支援 -</a></li>
+  <li><a href="http://www.doblog.com/weblog/myblog/28493/2033498#2033498">P2PBBSの話その3 - 新月＠ひがんばなの適当日記禄</a></li>
+  <li><a href="http://gigazine.net/index.php?/news/comments/20070112_p2p_bbs/">P2P型の匿名掲示板は今、どこまで開発が進んでいるのか？ - GIGAZINE</a></li>
+</ul>
+
+<h2 id="interview">インタビュー等</h2>
+<ul>
+  <li><a href="http://wanderingdj.blogtribe.org/entry-1b56dd83d4e826009d3be4a3b8e41166.html">お話聞きました……新月java版作者氏編</a></li>
+  <li><a href="http://wanderingdj.blogtribe.org/entry-2bdcd888e6417173cfd99628aacb7222.html">お話聞きました……新月作者氏本編</a></li>
+  <li><a href="http://muziyoshiz.jp/20040911.html#p05">P2P掲示板「新月」のプロトコルとデータ構造＠第1回P2P勉強会議事録</a></li>
+</ul>
+
+<h2 id="magazine">雑誌</h2>
+<ul>
+  <li><a href="http://www.itmedia.co.jp/internet/runner/0403/special/spe01.html">ネットランナー 2004年3月号</a>, pp.64--65</li>
+  <li><a href="http://ip-web.jp/">iP!</a> 2005年3月号, p.63</li>
+  <li><a href="http://www.unixuser.jp/magazine/2006/200602.html">オープンソースマガジン 2006年2月号</a>, p.37</li>
+  <li><a href="http://ip-web.jp/">iP!</a> 2008年5月号, pp.60--63</li>
+</ul>
+
+<h2 id="paper">学術論文等</h2>
+<ul>
+  <li>水野雄輔,
+      <a href="http://www.seto.nanzan-u.ac.jp/msie/gr-thesis/it/proc/2005/#kawano">トラックバックを利用したP2P型ブログにおけるノード発見の実装</a>,
+      南山大学 数理情報学部 2005年度 卒業論文, 2006年 3月.</li>
+
+  <li>木戸裕樹,
+      <a href="http://www-nishio.ise.eng.osaka-u.ac.jp/Thesis/#m">P2Pネットワークにおけるデータアクセス頻度を考慮した確率的な複製配置方式</a>,
+      大阪大学大学院 情報科学研究科 修士論文, 2006年 2月.</li>
+
+  <li>渡辺俊貴,
+      <a href="http://www-nishio.ist.osaka-u.ac.jp/Thesis/bachelor/2005/watanabe/paper.pdf">P2Pネットワークにおける障害耐性向上と負荷軽減のための木構造に基づく複製更新伝播法</a>,
+      大阪大学 工学部 2005年度 卒業論文, 2006年 2月.</li>
+
+  <li>河木孝治, 小瀬木浩昭, 大矢健太,鎌田浩嗣, 村田大樹, 武田正之,
+      <a href="http://www.internetconference.org/ic2005/program.html#main2">P2P型Web 情報伝播モデルの提案と自律的リンク構築機構の実現</a>,
+      インターネットコンファレンス2005, 2005年10月.</li>
+
+  <li>望月洋介, 山本浩之, 森本雄, 直江健介, 豊田陽一, 武藤佳恭,
+      <a href="http://www.kri.sfc.keio.ac.jp/japanese/publications/mori/2004/b-26/">パラレルスレッディングを実現する 掲示板システムの提案</a>,
+      情報処理学会 第67回全国大会投稿論文, 2005年 3月.</li>
+</ul>
+
+>>>include "foot.ja.h"

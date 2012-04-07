@@ -1,0 +1,44 @@
+>>>define TITLE         DNSラウンドロビンなど
+>>>define DESCRIPTION   いろいろとDNSの設定をしてみました。
+>>>include "head.ja.h"
+
+<p class="date">2005-12-15, 2007-02-20</p>
+
+<h2 id="dns">DNSラウンドロビン</h2>
+<p>2005年12月15頃から2007年02月27日まで負荷分散のテストのため、
+<a href="http://bbs.shingetsu.info/">bbs.shingetsu.info</a>を
+<a href="http://fuktommy.ddo.jp/">fuktommy.ddo.jp</a>と
+<a href="http://pushare.zenno.info/">pushare.zenno.info</a>との
+DNSラウンドロビンにしていました。
+現状では分散しなければならないほどの負荷ではないんですが、
+将来のことを考えてのテストでした。</p>
+
+<p>この2ノードは固定IPアドレスではないので、
+IPアドレスが変わったときの対策がしてありました。
+そのときはDNSラウンドロビンではなく
+bbs.shingetsu.info=fuktommy.ddo.jp となります。</p>
+
+<h2 id="gateway">名前を持ったゲートウェイの募集</h2>
+<p>fuktommy.ddo.jpやpushare.zenno.infoのような、
+安定したDNS名を持ったゲートウェイを募集しています。
+常設である必要はありません。
+連絡は<a href="mailto:staff@shingetsu.info">staff@shingetsu.info</a>または
+<a href="http://bbs.shingetsu.info/thread.cgi/%E6%96%B0%E6%9C%88%E3%81%AE%E9%96%8B%E7%99%BA">[[新月の開発]]</a>まで。
+ぜひ(お気軽に)参加してください。
+(募集中です)</p>
+
+<h2 id="node">DNSラウンドロビンへの参加ノードの募集</h2>
+<p>比較的安定してサービスを提供できるノードを募集しています。
+加えて、80/tcpでHTTPを受け付けていること、
+8000/tcpで新月を受け付けていること、
+thread.cgiなどのパスが新月のデフォルトであることなどが条件です。
+連絡先は上と同じです。
+(募集は終了しました)</p>
+
+<h2 id="mail">メールアカウントを提供します</h2>
+<p>新月の開発・運営に関わっているボランティアの方に ***@shingetsu.info
+のメールアカウント(転送メール)を提供する用意があります。
+詳しくは<a href="mailto:staff@shingetsu.info">staff@shingetsu.info</a>まで。
+(募集は終了しました)</p>
+
+>>>include "foot.ja.h"

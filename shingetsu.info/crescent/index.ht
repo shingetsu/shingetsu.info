@@ -1,0 +1,35 @@
+>>>define TITLE         Crescent - P2P匿名掲示板
+>>>define DESCRIPTION   Windows向けの実装ですが、古いフォーマットと、それを独自に拡張したフォーマットのみに対応しています。
+>>>include "head.ja.h"
+
+<p>CrescentはRRmI8rEBRM氏が開発していたP2P匿名掲示板です。
+<a href="/">新月</a>が仕様を変更したため、現在は使えなくなっています。
+参考のために公開します。</p>
+
+<h2>ダウンロード</h2>
+<ul>
+  <li><a href="Crescent0023.zip">Crescent v.0.0.23 実行ファイル</a></li>
+  <li><a href="Crescent0023src.zip">Crescent v.0.0.23 ソース</a></li>
+  <li><a href="Janny036.zip">Janny v.0.3.6 実行ファイル</a></li>
+  <li><a href="Janny035src.zip">Janny v.0.3.5 ソース</a></li>
+</ul>
+
+<h2>Crescentの使っているライブラリなど</h2>
+<ul>
+  <li><a href="/apollo/">Apollo</a></li>
+  <li><a href="http://www.indyproject.org/download/Files/Indy9.html">
+      Indy 9.0.14</a></li>
+  <li><a href="http://www.base2ti.com./downloads/delphi-objects.shtm">
+      Zlib 1.2.1</a></li>
+  <li><a href="http://www.borland.co.jp/delphi/personal/">
+      Delphi6 Personal</a></li>
+</ul>
+
+<h2>インストール</h2>
+<ul>
+  <li>モデム、ルータまたはファイアウォールを設定して8000/tcpを開けてください。</li>
+  <li>Crescent.exeを実行してください。</li>
+  <li>ブラウザで <a href="http://localhost:8000/">http://localhost:8000/</a>を表示してください。</li>
+</ul>
+
+>>>include "foot.ja.h"

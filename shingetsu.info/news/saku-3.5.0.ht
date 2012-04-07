@@ -1,0 +1,68 @@
+>>>define TITLE         朔 3.5.0 リリース
+>>>define DESCRIPTION   朔はP2P掲示板「新月」のPythonによる実装です。
+>>>include "head.ja.h"
+<!-- $Id$ -->
+
+<p class="date">2007-12-16</p>
+
+<p>朔 3.5.0 をリリースします。</p>
+
+<p>なお、3.4.0をリリースした2007-10-06以降では、
+SubversionリポジトリのURLが変更になりました。
+新しいURLは
+<a href="https://shingetsu.svn.sourceforge.net/svnroot/shingetsu/saku/trunk/">https://shingetsu.svn.sourceforge.net/svnroot/shingetsu/saku/trunk/</a>
+です。</p>
+
+<h2>3.4.0 からの変更点</h2>
+<ul>
+  <li>同梱の<a href="http://www.cheetahtemplate.org/">Cheetah</a>のバージョンを2.0.1に上げる。</li>
+  <li>ネットワーク利用規約を改訂。</li>
+</ul>
+
+<h2>3.3.1 からの変更点</h2>
+<ul>
+  <li>同時アクセス数制限機能を追加。</li>
+</ul>
+
+<h2>3.3.0 からの変更点</h2>
+<ul>
+  <li>添付ファイルが表示できないバグの修正。</li>
+</ul>
+
+<h2>3.2.0 からの変更点</h2>
+<ul>
+  <li>レコード数をファイルに書くことでディレクトリ走査の回数を減らす。</li>
+  <li>recent.txtを1つの掲示板につき1行としてサイズの縮小をする。</li>
+</ul>
+
+<h2>3.1.1 からの変更点</h2>
+<ul>
+  <li>排他制御。</li>
+  <li>/update命令を受けたときの反応速度の向上。</li>
+</ul>
+
+<h2>3.1.0 からの変更点</h2>
+<ul>
+  <li>rss出力でdc:creatorが正しく表示されない問題の修正。</li>
+  <li>shingetsu.cache.Record.free()の修正でメモリリークの改善。</li>
+</ul>
+
+<h2>3.0.0 からの変更点</h2>
+<ul>
+  <li>スパムがあっても一覧等に表示される最終更新時刻には反映させない。</li>
+</ul>
+
+<h2>2.9.0 からの変更点</h2>
+<ul>
+  <li>テンプレートエンジン
+      <a href="http://cheetahtemplate.org/">Cheetah</a>
+      の採用。
+      詳しい使い方は
+      <a href="http://shingetsu.info/saku/template">朔のテンプレート</a>
+      をご覧ください。</li>
+  <li>au(W41CA)に加えi-modeに対応したつもり(一部機種を除く)。</li>
+</ul>
+
+<p>ダウンロード: <a href="/saku/#stable">朔 - P2P匿名掲示板</a></p>
+
+>>>include "foot.ja.h"

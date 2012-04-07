@@ -1,0 +1,33 @@
+>>>define TITLE         朔 3.8.0 リリース
+>>>define DESCRIPTION   朔はP2P掲示板「新月」のPythonによる実装です。
+>>>include "head.ja.h"
+<!-- $Id$ -->
+
+<p class="date">2010-11-20</p>
+
+<p>朔 3.8.0 をリリースします。</p>
+
+<h2>3.7.3 からの変更点</h2>
+<ul>
+  <li>サムネイルパッチ</li>
+</ul>
+
+<h2>3.7.2 からの変更点</h2>
+<ul>
+  <li>XSS脆弱性の修正。</li>
+</ul>
+
+<h2>3.7.1 からの変更点</h2>
+<ul>
+  <li>Windows版のPythonとFirefoxの組み合わせで
+      画像出力が強制ダウンロードになる不具合修正。</li>
+</ul>
+
+<h2>3.7.0 からの変更点</h2>
+<ul>
+  <li>レスアンカーのポップアップが出ない不具合修正。</li>
+</ul>
+
+<p>ダウンロード: <a href="/saku/#stable">朔 - P2P匿名掲示板</a></p>
+
+>>>include "foot.ja.h"

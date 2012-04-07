@@ -1,0 +1,134 @@
+>>>define TITLE         朔 - P2P匿名掲示板
+>>>define DESCRIPTION   新月のPython向けの実装「朔」の配布ページです。
+>>>include "head.ja.h"
+<!-- $Id$ -->
+
+<p>朔は<a href="/">新月</a>の<a href="http://www.python.jp/Zope/">Python</a>用の新月の実装です。
+Windows版と共通版(Pythonスクリプト版)があります。</p>
+
+<h2 id="stable">ダウンロード(安定版)</h2>
+<p>通常はこちらをダウンロードしてください。
+共通版は別途Pythonをインストールして使うもので、WindowsでもUnixでも動きます。
+Windows版は単独で動きますが、ファイルサイズが大きいです。</p>
+
+<ul>
+  <li>2012-03-12
+      <a href="winsaku-3.11.1.zip">Saku 3.11.1 Windows版</a></li>
+  <li>2012-03-12
+      <a href="saku-3.11.1.tar.gz">Saku 3.11.1 共通版</a></li>
+</ul>
+
+<ul>
+  <li><a href="https://github.com/shingetsu/saku/commits/master/">更新履歴はこちら。</a></li>
+  <li><a href="guideline">P2Pガイドラインに基く表示はこちら。</a></li>
+</ul>
+
+<h2 id="windows">Windows版の使い方</h2>
+<ol>
+  <li>このページから朔のプログラムをダウンロードする。</li>
+  <li>アーカイブを展開する。</li>
+  <li>tksaku.exeをダブルクリック。</li>
+  <li><a href="http://localhost:8000/">http://localhost:8000/</a>を
+      ブラウザで表示。</li>
+  <li>しばらく待っても掲示板が表示されなければ8000/tcpのポートを空ける。
+      ルータやファイアウォールのマニュアルを参照。</li>
+  <li>掲示板の使い方は<a href="/tutorial/">チュートリアル</a>を参照。</li>
+  <li>設定方法は<a href="config">朔設定ガイド</a>を参照。</li>
+  <li>テンプレートの設定方法は<a href="template">朔のテンプレート</a>を参照。</li>
+</ol>
+
+<p><q>このアプリケーションの構成が正しくないため、アプリケーションを開始できませんでした。
+アプリケーションを再度インストールすることにより問題が解決する場合があります。</q>
+というエラーが出る場合は
+「<a href="http://www.microsoft.com/downloads/details.aspx?displaylang=ja&amp;FamilyID=a5c84275-3b97-4ab7-a40d-3802b2af5fc2">Visual C++ 2008 SP1 再頒布可能パッケージ</a>」
+をインストールすることで改善する可能性があります
+(<a href="http://d.hatena.ne.jp/AMENOHI/20090202/1233575464">Python 2.6でpy2exe 0.6.9を使ったときの問題 - 雨からの伝言</a>より)。
+Pythonをインストールして、<a href="#usage">共通版</a>を使うのもおすすめです。</p>
+
+<h2 id="usage">共通版の簡単な使い方</h2>
+<ol>
+  <li><a href="http://www.python.jp/Zope/download/pythoncore">Pythonをダウンロード</a>して
+      インストールしておく(2.3以降)。</li>
+  <li>このページから朔のプログラムをダウンロードする。</li>
+  <li>アーカイブを展開する。
+      <a href="http://www.vector.co.jp/soft/win95/util/se169348.html">Lhaplus</a>がお薦め。</li>
+  <li>tksaku.pywをダブルクリック。
+      UnixなどでGUIを使わない場合には代わりにsaku.pyを実行。</li>
+  <li><a href="http://localhost:8000/">http://localhost:8000/</a>を
+      ブラウザで表示。</li>
+  <li>しばらく待っても掲示板が表示されなければ8000/tcpのポートを空ける。
+      ルータやファイアウォールのマニュアルを参照。</li>
+  <li>掲示板の使い方は<a href="/tutorial/">チュートリアル</a>を参照。</li>
+  <li>設定方法は<a href="config">朔設定ガイド</a>を参照。</li>
+  <li>テンプレートの設定方法は<a href="template">朔のテンプレート</a>を参照。</li>
+</ol>
+
+<h2>アップデートの方法</h2>
+<p>できるだけ新しいバージョンを使ってください。
+アップデートの際には、特に告知がなければ以前のフォルダにある
+cache, log, runの3つのフォルダを新しいフォルダに移動してください。
+以前のデータを引き継ぐことができます。</p>
+
+<h2 id="unstable">不安定版</h2>
+<p>開発中の最新版を使いたい方や、テストに協力してくださる方はこちらをダウンロードしてください。
+Windows版はファイルサイズが大きいので、
+できれば共通版を使ってください。
+</p>
+
+<ul>
+  <li><a href="saku-git20120312-1400.tar.gz">2012-03-12 共通版</a> (3.11.1 相当)</li>
+  <li><a href="rss">アップロード監視用RSS</a></li>
+</ul>
+
+<p><a href="https://github.com/shingetsu/saku">GitHub</a>から入手することもできます。</p>
+
+<ol>
+  <li>まずは次のコマンドを入力してください。
+<pre>%git clone git://github.com/shingetsu/saku.git</pre></li>
+  <li>2回目からは次のコマンドを入力してください。
+<pre>% cd saku
+% git pull</pre></li>
+</ol>
+
+<p>Windows版のコンパイルは<a href="/tech/py2exe">py2exe</a>を使い、
+こんな感じのスクリプトで行っています:
+<a href="mkwinsaku.sh">mkwinsaku.sh</a></p>
+
+<h2>共通版をUnix等にインストールする場合の手順</h2>
+<ol>
+  <li><a href="http://www.cheetahtemplate.org/">Cheetah</a>
+      をインストールしてください。
+      同梱されているCheetahディレクトリをコピーしてもいいですが、
+      本家のものをインストールした方が処理速度が速いはずです。
+      Linuxディストリビューションでパッケージを提供しているときは
+      それを使うのをお勧めします。</li>
+  <li>モデム、ルータまたはファイアウォールを設定して
+      8000/tcpを開けてください。</li>
+  <li>コンパイルとインストールをします。
+<pre># make install
+あるいは
+# make install PREFIX=/path/to/insall/dir</pre>
+      デフォルトでは /usr/local にインストールしますが、
+      環境によってはここにインストールしたモジュールは読み込まれません。
+      その場合は
+<pre># ln -s /usr/local/lib/python2.4/site-packages/shingetsu /usr/lib/python2.4/site-packages</pre>
+      のようにリンクを張ってください。</li>
+  <li>設定ファイルの雛型は /usr/local/share/doc/saku/sample にインストールされています。
+      saku.ini は /usr/local/etc/saku.ini, /etc/saku.ini, ~/.saku/saku.ini の順に読み込まれ、
+      後のものが優先されます。
+      起動スクリプトは saku.init で、これを /etc/init.d/saku のようにコピーしてください。
+      その他の設定ファイルは saku.ini で指定します。</li>
+  <li>起動と終了は次のコマンドです。
+      その後 <a href="http://localhost:8000/">http://localhost:8000/</a>
+      を表示してください。
+<pre># /etc/init.d/saku start
+# /etc/init.d/saku stop</pre></li>
+  <li>掲示板の使い方は<a href="/tutorial/">チュートリアル</a>を参照。</li>
+  <li>設定方法は<a href="config">朔設定ガイド</a>を参照。</li>
+  <li>テンプレートの設定方法は<a href="template">朔のテンプレート</a>を参照。</li>
+</ol>
+
+<p>注: インストールしなくても使うことができます。
+<a href="#usage">共通版の簡単な使い方</a>をご覧ください。</p>
+
+>>>include "foot.ja.h"
