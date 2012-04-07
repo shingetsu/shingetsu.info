@@ -1,1 +1,1 @@
-../../fuktommy.com/template/amazonbanner.h
+../../../fuktommy/fuktommy.com/template/amazonbanner.h
