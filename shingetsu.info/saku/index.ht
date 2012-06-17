@@ -48,7 +48,7 @@ Pythonをインストールして、<a href="#usage">共通版</a>を使うの�
 <h2 id="usage">共通版の簡単な使い方</h2>
 <ol>
   <li><a href="http://www.python.jp/Zope/download/pythoncore">Pythonをダウンロード</a>して
-      インストールしておく(2.3以降)。</li>
+      インストールしておく(2.5以降)。</li>
   <li>このページから朔のプログラムをダウンロードする。</li>
   <li>アーカイブを展開する。
       <a href="http://www.vector.co.jp/soft/win95/util/se169348.html">Lhaplus</a>がお薦め。</li>
@@ -76,6 +76,7 @@ Windows版はファイルサイズが大きいので、
 </p>
 
 <ul>
+  <li><a href="saku-git20120617-2149.tar.gz">2012-06-17 共通版</a> (Twitter Bootstrap 対応)</li>
   <li><a href="saku-git20120312-1400.tar.gz">2012-03-12 共通版</a> (3.11.1 相当)</li>
   <li><a href="rss">アップロード監視用RSS</a></li>
 </ul>
