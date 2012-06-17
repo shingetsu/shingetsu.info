@@ -1,0 +1,99 @@
+>>>define TITLE         Documents
+>>>define DESCRIPTION   Documents of shinGETsu
+>>>define BASE          docs
+>>>include "head.en.h"
+
+<div id="intro" class="menupanel">
+<h2>What is shinGETsu</h2>
+<p>shinGETsu is the general term for a P2P (peer-to-peer) BBS <a href="/protocol/">protocol</a>
+ and its some implementations.
+It is developed on <a href="https://github.com/shingetsu">GitHub</a>.</p>
+
+<ul>
+  <li><a href="/intro/">Introduction</a></li>
+  <li><a href="/news/">News</a></li>
+  <li><a href="/ref/">reference to shinGETsu</a></li>
+  <li><a href="/faq/">FAQ</a></li>
+</ul>
+<p>
+  <img src="logo.gif" width="271" height="181" alt="Logo" style="background-color:#88f" />
+</p>
+</div>
+
+<div id="join" class="menupanel">
+<h2>Join us</h2>
+<ul>
+  <li><a href="http://bbs.shingetsu.info/">bbs.shingetsu.info</a></li>
+  <li><a href="http://pushare.zenno.info/">pushare.zenno.info</a></li>
+  <li><a href="http://rep4649.ddo.jp/">rep4649.ddo.jp</a></li>
+  <li><a href="http://sg.r00tz0n3.com/">sg.r00tz0n3.com</a></li>
+  <li><a href="http://bbs.shingetsu.info/gw">Random Gateway</a></li>
+  <li><a href="/wiki/">Wiki</a></li>
+  <li><a href="http://archive.shingetsu.info/">Archives</a></li>
+  <li><a href="jump">Redirector with JavaScript</a></li>
+  <li><a href="http://bbs.shingetsu.info/mobile.cgi"><img src="/mobileqrcode.gif" width="148" height="148" alt="Mobile BBS" title="Mobile BBS" /></a></li>
+</ul>
+</div>
+
+<div id="download" class="menupanel">
+<h2>Download</h2>
+<p>shinGETsu works on multi platform.
+Download for your OS.</p>
+
+<table summary="Implementation of shinGETsu" id="client">
+  <thead><tr>
+    <td>implementation</td>
+    <td>os, platform</td>
+    <td>note</td>
+  </tr></thead>
+  <tr>
+    <td><a href="/saku/">Saku</a></td>
+    <td><a href="http://www.python.org/">Python</a></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="/saku/">Saku for Windows</a></td>
+    <td><a href="http://www.microsoft.com/">Windows</a></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="/sakuex/">Saku-Extreme</a></td>
+    <td><a href="http://www.python.org/">Python</a></td>
+    <td></td>
+  </tr>
+</table>
+
+<p>You can <a href="http://sourceforge.net/projects/shingetsu/files/">download from SF.net</a>
+Saku and its old version, Perl or Java elder versions.</p>
+</div>
+
+<div id="manage" class="menupanel">
+<h2>for Managers</h2>
+<p>If you want to install shinGETsu or you installed shinGETsu,
+read following documents.</p>
+<ul>
+  <li><a href="/extension/">Extensions</a></li>
+  <li><a href="/manage/">Tips for managers</a></li>
+</ul>
+</div>
+
+<div id="develop" class="menupanel">
+<h2>for Developpers</h2>
+<p>If you want to know shinGETsu technology or develop shinGETsu programs,
+read following documents.</p>
+
+<ul>
+  <li><a href="/trac/">Trac</a></li>
+  <li><a href="/protocol/">Protocol</a></li>
+  <li><a href="/tech/">Technical documents</a></li>
+  <li><a href="/saku/api">Saku API</a></li>
+  <li><a href="/saku/extension">Saku extensions</a></li>
+  <li><a href="/hoven/">Hoven</a> (for reference)</li>
+  <li><a href="/nanashi/">NanaSHI</a> (for reference)</li>
+  <li><a href="/apollo/">Signature module</a> (for reference)</li>
+  <li><a href="/crescent/">Crescent</a> (for reference)</li>
+  <li><a href="/launch/">Launcher</a> (for reference)</li>
+</ul>
+</div>
+
+>>>include "foot.en.h"

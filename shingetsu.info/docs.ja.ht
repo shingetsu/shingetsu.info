@@ -1,0 +1,95 @@
+>>>define TITLE         ドキュメント
+>>>define DESCRIPTION   新旧のドキュメントです
+>>>define BASE          docs
+>>>include "head.ja.h"
+
+<div id="intro" class="menupanel">
+<h2>新月とは？</h2>
+<ul>
+  <li><a href="/intro/">新月の紹介</a></li>
+  <li><a href="/news/">ニュース</a></li>
+  <li><a href="/ref/">新月への言及</a></li>
+  <li><a href="/faq/">FAQ</a></li>
+  <li><a href="http://ja.wikipedia.org/wiki/%E6%96%B0%E6%9C%88_%28%E6%8E%B2%E7%A4%BA%E6%9D%BF%29">新月 (掲示板) - Wikipedia</a></li>
+</ul>
+<p>
+  <img src="logo.gif" width="271" height="181" alt="ロゴ" style="background-color:#88f" />
+</p>
+</div>
+
+<div id="join" class="menupanel">
+<h2>参加する</h2>
+<ul>
+  <li><a href="http://bbs.shingetsu.info/">bbs.shingetsu.info</a></li>
+  <li><a href="http://pushare.zenno.info/">pushare.zenno.info</a></li>
+  <li><a href="http://rep4649.ddo.jp/">rep4649.ddo.jp</a></li>
+  <li><a href="http://sg.r00tz0n3.com/">sg.r00tz0n3.com</a></li>
+  <li><a href="http://bbs.shingetsu.info/gw">ランダムゲートウェイ</a></li>
+  <li><a href="/wiki/">Wiki</a></li>
+  <li><a href="http://archive.shingetsu.info/">過去ログ保管庫</a></li>
+  <li><a href="jump">JavaScriptによるリダイレクタ</a></li>
+  <li><a href="http://bbs.shingetsu.info/mobile.cgi"><img src="/mobileqrcode.gif" width="148" height="148" alt="モバイルサイト" title="モバイルサイト" /></a></li>
+</ul>
+</div>
+
+<div id="download" class="menupanel">
+<h2>ダウンロード</h2>
+<p>新月はさまざまなプラットフォームで動きます。
+あなたの環境に合ったものをダウンロードしてください。</p>
+
+<table summary="新月の実装" id="client">
+  <thead><tr>
+    <td>実装</td>
+    <td>OS・環境</td>
+    <td>備考</td>
+  </tr></thead>
+  <tr>
+    <td><a href="/saku/">朔</a></td>
+    <td><a href="http://www.python.jp/Zope/">Python</a></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="/saku/">朔 Windows版</a></td>
+    <td><a href="http://www.microsoft.com/">Windows</a></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="/sakuex/">朔(Extreme版)</a></td>
+    <td><a href="http://www.python.jp/Zope/">Python</a></td>
+    <td></td>
+  </tr>
+</table>
+
+<p>朔やその古いバージョン、PerlやJavaによる古い実装は
+<a href="http://sourceforge.net/projects/shingetsu/files/">SF.netからもダウンロード</a>することができます。</p>
+</div>
+
+<div id="manage" class="menupanel">
+<h2>管理者のための情報</h2>
+<p>新月のインストールを考えている方や実際に動かしている方は
+こちらをご覧ください。</p>
+<ul>
+  <li><a href="/extension/">拡張機能</a></li>
+  <li><a href="/manage/">管理者向け情報</a></li>
+</ul>
+</div>
+
+<div id="develop" class="menupanel">
+<h2>開発者のための情報</h2>
+<p>新月の仕組みに興味のある方や新月のプログラムを書こうという方は
+こちらをご覧ください。</p>
+<ul>
+  <li><a href="/trac/">Trac</a></li>
+  <li><a href="/protocol/">プロトコル</a></li>
+  <li><a href="/tech/">技術情報</a></li>
+  <li><a href="/saku/api">朔API</a></li>
+  <li><a href="/saku/extension">朔の拡張機能</a></li>
+  <li><a href="/hoven/">Hoven</a> (参考までに)</li>
+  <li><a href="/nanashi/">NanaSHI</a> (参考までに)</li>
+  <li><a href="/apollo/">署名モジュール</a> (参考までに)</li>
+  <li><a href="/crescent/">Crescent</a> (参考までに)</li>
+  <li><a href="/launch/">導入パッケージ</a> (参考までに)</li>
+</ul>
+</div>
+
+>>>include "foot.ja.h"

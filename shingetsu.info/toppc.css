@@ -5,25 +5,16 @@ h1 {
     background-color: #fff;
 }
 
+p#sidebarctrl {
+    margin-bottom: 0;
+}
+
 div#maincolumn {
     border: none;
-    width: 100%;
-}
-
-div#maincolumn p {
-    margin: 1em 20%;
-}
-
-div#maincolumn table {
-    margin-left: 30%;
-}
-
-div#maincolumn ul, div#maincolumn dl {
-    margin: 1em 30%;
-}
-
-div#maincolumn ul.navi {
-    margin: 1em 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 div#sidebar {
@@ -31,28 +22,11 @@ div#sidebar {
     display: none;
 }
 
-div.menupanel {
-    margin: 1em;
-    border: solid 1px black;
+div#maincolumn p {
+    margin-left: 3em;
 }
 
-form#search {
-    text-align: center;
-    margin-bottom: 2em;
-}
-
-ul.navi {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-ul.navi li {
-    display: inline;
-    padding: 0 1ex;
-}
-
-p#search, p#banners{
+p#search {
     text-align: center;
     margin-bottom: 2em;
 }

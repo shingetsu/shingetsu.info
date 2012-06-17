@@ -19,6 +19,7 @@ rsync -Cacv --delete \
     --exclude="- /tool" \
     --exclude="- /template" \
     --exclude="- /index.html" \
+    --exclude="- /docs.html" \
     --exclude="- /intro/index.html" \
     --exclude="- /searchbox.js" \
     --exclude="- /saku/changelog.ja.txt" \
