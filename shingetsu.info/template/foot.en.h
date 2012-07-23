@@ -43,7 +43,6 @@
       <img src="/feed-icon-16x16.gif" width="16" height="16" alt="" />
       RSS 1.0</a></li>
   <li><a href="http://fusion.google.com/add?feedurl=http%3A//shingetsu.info/rss"><img src="http://buttons.googlesyndication.com/fusion/add.gif" width="104" height="17" alt="Add to Google" /></a></li>
-  <li><a href="http://sourceforge.net/donate/index.php?group_id=97083"><img src="/project-support.jpg" width="88" height="32" alt="Support This Project" /></a></li>
   <li><a rel="license" href="http://creativecommons.org/licenses/by/2.1/jp/" title="This work is licensed under a Creative Commons Attribution 2.1 Japan License."><img alt="Creative Commons License" src="/cc-by-88x31.png" width="88" height="31" /></a></li>
 </ul>
 

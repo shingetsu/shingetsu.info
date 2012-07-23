@@ -1,9 +1,9 @@
 >>>define TITLE         ニュース
 >>>define DESCRIPTION   新月の最新情報です。
 >>>include "head.ja.h"
-<!-- $Id$ -->
 
 <ul>
+  <li>2012-07-23 <a href="saku-3.12.0">朔 3.12.0 リリース</a></li>
   <li>2012-03-12 <a href="saku-3.11.1">朔 3.11.1 リリース</a></li>
   <li>2012-02-23 <a href="github">開発の場をGitHubに移動しました</a></li>
   <li>2011-11-27 <a href="saku-3.11.0">朔 3.11.0 リリース</a></li>
