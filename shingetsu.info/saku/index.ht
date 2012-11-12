@@ -1,7 +1,6 @@
 >>>define TITLE         朔 - P2P匿名掲示板
 >>>define DESCRIPTION   新月のPython向けの実装「朔」の配布ページです。
 >>>include "head.ja.h"
-<!-- $Id$ -->
 
 <p>朔は<a href="/">新月</a>の<a href="http://www.python.jp/Zope/">Python</a>用の新月の実装です。</p>
 
@@ -11,7 +10,7 @@
 WindowsでもUnixでも動きます。</p>
 
 <ul>
-  <li>2012-07-23 <a href="saku-3.12.0.tar.gz">Saku 3.12.0 共通版</a></li>
+  <li>2012-11-12 <a href="saku-3.13.0.tar.gz">Saku 3.13.0 共通版</a></li>
 </ul>
 
 <ul>
@@ -47,9 +46,7 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
 <p>開発中の最新版を使いたい方や、テストに協力してくださる方はこちらをダウンロードしてください。</p>
 
 <ul>
-  <li><a href="saku-git20121112-1217.tar.gz">2012-11-12 共通版</a> (名前等がCookieに保存されない不具合の修正)</li>
-  <li><a href="saku-git20120914-1527.tar.gz">2012-09-25 共通版</a> (2chスタイルのAAが見れそうな設定、ほか)</li>
-  <li><a href="saku-git20120723-1357.tar.gz">2012-07-23 共通版</a> (3.12.0 相当)</li>
+  <li><a href="saku-git20121112-1238.tar.gz">2012-11-12 共通版</a> (3.13.0 相当)</li>
   <li><a href="rss">アップロード監視用RSS</a></li>
 </ul>
 
