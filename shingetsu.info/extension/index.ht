@@ -8,9 +8,11 @@
 リンク先を表示しますが、これも拡張機能の1つです。
 ここでは追加の拡張機能をダウンロードすることができます。</p>
 
-<p><a href="/news/saku-3.9.0">朔3.9.0</a>で仕様を変更したので、
+<p><a href="/news/saku-3.12.0">朔3.12.0</a>で仕様を変更したので、
 それ以前のものとは互換性がなくなりました。
-旧仕様のものは<a href="./2010-07-09/">2010-07-09版</a>をダウンロードしてくだささい。</p>
+旧仕様のものは<a href="./2012-04-08/">2012-04-08版</a>をダウンロードしてくだささい。
+<a href="/news/saku-3.9.0">朔3.9.0</a>以前のバージョンに対応するものは
+<a href="./2010-07-09/">2010-07-09版</a>をダウンロードしてくだささい。</p>
 
 <h3>使い方</h3>
 <p>共通版、Windows版で共通して使うことができます。
@@ -23,27 +25,27 @@ wwwディレクトリに保存してください。
 
 <h3 id="tag">フィルタ・タグ</h3>
 <dl>
-  <dt><a href="30filterlink.js">30filterlink.js</a></dt>
+  <dt><a href="https://github.com/shingetsu/saku/blob/master/www/extensions/30filterlink.js">30filterlink.js</a></dt>
   <dd>”最終更新””新着情報”に「フィルタ」へのリンクを追加します。
 　    中身を直感で書き換えて御使用ください。</dd>
 
-  <dt><a href="40incfilter.js">40incfilter.js</a></dt>
+  <dt><a href="https://github.com/shingetsu/saku/blob/master/www/extensions/40incfilter.js">40incfilter.js</a></dt>
   <dd>「フィルタ」と「タグ」をインクリメンタルに表示する拡張機能です。
       いちいちボタン押さなくて良くなります。</dd>
 </dl>
 
 <h3 id="input">入力支援</h3>
 <dl>
-  <dt><a href="40textarea.js">40textarea.js</a></dt>
+  <dt><a href="https://github.com/shingetsu/saku/blob/master/www/extensions/40textarea.js">40textarea.js</a></dt>
   <dd>テキストエリアの右下をドラッグして拡大・縮小出来るようにする拡張機能です。</dd>
 </dl>
 
 <h3 id="admin">管理</h3>
 <dl>
-  <dt><a href="30admin.js">30admin.js</a></dt>
+  <dt><a href="https://github.com/shingetsu/saku/blob/master/www/extensions/30admin.js">30admin.js</a></dt>
   <dd>”状態”の隣接ノード、検索ノードをそのノードへのリンクにします。</dd>
 
-  <dt><a href="30filename.js">30filename.js</a></dt>
+  <dt><a href="https://github.com/shingetsu/saku/blob/master/www/extensions/30filename.js">30filename.js</a></dt>
   <dd>スレッドのページ下部にそのスレッドのキャッシュフォルダ名を表示します。
 　    (スレッド名/レス数/ファイルサイズ) と書かれている行をクリックすると
       ディスプレイされます。</dd>
@@ -52,14 +54,14 @@ wwwディレクトリに保存してください。
 
 <h3 id="design">表示</h3>
 <dl>
-  <dt><a href="30addlinks.js">30addlinks.js</a></dt>
+  <dt><a href="https://github.com/shingetsu/saku/blob/master/www/extensions/30addlinks.js">30addlinks.js</a></dt>
   <dd>トップページや各スレッドの上下に付いているリンクを書き換えます。
 　    中身を直感で書き換えて御使用ください。</dd>
 
-  <dt><a href="10default.js">10default.js</a>, <a href="30idres.js">30idres.js</a></dt>
+  <dt><a href="https://github.com/shingetsu/saku/blob/master/www/extensions/30idres.js">30idres.js</a></dt>
   <dd>ID に通し番号を割り当てます。また、書き込みフォームでの &gt;&gt;番号 を &gt;&gt;ID に変換します。</dd>
 
-  <dt><a href="30ytplayer.js">30ytplayer.js</a></dt>
+  <dt><a href="https://github.com/shingetsu/saku/blob/master/www/extensions/30ytplayer.js">30ytplayer.js</a></dt>
   <dd>YouTubeのURLにカーソルを当てたときに動画をインラインで表示できるようになります。</dd>
 </dl>
 
