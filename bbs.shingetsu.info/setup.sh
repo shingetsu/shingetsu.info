@@ -1,10 +1,10 @@
 #!/bin/sh -e
 
-cd /srv/stage/bbs.shingetsu.info
+cd /srv/stage/shingetsu/bbs.shingetsu.info
 
 rsync -Cacv --delete \
     --exclude="- /setup.sh" \
-    --exclude="- /index.html" \
+    --exclude="- /index*.html" \
     --exclude="- /mobile.html" \
     --exclude="- /mobile.xhtml" \
     --exclude="- /rss.rdf" \
