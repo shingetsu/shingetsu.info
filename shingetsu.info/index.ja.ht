@@ -4,8 +4,9 @@
 >>>define BASE          index
 >>>include "head.ja.h"
 
-<p>新月(shinGETsu)はP2P掲示板を実現するための<a href="/protocol/">プロトコル</a>といくつかの実装の総称です。
-主に<a href="https://github.com/shingetsu">GitHub</a>で開発されています。</p>
+<p>新月(shinGETsu)はいくつかのサーバーで動いているスレッドフロート型掲示板の集合体です。
+その中のいくつかのスレッド(掲示板)は<a href="/protocol/">P2Pの仕組み</a>によってデータを共有しています。
+ソフトウェアをダウンロードして掲示板を運営することもできます。</p>
 
 <h2>掲示板を利用する</h2>
 <p><a href="http://bbs.shingetsu.info/">公開ゲートウェイ</a>はこちら。
