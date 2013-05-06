@@ -10,7 +10,7 @@
 WindowsでもUnixでも動きます。</p>
 
 <ul>
-  <li>2012-11-12 <a href="saku-3.13.0.tar.gz">Saku 3.13.0 共通版</a></li>
+  <li>2013-05-06 <a href="saku-3.14.0.tar.gz">Saku 3.14.0 共通版</a></li>
 </ul>
 
 <ul>
@@ -21,7 +21,7 @@ WindowsでもUnixでも動きます。</p>
 <h2 id="usage">共通版の簡単な使い方</h2>
 <ol>
   <li><a href="http://www.python.jp/Zope/download/pythoncore">Python2.xをダウンロード</a>して
-      インストールしておく(2.5以降)。</li>
+      インストールしておく(2.7以降)。</li>
   <li>このページから朔のプログラムをダウンロードする。</li>
   <li>アーカイブを展開する。
       <a href="http://www.vector.co.jp/soft/win95/util/se169348.html">Lhaplus</a>がお薦め。</li>
@@ -46,10 +46,7 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
 <p>開発中の最新版を使いたい方や、テストに協力してくださる方はこちらをダウンロードしてください。</p>
 
 <ul>
-  <li><a href="saku-git20130430-0046.tar.gz">2013-04-30 共通版</a> (Spoiler-Alert for 朔 を追加)</li>
-  <li><a href="saku-git20121201-1344.tar.gz">2012-12-01 共通版</a> (ユーザーから投稿された拡張機能が動くように修正して、配布物に含める)</li>
-  <li><a href="saku-git20121130-1638.tar.gz">2012-11-30 共通版</a> (同期時に大量のスパムがある場合には同期を打ち切る)</li>
-  <li><a href="saku-git20121112-1238.tar.gz">2012-11-12 共通版</a> (3.13.0 相当)</li>
+  <li><a href="saku-git20130506-0753.tar.gz">2013-05-06 共通版</a> (3.14.0 相当)</li>
   <li><a href="rss">アップロード監視用RSS</a></li>
 </ul>
 
