@@ -23,4 +23,5 @@ rsync -Cacv --delete \
     --exclude="- /intro/index.html" \
     --exclude="- /searchbox.js" \
     --exclude="- /saku/changelog.ja.txt" \
+    --exclude="- /wiki/rss.xml" \
     ./ /srv/www/shingetsu.info/

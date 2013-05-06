@@ -26,7 +26,7 @@ use Fcntl;
 # Check if the server can use 'AnyDBM_File' or not.
 # eval 'use AnyDBM_File';
 # my $error_AnyDBM_File = $@;
-my $version = '2.1.2a';
+my $version = '2.1.3';
 ##############################
 #
 # You MUST modify following '$modifier_...' variables.
@@ -38,6 +38,7 @@ my $modifier_dir_data = '/srv/data/shingetsu.info/wiki'; # Your data directory (
 my $modifier_url_data = '.'; # Your data URL (not DIRECTORY, but URL).
 my $modifier_rss_title = "shinGETsu Wiki";
 my $modifier_rss_link = 'http://shingetsu.info/wiki/';
+my $modifier_rss_about = 'http://shingetsu.info/wiki/rss';
 my $modifier_rss_description = 'Wiki for shinGETsu Project.';
 my $modifier_rss_timezone = '+09:00';
 ##############################
@@ -57,10 +58,12 @@ my $file_resource = "$modifier_dir_data/resource.txt";
 my $file_FrontPage = "$modifier_dir_data/frontpage.txt";
 my $file_conflict = "$modifier_dir_data/conflict.txt";
 my $file_format = "$modifier_dir_data/format.txt";
+my $file_rss = "$modifier_dir_data/rss.xml";
 my $url_cgi = '/wiki/';
 my $url_stylesheet = "$modifier_url_data/wiki.css";
 my $icontag = qq(<img src="$modifier_url_data/icon40x40.gif" alt="*" width="40" height="40" />);
 my $maxrecent = 50;
+my $max_message_length = 500_000; # -1 for unlimited.
 my $cols = 80;
 my $rows = 20;
 ##############################
@@ -260,7 +263,15 @@ sub do_index {
 }
 
 sub do_write {
+    if (&keyword_reject()) {
+        return;
+    }
+
     if (&frozen_reject()) {
+        return;
+    }
+
+    if (&length_reject()) {
         return;
     }
 
@@ -417,7 +428,7 @@ Content-type: text/html; charset=$charset
     <link rel="index" href="$url_cgi?$IndexPage">
     <link rev="made" href="mailto:$modifier_mail">
     <link rel="stylesheet" type="text/css" href="$url_stylesheet">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="$url_cgi?$RssPage" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="$modifier_rss_about" />
 </head>
 <body class="$bodyclass">
 <div class="tools">
@@ -435,7 +446,7 @@ Content-type: text/html; charset=$charset
     ]}
     <a href="$url_cgi?$CreatePage">$resource{createbutton}</a> | 
     <a href="$url_cgi?$IndexPage">$resource{indexbutton}</a> | 
-    <a href="$url_cgi?$RssPage">$resource{rssbutton}</a> | 
+    <a href="$modifier_rss_about">$resource{rssbutton}</a> | 
     <a href="$url_cgi?$FrontPage">$FrontPage</a> | 
     <a href="$url_cgi?$SearchPage">$resource{searchbutton}</a> | 
     <a href="$url_cgi?$RecentChanges">$resource{recentchangesbutton}</a>
@@ -782,6 +793,9 @@ sub update_recent_changes {
         print FILE localtime() . "\n";
         close(FILE);
     }
+    if ($file_rss) {
+        &update_rssfile;
+    }
 }
 
 sub get_subjectline {
@@ -808,7 +822,7 @@ sub send_mail_to_admin {
     my $message = <<"EOD";
 To: $modifier_mail
 From: $modifier_mail
-Subject: [Wiki]
+Subject: [Wiki/$mode]
 MIME-Version: 1.0
 Content-Type: text/plain; charset=ISO-2022-JP
 Content-Transfer-Encoding: 7bit
@@ -1148,6 +1162,17 @@ sub frozen_reject {
     }
 }
 
+sub length_reject {
+    if ($max_message_length < 0) {
+        return 0;
+    }
+    if ($max_message_length < length($form{mymsg})) {
+        &print_error($resource{toolongpost} . $max_message_length);
+        return 1;
+    }
+    return 0;
+}
+
 sub valid_password {
     my ($givenpassword) = @_;
     my ($validpassword_crypt) = &get_info($AdminSpecialPage, $info_AdminPassword);
@@ -1307,42 +1332,15 @@ sub do_diff {
     &print_footer($title);
 }
 
-# Thanks to Makio Tsukamoto for dc_date.
 sub do_rss {
-    my $rss = new Yuki::RSS(
-        version => '1.0',
-        encoding => $charset,
-    );
-    $rss->channel(
-        title => $modifier_rss_title,
-        link  => $modifier_rss_link,
-        about  => "$modifier_rss_link?$RssPage",
-        description => $modifier_rss_description,
-    );
-    my $recentchanges = $database{$RecentChanges};
-    my $count = 0;
-    foreach (split(/\n/, $recentchanges)) {
-        last if ($count >= 15);
-        /^\- (\d\d\d\d\-\d\d\-\d\d) \(...\) (\d\d:\d\d:\d\d) (\S+)/;    # date format.
-        my $dc_date = "$1T$2$modifier_rss_timezone";
-        my $title = &unarmor_name($3);
-        my $escaped_title = &escape($title);
-        my $link = $modifier_rss_link . '?' . &encode($title);
-        my $description = $escaped_title . &escape(&get_subjectline($title));
-        $rss->add_item(
-            title => $escaped_title,
-            link  => $link,
-            description => $description,
-            dc_date => $dc_date,
-        );
-        $count++;
-    }
-    # print RSS information (as XML).
-    print <<"EOD"
-Content-type: text/xml
+    if ($file_rss) {
+        print <<"EOD";
+Status: 301 Moved Permanently
+Location: $modifier_rss_about
 
-@{[$rss->as_string]}
 EOD
+        return;
+    }
 }
 
 sub is_exist_page {
@@ -1371,6 +1369,57 @@ sub print_plugin_log {
     }
 }
 
+sub keyword_reject {
+    my $s = $form{mymsg};
+    my @reject_words = qw(
+buy-cheap.com
+ultram.online-buy.com
+    );
+    for (@reject_words) {
+        if ($s =~ /\Q$_\E/) {
+            &send_mail_to_admin($form{mypage}, "Rejectword: $_");
+            sleep(30);
+            return 1;
+        }
+    }
+    return 0;
+}
+
+# Thanks to Makio Tsukamoto for dc_date.
+sub update_rssfile {
+    my $rss = new Yuki::RSS(
+        version => '1.0',
+        encoding => $charset,
+    );
+    $rss->channel(
+        title => $modifier_rss_title,
+        link  => $modifier_rss_link,
+        about  => $modifier_rss_about,
+        description => $modifier_rss_description,
+    );
+    my $recentchanges = $database{$RecentChanges};
+    my $count = 0;
+    foreach (split(/\n/, $recentchanges)) {
+        last if ($count >= 15);
+        /^\- (\d\d\d\d\-\d\d\-\d\d) \(...\) (\d\d:\d\d:\d\d) (\S+)/;    # date format.
+        my $dc_date = "$1T$2$modifier_rss_timezone";
+        my $title = &unarmor_name($3);
+        my $escaped_title = &escape($title);
+        my $link = $modifier_rss_link . '?' . &encode($title);
+        my $description = $escaped_title . &escape(&get_subjectline($title));
+        $rss->add_item(
+            title => $escaped_title,
+            link  => $link,
+            description => $description,
+            dc_date => $dc_date,
+        );
+        $count++;
+    }
+    open(FILE, "> $file_rss") or &print_error("($file_rss)");
+    print FILE $rss->as_string;
+    close(FILE);
+}
+
 1;
 __END__
 =head1 NAME
@@ -1391,7 +1440,7 @@ Hiroshi Yuki <hyuki@hyuki.com> http://www.hyuki.com/yukiwiki/
 
 =head1 LICENSE
 
-Copyright (C) 2000-2004 by Hiroshi Yuki.
+Copyright (C) 2000-2006 by Hiroshi Yuki.
 
 This program is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself.
