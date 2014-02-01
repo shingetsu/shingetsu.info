@@ -10,7 +10,7 @@
 WindowsでもUnixでも動きます。</p>
 
 <ul>
-  <li>2013-12-09 <a href="saku-3.14.4.tar.gz">Saku 3.14.4 共通版</a></li>
+  <li>2014-02-01 <a href="saku-3.15.0.tar.gz">Saku 3.15.0 共通版</a></li>
 </ul>
 
 <ul>
@@ -46,9 +46,7 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
 <p>開発中の最新版を使いたい方や、テストに協力してくださる方はこちらをダウンロードしてください。</p>
 
 <ul>
-  <li><a href="saku-git20140105-1335.tar.gz">2014-01-05 共通版</a> (インストールするときにCSSとJSを1つのファイルにまとめる)</li>
-  <li><a href="saku-git20131221-1847.tar.gz">2013-12-21 共通版</a> (twitter bootstrap を更新)</li>
-  <li><a href="saku-git20131209-1357.tar.gz">2013-12-09 共通版</a> (3.14.4 相当)</li>
+  <li><a href="saku-git20140201-0958.tar.gz">2014-02-01 共通版</a> (3.15.0 相当)</li>
   <li><a href="rss">アップロード監視用RSS</a></li>
 </ul>
 
