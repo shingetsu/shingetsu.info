@@ -2,3 +2,4 @@ RewriteEngine on
 
 RewriteRule ^tutorial/  http://shingetsu.info/wiki/?%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB  [R=301,L]
 RewriteRule ^svn/  https://github.com/shingetsu  [R=301,L]
+RewriteRule ^sakuex/    http://shingetsu.info/saku/ [R=301,L]

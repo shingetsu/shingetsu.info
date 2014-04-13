@@ -1,0 +1,25 @@
+>>>define TITLE         朔のPython3対応
+>>>define DESCRIPTION   朔はP2P掲示板「新月」のPythonによる実装です。
+>>>include "head.ja.h"
+
+<p class="date">2014-04-14</p>
+
+<p><a href="https://github.com/shingetsu/saku">GitHub</a>上で、
+朔のPython3対応の開発が進められています。
+Debian7.4上のCPython3.2で、それなりに動くことが確認できたため、
+開発の場がmasterブランチに移りました。
+従来のようにPython2では動きませんので、ご注意ください。</p>
+
+<p>ほか以下のような変更点があります。</p>
+
+<ul>
+  <li>Python2に非対応となり、Python3のみに対応</li>
+  <li>テンプレートエンジンが
+      <a href="http://www.cheetahtemplate.org/">Cheetah</a>から
+      <a href="http://jinja.pocoo.org/">Jinja2</a>に変更</li>
+  <li>朔Extream版のコードをもとにして、いくつかの機能を廃止</li>
+</ul>
+
+<p>また朔Extream版は朔本体に取り込まれたため、開発が終了しました。</p>
+
+>>>include "foot.ja.h"

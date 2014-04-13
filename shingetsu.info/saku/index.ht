@@ -20,17 +20,18 @@ WindowsでもUnixでも動きます。</p>
 
 <h2 id="usage">共通版の簡単な使い方</h2>
 <ol>
-  <li><a href="http://www.python.jp/Zope/download/pythoncore">Python2.xをダウンロード</a>して
+  <li><a href="http://www.python.jp/download/">Python2.xをダウンロード</a>して
       インストールしておく(2.7以降)。</li>
+  <li>2014-04-14以降の不安定版を用いる場合には
+      <a href="http://www.python.jp/download/">Python3.xをダウンロード</a>して
+      インストールしておく(3.2以降)。</li>
   <li>このページから朔のプログラムをダウンロードする。</li>
   <li>アーカイブを展開する。
       <a href="http://www.vector.co.jp/soft/win95/util/se169348.html">Lhaplus</a>がお薦め。</li>
-  <li>tksaku.pywをダブルクリック。
-      UnixなどでGUIを使わない場合には代わりにsaku.pyを実行。</li>
+  <li>モデム、ルータまたはファイアウォールを設定して8000/tcpを開ける。</li>
+  <li>saku.pyをダブルクリックするか、コマンドラインから <kbd>python saky.py -v</kbd> を実行する。</li>
   <li><a href="http://localhost:8000/">http://localhost:8000/</a>を
       ブラウザで表示。</li>
-  <li>しばらく待っても掲示板が表示されなければ8000/tcpのポートを空ける。
-      ルータやファイアウォールのマニュアルを参照。</li>
   <li>掲示板の使い方は<a href="/tutorial/">チュートリアル</a>を参照。</li>
   <li>設定方法は<a href="config">朔設定ガイド</a>を参照。</li>
   <li>テンプレートの設定方法は<a href="template">朔のテンプレート</a>を参照。</li>
@@ -64,10 +65,19 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
 
 <h2>共通版をUnix等にインストールする場合の手順</h2>
 <ol>
+  <li>2014-04-14以降の不安定版を用いる場合には
+      <a href="http://www.python.jp/download/">Python3.xをダウンロード</a>して
+      インストールしておく(3.2以降)。</li>
   <li><a href="http://www.cheetahtemplate.org/">Cheetah</a>
       をインストールしてください。
       同梱されているCheetahディレクトリをコピーしてもいいですが、
       本家のものをインストールした方が処理速度が速いはずです。
+      Linuxディストリビューションでパッケージを提供しているときは
+      それを使うのをお勧めします。</li>
+  <li>2014-04-14以降の不安定版を用いる場合には
+      <a href="http://jinja.pocoo.org/">Jinja2</a>
+      をインストールしてください。
+      Python3.2の場合にはver.2.7.xを使ってください。
       Linuxディストリビューションでパッケージを提供しているときは
       それを使うのをお勧めします。</li>
   <li>モデム、ルータまたはファイアウォールを設定して
@@ -79,7 +89,7 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
       デフォルトでは /usr/local にインストールしますが、
       環境によってはここにインストールしたモジュールは読み込まれません。
       その場合は
-<pre># ln -s /usr/local/lib/python2.4/site-packages/shingetsu /usr/lib/python2.4/site-packages</pre>
+<pre># ln -s /usr/local/lib/python3.3/site-packages/shingetsu /usr/lib/python3.3/site-packages</pre>
       のようにリンクを張ってください。</li>
   <li>設定ファイルの雛型は /usr/local/share/doc/saku/sample にインストールされています。
       saku.ini は /usr/local/etc/saku.ini, /etc/saku.ini, ~/.saku/saku.ini の順に読み込まれ、
