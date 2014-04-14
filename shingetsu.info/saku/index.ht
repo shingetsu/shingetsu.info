@@ -6,11 +6,10 @@
 
 <h2 id="stable">ダウンロード(安定版)</h2>
 <p>通常はこちらをダウンロードしてください。
-共通版は別途Pythonをインストールして使うもので、
 WindowsでもUnixでも動きます。</p>
 
 <ul>
-  <li>2014-02-19 <a href="saku-3.16.0.tar.gz">Saku 3.16.0 共通版</a></li>
+  <li>2014-02-19 <a href="saku-3.16.0.tar.gz">Saku 3.16.0</a></li>
 </ul>
 
 <ul>
@@ -18,7 +17,7 @@ WindowsでもUnixでも動きます。</p>
   <li><a href="guideline">P2Pガイドラインに基く表示はこちら。</a></li>
 </ul>
 
-<h2 id="usage">共通版の簡単な使い方</h2>
+<h2 id="usage">簡単な使い方</h2>
 <ol>
   <li><a href="http://www.python.jp/download/">Python2.xをダウンロード</a>して
       インストールしておく(2.7以降)。</li>
@@ -47,9 +46,10 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
 <p>開発中の最新版を使いたい方や、テストに協力してくださる方はこちらをダウンロードしてください。</p>
 
 <ul>
-  <li><a href="saku-git20140312-1535.tar.gz">2014-03-12 共通版</a> (ポップアップを再帰的に開くのの修正)</li>
-  <li><a href="saku-git20140309-1541.tar.gz">2014-03-09 共通版</a> (ポップアップを再帰的に開く)</li>
-  <li><a href="saku-git20140218-1607.tar.gz">2014-02-18 共通版</a> (3.16.0 相当)</li>
+  <li><a href="saku-20140414-1414.tar.gz">2014-03-14</a> (Python3対応)</li>
+  <li><a href="saku-git20140312-1535.tar.gz">2014-03-12</a> (ポップアップを再帰的に開くのの修正)</li>
+  <li><a href="saku-git20140309-1541.tar.gz">2014-03-09</a> (ポップアップを再帰的に開く)</li>
+  <li><a href="saku-git20140218-1607.tar.gz">2014-02-18</a> (3.16.0 相当)</li>
   <li><a href="rss">アップロード監視用RSS</a></li>
 </ul>
 
@@ -63,7 +63,7 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
 % git pull</pre></li>
 </ol>
 
-<h2>共通版をUnix等にインストールする場合の手順</h2>
+<h2>Unix等にインストールする場合の手順</h2>
 <ol>
   <li>2014-04-14以降の不安定版を用いる場合には
       <a href="http://www.python.jp/download/">Python3.xをダウンロード</a>して
@@ -107,6 +107,6 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
 </ol>
 
 <p>注: インストールしなくても使うことができます。
-<a href="#usage">共通版の簡単な使い方</a>をご覧ください。</p>
+<a href="#usage">簡単な使い方</a>をご覧ください。</p>
 
 >>>include "foot.ja.h"
