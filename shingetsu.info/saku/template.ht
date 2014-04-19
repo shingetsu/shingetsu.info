@@ -3,12 +3,12 @@
 >>>define SECTION       朔
 >>>include "head.ja.h"
 
-<p><a href="/saku/">朔 3.0.0以降</a>では
-<a href="http://cheetahtemplate.org/">Cheetah</a>
+<p><a href="/saku/">朔 4.0.0以降</a>では
+<a href="http://jinja.pocoo.org/">Jinja2</a>
 というテンプレートエンジンを使って、出力するHTMLを生成しています
 (一部例外があります)。
 一般的な書式は
-<a href="http://cheetahtemplate.org/docs/users_guide_html_multipage/">Cheetah Users' Guide</a>
+<a href="http://jinja.pocoo.org/docs/">Jinja2 documentation</a>
 を見てもらうとして、
 どんな変数を定義しているのかを説明します。</p>
 
