@@ -25,7 +25,6 @@
   <li><a href="/news/">News</a></li>
   <li><a href="/wiki/">Wiki</a></li>
   <li><a id="bbs_foot" href="http://bbs.shingetsu.info/">BBS</a></li>
-  <li><a href="http://bbs.shingetsu.info/" id="shingetsu_link" title="Relayed BBS">shinGETsu</a></li>
 </ul>
 <script type="text/javascript">
   readCookie();
@@ -59,8 +58,6 @@
 
 >>>include "address.h"
 
-<script type="text/javascript" src="http://bbs.shingetsu.info/suggest.js" charset="utf-8">
-</script>
 <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
 </script>
 <script type="text/javascript">

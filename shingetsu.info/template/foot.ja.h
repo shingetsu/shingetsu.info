@@ -26,7 +26,6 @@
   <li><a href="/news/">ニュース</a></li>
   <li><a href="/wiki/">Wiki</a></li>
   <li><a id="bbs_foot" href="http://bbs.shingetsu.info/">掲示板</a></li>
-  <li><a href="http://bbs.shingetsu.info/" id="shingetsu_link" title="関連する新月の掲示板">新月</a></li>
 </ul>
 <script type="text/javascript">
   readCookie();
@@ -60,8 +59,6 @@
 
 >>>include "address.h"
 
-<script type="text/javascript" src="http://bbs.shingetsu.info/suggest.js" charset="utf-8">
-</script>
 <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
 </script>
 <script type="text/javascript">
