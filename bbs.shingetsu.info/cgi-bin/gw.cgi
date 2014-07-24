@@ -53,6 +53,10 @@ def nodes():
     return buf
 
 def public_gateway(uri):
+    if 'fuktommy.com:8000' in uri:
+        return False
+    if 'shingetsu.info:8000' in uri:
+        return False
     try:
         for line in urlopen(uri):
             if '<meta name="robots" content="NOINDEX" />' in line:
