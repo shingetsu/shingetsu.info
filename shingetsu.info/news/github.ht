@@ -1,7 +1,6 @@
 >>>define TITLE         開発の場をGitHubに移動しました 
 >>>define DESCRIPTION   朔はP2P掲示板「新月」のPythonによる実装です。
 >>>include "head.ja.h"
-<!-- $Id$ -->
 
 <p class="date">2011-02-23</p>
 
@@ -9,7 +8,6 @@
 <a href="http://sourceforge.net/projects/shingetsu/">SourceForge.net</a>
 から <a href="https://github.com/shingetsu">GitHub</a> に移動しました。</p>
 
-<p>ダウンロード方法等は <a href="/saku/">朔</a>、<a href="/sakuex/">朔ex</a>
-のページをご覧ください。</p>
+<p>ダウンロード方法等は <a href="/saku/">朔</a> のページをご覧ください。</p>
 
 >>>include "foot.ja.h"
