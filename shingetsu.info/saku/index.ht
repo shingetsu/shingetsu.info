@@ -9,9 +9,9 @@
 WindowsでもUnixでも動きます。</p>
 
 <ul>
-  <li>2014-12-18
-      <a href="https://github.com/shingetsu/saku/archive/release-4.3.1.tar.gz">Saku 4.3.1</a>
-      (<a href="saku-4.3.1.tar.gz">ミラー</a>)
+  <li>2014-12-31
+      <a href="https://github.com/shingetsu/saku/archive/release-4.4.0.tar.gz">Saku 4.4.0</a>
+      (<a href="saku-4.4.0.tar.gz">ミラー</a>)
   </li>
 </ul>
 
@@ -46,9 +46,7 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
 <p>開発中の最新版を使いたい方や、テストに協力してくださる方はこちらをダウンロードしてください。</p>
 
 <ul>
-  <li><a href="saku-20141223-1500.tar.gz">2014-12-23</a> (書き込みを装飾する拡張機能を、Ajaxで書き込みを読み込んだときにも同じ方式で適用できるようにする)</li>
-  <li><a href="saku-20141221-1619.tar.gz">2014-12-21</a> (ユーザー版localtime.jsを標準版のインタフェースに合わせる)</li>
-  <li><a href="saku-20141218-1430.tar.gz">2014-12-18</a> (4.3.1相当)</li>
+  <li><a href="saku-20141231-1248.tar.gz">2014-12-31</a> (4.4.0相当)</li>
   <li><a href="rss">アップロード監視用RSS</a></li>
 </ul>
 
