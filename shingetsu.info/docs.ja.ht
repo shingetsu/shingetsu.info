@@ -28,7 +28,6 @@
   <li><a href="/wiki/">Wiki</a></li>
   <li><a href="http://archive.shingetsu.info/">過去ログ保管庫</a></li>
   <li><a href="jump">JavaScriptによるリダイレクタ</a></li>
-  <li><a href="http://bbs.shingetsu.info/mobile.cgi"><img src="/mobileqrcode.gif" width="148" height="148" alt="モバイルサイト" title="モバイルサイト" /></a></li>
 </ul>
 </div>
 
@@ -46,6 +45,11 @@
   <tr>
     <td><a href="/saku/">朔</a></td>
     <td><a href="http://www.python.jp/Zope/">Python</a></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/ha1t/sgphp">sgphp</a></td>
+    <td><a href="http://php.net/">PHP</a></td>
     <td></td>
   </tr>
 </table>
@@ -69,7 +73,7 @@
 <p>新月の仕組みに興味のある方や新月のプログラムを書こうという方は
 こちらをご覧ください。</p>
 <ul>
-  <li><a href="/trac/">Trac</a></li>
+  <li><a href="https://github.com/shingetsu/saku">GitHub</a></li>
   <li><a href="/protocol/">プロトコル</a></li>
   <li><a href="/tech/">技術情報</a></li>
   <li><a href="/saku/api">朔API</a></li>

@@ -31,7 +31,6 @@ It is developed on <a href="https://github.com/shingetsu">GitHub</a>.</p>
   <li><a href="/wiki/">Wiki</a></li>
   <li><a href="http://archive.shingetsu.info/">Archives</a></li>
   <li><a href="jump">Redirector with JavaScript</a></li>
-  <li><a href="http://bbs.shingetsu.info/mobile.cgi"><img src="/mobileqrcode.gif" width="148" height="148" alt="Mobile BBS" title="Mobile BBS" /></a></li>
 </ul>
 </div>
 
@@ -49,6 +48,11 @@ Download for your OS.</p>
   <tr>
     <td><a href="/saku/">Saku</a></td>
     <td><a href="http://www.python.org/">Python</a></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/ha1t/sgphp">sgphp</a></td>
+    <td><a href="http://php.net/">PHP</a></td>
     <td></td>
   </tr>
 </table>
@@ -73,7 +77,7 @@ read following documents.</p>
 read following documents.</p>
 
 <ul>
-  <li><a href="/trac/">Trac</a></li>
+  <li><a href="https://github.com/shingetsu/saku">GitHub</a></li>
   <li><a href="/protocol/">Protocol</a></li>
   <li><a href="/tech/">Technical documents</a></li>
   <li><a href="/saku/api">Saku API</a></li>
