@@ -88,7 +88,7 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
 <pre># ln -s /usr/local/lib/python3.3/site-packages/shingetsu /usr/lib/python3.3/site-packages</pre>
       のようにリンクを張ってください。</li>
   <li>設定ファイルの雛型は /usr/local/share/doc/saku/sample にインストールされています。
-      saku.ini は /usr/local/etc/saku.ini, /etc/saku.ini, ~/.saku/saku.ini の順に読み込まれ、
+      saku.ini は /usr/local/etc/saku/saku.ini, /etc/saku/saku.ini, ~/.saku/saku.ini の順に読み込まれ、
       後のものが優先されます。
       起動スクリプトは saku.init で、これを /etc/init.d/saku のようにコピーしてください。
       その他の設定ファイルは saku.ini で指定します。</li>
