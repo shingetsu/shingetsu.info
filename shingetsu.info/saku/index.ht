@@ -9,9 +9,9 @@
 WindowsでもUnixでも動きます。</p>
 
 <ul>
-  <li>2015-01-10
-      <a href="https://github.com/shingetsu/saku/archive/release-4.4.1.tar.gz">Saku 4.4.1</a>
-      (<a href="saku-4.4.1.tar.gz">ミラー</a>)
+  <li>2015-02-22
+      <a href="https://github.com/shingetsu/saku/archive/release-4.5.0.tar.gz">Saku 4.5.0</a>
+      (<a href="saku-4.5.0.tar.gz">ミラー</a>)
   </li>
 </ul>
 
@@ -46,15 +46,7 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
 <p>開発中の最新版を使いたい方や、テストに協力してくださる方はこちらをダウンロードしてください。</p>
 
 <ul>
-  <li><a href="saku-20150222-1406.tar.gz">2015-02-22</a> (ソケットに書き込んだ内容が欠ける現象を一部改善)</li>
-  <li><a href="saku-20150221-1651.tar.gz">2015-02-21</a> (最近の書き込み順ソートを追加)</li>
-  <li><a href="saku-20150221-1147.tar.gz">2015-02-21</a> (2chインタフェースでスレッドがないときのレスポンスコードを修正。新着情報リストで自分のつけたタグと他のノードでつけたタグが重複してるときに他のノードのタグを非表示にした。HTMLとRSSからエスケープシーケンスを除去した)</li>
-  <li><a href="saku-20150219-0057.tar.gz">2015-02-19</a> (2chインタフェースでid表示を削除)</li>
-  <li><a href="saku-20150218-1820.tar.gz">2015-02-18</a> (2chインタフェースでスレッドURLをUnixtimeにする)</li>
-  <li><a href="saku-20150218-1417.tar.gz">2015-02-18</a> (2chインタフェースで板が開けないことがあるのを修正)</li>
-  <li><a href="saku-20150217-1602.tar.gz">2015-02-17</a> (2chインタフェースでタグを板として扱う)</li>
-  <li><a href="saku-20150112-1038.tar.gz">2015-01-12</a> (2chインタフェースで全角チルダ・波ダッシュ問題があるのを修正。2chインタフェースでスパムフィルタが効かないのを修正)</li>
-  <li><a href="saku-20150110-1202.tar.gz">2015-01-10</a> (4.4.1相当)</li>
+  <li><a href="saku-20150222-1425.tar.gz">2015-02-22</a> (4.5.0相当)</li>
   <li><a href="rss">アップロード監視用RSS</a></li>
 </ul>
 
