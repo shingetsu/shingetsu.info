@@ -31,7 +31,7 @@ WindowsでもUnixでも動きます。</p>
   <li>saku.pyをダブルクリックするか、コマンドラインから <kbd>python saky.py -v</kbd> を実行する。</li>
   <li><a href="http://localhost:8000/">http://localhost:8000/</a>を
       ブラウザで表示。</li>
-  <li>掲示板の使い方は<a href="/tutorial/">チュートリアル</a>を参照。</li>
+  <li>掲示板の使い方は<a href="http://shingetsu.info/wiki/?%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB">チュートリアル</a>を参照。</li>
   <li>設定方法は<a href="config">朔設定ガイド</a>を参照。</li>
   <li>テンプレートの設定方法は<a href="template">朔のテンプレート</a>を参照。</li>
 </ol>
@@ -90,7 +90,7 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
       を表示してください。
 <pre># /etc/init.d/saku start
 # /etc/init.d/saku stop</pre></li>
-  <li>掲示板の使い方は<a href="/tutorial/">チュートリアル</a>を参照。</li>
+  <li>掲示板の使い方は<a href="http://shingetsu.info/wiki/?%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB">チュートリアル</a>を参照。</li>
   <li>設定方法は<a href="config">朔設定ガイド</a>を参照。</li>
   <li>テンプレートの設定方法は<a href="template">朔のテンプレート</a>を参照。</li>
 </ol>
