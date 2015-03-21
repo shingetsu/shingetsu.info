@@ -10,7 +10,7 @@
 <p>次の設定ファイルが順に読み込まれます。
 後で設定したものが優先されます。
 書式は同じです。
-file/sample.iniをご覧ください。</p>
+doc/sample.iniをご覧ください。</p>
 
 <ol>
   <li>file/saku.ini</li>
