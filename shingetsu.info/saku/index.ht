@@ -9,9 +9,9 @@
 WindowsでもUnixでも動きます。</p>
 
 <ul>
-  <li>2015-03-04
-      <a href="https://github.com/shingetsu/saku/archive/release-4.5.1.tar.gz">Saku 4.5.1</a>
-      (<a href="saku-4.5.1.tar.gz">ミラー</a>)
+  <li>2015-04-11
+      <a href="https://github.com/shingetsu/saku/archive/release-4.6.0.tar.gz">Saku 4.6.0</a>
+      (<a href="saku-4.6.0.tar.gz">ミラー</a>)
   </li>
 </ul>
 
@@ -46,8 +46,7 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
 <p>開発中の最新版を使いたい方や、テストに協力してくださる方はこちらをダウンロードしてください。</p>
 
 <ul>
-  <li><a href="saku-20150321-1350.tar.gz">2015-03-21</a> (Apache連携でRSSが更新できない不具合修正。mchでタイトル中に改行が入る不具合修正。mchで不要そうなデータの読み込みをしているところを削除。Supervisor経由で起動するインストール方法を追加。一覧等でのフィルタ機能を正規表現から文字列比較に変更)</li>
-  <li><a href="saku-20150304-0233.tar.gz">2015-03-04</a> (4.5.1相当)</li>
+  <li><a href="saku-20150411-1347.tar.gz">2015-04-11</a> (4.6.0相当)</li>
   <li><a href="rss">アップロード監視用RSS</a></li>
 </ul>
 
