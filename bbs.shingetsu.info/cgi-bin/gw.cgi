@@ -2,7 +2,7 @@
 '''Gateway Guide.
 '''
 #
-# Copyright (c) 2007 shinGETsu Project.
+# Copyright (c) 2007,2015 shinGETsu Project.
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -67,7 +67,7 @@ def public_gateway(uri):
 
 def main():
     for n in nodes():
-        if public_gateway(n):
+        if n and public_gateway(n):
             print 'Location: %s' % n
             print
             sys.exit()
