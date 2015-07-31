@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 '''Gateway Guide.
 '''
 #
@@ -31,8 +31,7 @@ import re
 import sys
 import socket
 from random import shuffle
-from urllib import urlopen
-from sets import Set
+from urllib.request import urlopen
 
 from shingetsu.node import NodeList, SearchList
 
@@ -48,7 +47,7 @@ def gateway(node):
 def nodes():
     n = [gateway(i) for i in NodeList()]
     s = [gateway(i) for i in SearchList()]
-    buf = list(Set(n).union(s))
+    buf = list(set(n).union(s))
     shuffle(buf)
     return buf
 
@@ -59,7 +58,7 @@ def public_gateway(uri):
         return False
     try:
         for line in urlopen(uri):
-            if '<meta name="robots" content="NOINDEX" />' in line:
+            if '<meta name="robots" content="NOINDEX" />' in line.decode('utf-8', 'ignore'):
                 return False
         return True
     except (IOError, socket.timeout):
@@ -68,11 +67,11 @@ def public_gateway(uri):
 def main():
     for n in nodes():
         if n and public_gateway(n):
-            print 'Location: %s' % n
-            print
+            print('Location: %s' % n)
+            print()
             sys.exit()
-    print 'Location: http://bbs.shingetsu.info/'
-    print
+    print('Location: http://bbs.shingetsu.info/')
+    print()
 
 if __name__ == '__main__':
     main()
