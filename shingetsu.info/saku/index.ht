@@ -9,9 +9,9 @@
 WindowsでもUnixでも動きます。</p>
 
 <ul>
-  <li>2015-04-11
-      <a href="https://github.com/shingetsu/saku/archive/release-4.6.0.tar.gz">Saku 4.6.0</a>
-      (<a href="saku-4.6.0.tar.gz">ミラー</a>)
+  <li>2015-08-22
+      <a href="https://github.com/shingetsu/saku/archive/release-4.6.1.tar.gz">Saku 4.6.1</a>
+      (<a href="saku-4.6.1.tar.gz">ミラー</a>)
   </li>
 </ul>
 
@@ -46,8 +46,7 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
 <p>開発中の最新版を使いたい方や、テストに協力してくださる方はこちらをダウンロードしてください。</p>
 
 <ul>
-  <li><a href="saku-20150624-0258.tar.gz">2015-06-24</a> (更新通知の処理でもnode_allowとnode_denyのチェックを行う)</li>
-  <li><a href="saku-20150411-1347.tar.gz">2015-04-11</a> (4.6.0相当)</li>
+  <li><a href="saku-20150822-1335.tar.gz">2015-08-22</a> (4.6.1相当)</li>
   <li><a href="rss">アップロード監視用RSS</a></li>
 </ul>
 
