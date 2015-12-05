@@ -9,9 +9,9 @@
 WindowsでもUnixでも動きます。</p>
 
 <ul>
-  <li>2015-08-22
-      <a href="https://github.com/shingetsu/saku/archive/release-4.6.1.tar.gz">Saku 4.6.1</a>
-      (<a href="saku-4.6.1.tar.gz">ミラー</a>)
+  <li>2015-12-05
+      <a href="https://github.com/shingetsu/saku/archive/release-4.7.0.tar.gz">Saku 4.7.0</a>
+      (<a href="saku-4.7.0.tar.gz">ミラー</a>)
   </li>
 </ul>
 
@@ -46,12 +46,7 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
 <p>開発中の最新版を使いたい方や、テストに協力してくださる方はこちらをダウンロードしてください。</p>
 
 <ul>
-  <li><a href="saku-20151129-0900.tar.gz">2015-11-29</a> (Markdownを表示する拡張機能を同梱)</li>
-  <li><a href="saku-20151125-0158.tar.gz">2015-11-25</a> (base64デコードのエラー対応)</li>
-  <li><a href="saku-20151125-0100.tar.gz">2015-11-25</a> (/update のデータ中継をしているノードの検証を少し真面目に行う)</li>
-  <li><a href="saku-20151103-1226.tar.gz">2015-11-03</a> (受け取った/updateや/recentの結果をバリデーションする)</li>
-  <li><a href="saku-20151005-0840.tar.gz">2015-10-05</a> (狭い画面でメニューバーを1行に表示する)</li>
-  <li><a href="saku-20150822-1335.tar.gz">2015-08-22</a> (4.6.1相当)</li>
+  <li><a href="saku-20151205-1413.tar.gz">2015-12-05</a> (4.7.0相当)</li>
   <li><a href="rss">アップロード監視用RSS</a></li>
 </ul>
 
