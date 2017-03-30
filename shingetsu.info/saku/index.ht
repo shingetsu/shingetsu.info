@@ -9,9 +9,9 @@
 WindowsでもUnixでも動きます。</p>
 
 <ul>
-  <li>2015-12-18
-      <a href="https://github.com/shingetsu/saku/archive/release-4.7.1.tar.gz">Saku 4.7.1</a>
-      (<a href="saku-4.7.1.tar.gz">ミラー</a>)
+  <li>2017-03-31
+      <a href="https://github.com/shingetsu/saku/archive/release-4.8.0.tar.gz">Saku 4.8.0</a>
+      (<a href="saku-4.8.0.tar.gz">ミラー</a>)
   </li>
 </ul>
 
@@ -46,8 +46,8 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
 <p>開発中の最新版を使いたい方や、テストに協力してくださる方はこちらをダウンロードしてください。</p>
 
 <ul>
-  <li><a href="saku-20160920-1327.tar.gz">2016-09-20</a> (2chインタフェースのサイト内リンク修正。webm等の映像をvideoタグで再生する)</li>
-  <li><a href="saku-20151218-1226.tar.gz">2015-12-18</a> (4.7.1相当)</li>
+  <li><a href="saku-20170330-1521.tar.gz">2017-03-31</a> (Jinja2を2.7.3に更新)</li>
+  <li><a href="saku-20170330-1504.tar.gz">2017-03-31</a> (4.8.0相当)</li>
   <li><a href="rss">アップロード監視用RSS</a></li>
 </ul>
 
@@ -64,10 +64,9 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
 <h2>Unix等にインストールする場合の手順</h2>
 <ol>
   <li><a href="http://www.python.jp/download/">Python3.xをダウンロード</a>して
-      インストールしておく(3.2以降)。</li>
+      インストールしておく(3.4以降)。</li>
   <li><a href="http://jinja.pocoo.org/">Jinja2</a>
       をインストールしてください。
-      Python3.2の場合にはver.2.7.xを使ってください。
       Linuxディストリビューションでパッケージを提供しているときは
       それを使うのをお勧めします。</li>
   <li>モデム、ルータまたはファイアウォールを設定して
