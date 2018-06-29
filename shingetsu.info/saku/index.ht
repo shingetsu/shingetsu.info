@@ -9,9 +9,9 @@
 WindowsでもUnixでも動きます。</p>
 
 <ul>
-  <li>2017-03-31
-      <a href="https://github.com/shingetsu/saku/archive/release-4.8.0.tar.gz">Saku 4.8.0</a>
-      (<a href="saku-4.8.0.tar.gz">ミラー</a>)
+  <li>2018-06-29
+      <a href="https://github.com/shingetsu/saku/archive/release-4.8.1.tar.gz">Saku 4.8.1</a>
+      (<a href="saku-4.8.1.tar.gz">ミラー</a>)
   </li>
 </ul>
 
@@ -46,10 +46,7 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
 <p>開発中の最新版を使いたい方や、テストに協力してくださる方はこちらをダウンロードしてください。</p>
 
 <ul>
-  <li><a href="saku-20180604-0158.tar.gz">2019-06-04</a> (不正なHTTPリクエストを受け取ったときにエラーが発生するのを修正)</li>
-  <li><a href="saku-20170630-0521.tar.gz">2017-06-30</a> (jQuryを3.2.1に更新、Bootstrapを3.3.7に更新)</li>
-  <li><a href="saku-20170330-1521.tar.gz">2017-03-31</a> (Jinja2を2.7.3に更新)</li>
-  <li><a href="saku-20170330-1504.tar.gz">2017-03-31</a> (4.8.0相当)</li>
+  <li><a href="saku-20180629-0757.tar.gz">2018-06-29</a> (4.8.1相当)</li>
   <li><a href="rss">アップロード監視用RSS</a></li>
 </ul>
 
