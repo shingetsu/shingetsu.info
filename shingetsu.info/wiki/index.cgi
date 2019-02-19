@@ -479,12 +479,6 @@ sub print_footer {
 <p class="footer">
     <a href="http://www.hyuki.com/yukiwiki/">$icontag</a>
 </p>
-<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
-</script>
-<script type="text/javascript">
-_uacct = "UA-61877-9";
-urchinTracker();
-</script>
 </body>
 </html>
 EOD
