@@ -7,6 +7,8 @@ rsync -Cacv --delete \
     --exclude="- /index*.html" \
     --exclude="- /mobile.html" \
     --exclude="- /mobile.xhtml" \
+    --exclude="- /recent_rss.rdf" \
+    --exclude="- /recentrssdate" \
     --exclude="- /rss.rdf" \
     --exclude="- /rssdate" \
     --exclude="- /sitemap.txt" \
