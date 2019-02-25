@@ -9,9 +9,9 @@
 WindowsでもUnixでも動きます。</p>
 
 <ul>
-  <li>2018-08-27
-      <a href="https://github.com/shingetsu/saku/archive/release-4.8.2.tar.gz">Saku 4.8.2</a>
-      (<a href="saku-4.8.2.tar.gz">ミラー</a>)
+  <li>2019-02-25
+      <a href="https://github.com/shingetsu/saku/archive/release-4.8.3.tar.gz">Saku 4.8.3</a>
+      (<a href="saku-4.8.3.tar.gz">ミラー</a>)
   </li>
 </ul>
 
@@ -46,8 +46,7 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
 <p>開発中の最新版を使いたい方や、テストに協力してくださる方はこちらをダウンロードしてください。</p>
 
 <ul>
-  <li><a href="saku-20190218-1440.tar.gz">2019-02-18</a> (ノードの /join コマンドの受け付け処理を修正)</li>
-  <li><a href="saku-20180827-0133.tar.gz">2018-08-27</a> (4.8.2相当)</li>
+  <li><a href="saku-20190225-1247.tar.gz">2019-02-25</a> (4.8.3相当)</li>
   <li><a href="rss">アップロード監視用RSS</a></li>
 </ul>
 
