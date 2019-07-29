@@ -46,6 +46,7 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
 <p>開発中の最新版を使いたい方や、テストに協力してくださる方はこちらをダウンロードしてください。</p>
 
 <ul>
+  <li><a href="saku-20190729-1116.tar.gz">2019-07-29</a> (LocalStorageの修正。Python3.7.3でメモリリークになるのを修正)</li>
   <li><a href="saku-20190720-1356.tar.gz">2019-07-20</a> (Cookieの代わりにLocalStorageを使う)</li>
   <li><a href="saku-20190507-2336.tar.gz">2019-05-07</a> (4.8.4相当)</li>
   <li><a href="rss">アップロード監視用RSS</a></li>
