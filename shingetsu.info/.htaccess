@@ -1,5 +1,6 @@
 RewriteEngine on
 
-RewriteRule ^tutorial/ http://shingetsu.info/wiki/ [R=302,L]
+RewriteRule ^tutorial/ https://github.com/shingetsu/docs/blob/master/index.md [R=302,L]
+RewriteRule ^wiki/ https://github.com/shingetsu/docs/blob/master/index.md [R=302,L]
 RewriteRule ^svn/  https://github.com/shingetsu  [R=301,L]
 RewriteRule ^sakuex/    http://shingetsu.info/saku/ [R=301,L]
