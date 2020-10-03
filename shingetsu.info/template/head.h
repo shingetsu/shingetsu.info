@@ -1,5 +1,6 @@
   <title><$TITLE></title>
   <meta name="description" content="<$DESCRIPTION>" />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
 >>>ifdef BASE
   <link rel="alternate" href="<$BASE>.en" hreflang="en" />
   <link rel="alternate" href="<$BASE>.ja" hreflang="ja" />

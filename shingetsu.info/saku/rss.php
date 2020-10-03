@@ -5,15 +5,15 @@
 require_once('RSS.class.php');
 
 $rss = new RSS('SAKU snapshot',
-               'http://shingetsu.info/saku/',
-               'http://shingetsu.info/saku/rss',
+               'https://shingetsu.info/saku/',
+               'https://shingetsu.info/saku/rss',
                'Dairy snapshot of SAKU. SAKU is a clone of shinGETsu.');
 $suffix = array('tar.gz', 'zip', 'diff', 'diff.gz', 'exe.bz2');
 foreach ($suffix as $s) {
     foreach (glob('*.' . $s) as $f) {
         $rss->append(array('title' => $f,
                            'date'  => filemtime($f),
-                           'link'  => 'http://shingetsu.info/saku/' . $f,
+                           'link'  => 'https://shingetsu.info/saku/' . $f,
                     ));
     }
 }
