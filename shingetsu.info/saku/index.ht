@@ -9,9 +9,9 @@
 WindowsでもUnixでも動きます。</p>
 
 <ul>
-  <li>2019-07-30
-      <a href="https://github.com/shingetsu/saku/archive/release-4.9.0.tar.gz">Saku 4.9.0</a>
-      (<a href="saku-4.9.0.tar.gz">ミラー</a>)
+  <li>2020-12-25
+      <a href="https://github.com/shingetsu/saku/archive/release-4.9.1.tar.gz">Saku 4.9.1</a>
+      (<a href="saku-4.9.1.tar.gz">ミラー</a>)
   </li>
 </ul>
 
@@ -46,11 +46,7 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
 <p>開発中の最新版を使いたい方や、テストに協力してくださる方はこちらをダウンロードしてください。</p>
 
 <ul>
-  <li><a href="saku-20201206-2320.tar.gz">2020-12-07</a> (base64.encodestring()
-とbase64.decodestring()をbase64.encodebytes()とbase64.decodebytes()に置き換える)</li>
-  <li><a href="saku-20201003-1129.tar.gz">2020-10-03</a> (リファラーが全部送られるように設定)</li>
-  <li><a href="saku-20200122-0316.tar.gz">2020-01-22</a> (cgi.escapeをhtml.escapeに変更)</li>
-  <li><a href="saku-20190730-0255.tar.gz">2019-07-30</a> (4.9.0相当)</li>
+  <li><a href="saku-20201225-0933.tar.gz">2020-12-25</a> (4.9.1相当)</li>
   <li><a href="rss">アップロード監視用RSS</a></li>
 </ul>
 
