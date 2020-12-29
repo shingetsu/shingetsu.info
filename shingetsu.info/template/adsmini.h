@@ -1,2 +1,17 @@
-<script charset="utf-8" type="text/javascript" src="//ws-fe.amazon-adsystem.com/widgets/q?rt=tf_mfw&amp;ServiceVersion=20070822&amp;MarketPlace=JP&amp;ID=V20070822%2FJP%2Ffuktommysstor-22%2F8001%2F7322a3fb-2f73-49d8-8e2c-63f6b0f20a04"></script>
-<noscript><a rel="nofollow" href="//ws-fe.amazon-adsystem.com/widgets/q?rt=tf_mfw&amp;ServiceVersion=20070822&amp;MarketPlace=JP&amp;ID=V20070822%2FJP%2Ffuktommysstor-22%2F8001%2F7322a3fb-2f73-49d8-8e2c-63f6b0f20a04&amp;Operation=NoScript">Amazon.co.jp ウィジェット</a></noscript>
+<script type='text/javascript'>
+var amzn_wdgt={widget:'MyFavorites'};
+amzn_wdgt.tag='shingetsubbs-22';
+amzn_wdgt.columns='1';
+amzn_wdgt.rows='1';
+amzn_wdgt.title='';
+amzn_wdgt.width='150';
+amzn_wdgt.ASIN='B08BGBZT16,B07QMYTRR9,B06W5528D5,B074CGZ1XN,B01HAWP672,4040685520,B01N3XV7YK,B07P83Y4K2,B07YVGD8WG,B08KPXXTH6,B084KKPJ2P,B084QJGSVH';
+amzn_wdgt.showImage='True';
+amzn_wdgt.showPrice='True';
+amzn_wdgt.showRating='False';
+amzn_wdgt.design='2';
+amzn_wdgt.colorTheme='White';
+amzn_wdgt.marketPlace='JP';
+</script>
+<script type='text/javascript' src='https://wms-fe.amazon-adsystem.com/20070822/JP/js/AmazonWidgets.js'>
+</script>
