@@ -2,7 +2,6 @@
 <div id="sidebar">
 >>>ifndef TOPPAGE
 >>>include "adsmini.h"
->>>include "amazonbanner.h"
 <form action="https://www.google.com/cse" id="searchbar"><p>
   <input type="hidden" name="cx" value="003570941829906538055:gaatkcz2xxo" />
   <input type="hidden" name="ie" value="UTF-8" />

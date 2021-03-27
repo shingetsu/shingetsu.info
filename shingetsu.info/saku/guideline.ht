@@ -33,14 +33,14 @@
   <dt>サービス提供事業者を経由して他の利用者へ提供される情報</dt>
   <dd>利用者のIPアドレスは他の利用者に提供されます。
       この情報は
-      <a href="http://bbs.shingetsu.info/gateway.cgi/motd">利用規約</a>
+      <a href="https://bbs.shingetsu.info/gateway.cgi/motd">利用規約</a>
       の「ノードを管理・運営することで知った情報」に含まれますから、
       これに同意できない方は新月ネットワークに接続することはできません。</dd>
 
   <dt>利用者から他の利用者へ直接提供される情報</dt>
   <dd>利用者のIPアドレス、Pythonのバージョンは直接他の利用者に提供されます。
       この情報は
-      <a href="http://bbs.shingetsu.info/gateway.cgi/motd">利用規約</a>
+      <a href="https://bbs.shingetsu.info/gateway.cgi/motd">利用規約</a>
       の「ノードを管理・運営することで知った情報」に含まれますから、
       これに同意できない方は新月ネットワークに接続することはできません。</dd>
 

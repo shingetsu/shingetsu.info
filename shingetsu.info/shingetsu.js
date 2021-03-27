@@ -137,8 +137,8 @@ function printForm(msg, path) {
 //
 function printLink() {
 	document.write('<ul class="linklist">');
-	document.write('<li><a href="http://shingetsu.info/">公式サイト</a></li>');
-	document.write('<li><a href="http://bbs.shingetsu.info/">ゲートウェイ</a></li>');
+	document.write('<li><a href="https://shingetsu.info/">公式サイト</a></li>');
+	document.write('<li><a href="https://bbs.shingetsu.info/">ゲートウェイ</a></li>');
 	document.write('</ul>');
 } 
 

@@ -10,9 +10,9 @@
 
 <h2>掲示板を利用する</h2>
 <ul>
-  <li><a href="http://bbs.shingetsu.info/">公開ゲートウェイ</a></li>
+  <li><a href="https://bbs.shingetsu.info/">公開ゲートウェイ</a></li>
   <li><a href="http://shingetu.0g0.jp:8000/">shingetu.0g0.jp</a></li>
-  <li><a href="http://bbs.shingetsu.info/gw">ランダムゲートウェイ</a></li>
+  <li><a href="https://bbs.shingetsu.info/gw">ランダムゲートウェイ</a></li>
 </ul>
 
 <h2>ノードを動かす</h2>

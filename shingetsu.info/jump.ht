@@ -30,16 +30,16 @@
 </script>
 
 <noscript>
-  <p><a href="http://bbs.shingetsu.info/thread.cgi/%E4%BB%8A%E6%97%A5%E9%A3%9F%E3%81%B9%E3%81%9F%E3%82%82%E3%81%AE%E3%82%92%E5%A0%B1%E5%91%8A%E3%81%99%E3%82%8B%E3%82%B9%E3%83%AC">今日食べたものを報告するスレ</a></p>
+  <p><a href="https://bbs.shingetsu.info/thread.cgi/%E4%BB%8A%E6%97%A5%E9%A3%9F%E3%81%B9%E3%81%9F%E3%82%82%E3%81%AE%E3%82%92%E5%A0%B1%E5%91%8A%E3%81%99%E3%82%8B%E3%82%B9%E3%83%AC">今日食べたものを報告するスレ</a></p>
 </noscript>
 
 <h2>リダイレクタ活用例 - 表示が切り替えられるリンク</h2>
 <p>これなら文章中に書いても邪魔になりません。</p>
 
 <ul>
-  <li><a id="fuktommy" href="http://bbs.shingetsu.info/thread.cgi/Fuktommy%E3%81%AE%E6%97%A5%E8%A8%98">Fuktommyの日記</a></li>
-  <li><a id="p2ptoday" href="http://bbs.shingetsu.info/thread.cgi/P2Ptoday">P2Ptoday</a></li>
-  <li><a id="devel" href="http://bbs.shingetsu.info/thread.cgi/%E6%96%B0%E6%9C%88%E9%96%8B%E7%99%BA%E4%BD%9C%E6%88%A6%E4%BC%9A%E8%AD%B0%E5%AE%A4">新月開発作戦会議室</a></li>
+  <li><a id="fuktommy" href="https://bbs.shingetsu.info/thread.cgi/Fuktommy%E3%81%AE%E6%97%A5%E8%A8%98">Fuktommyの日記</a></li>
+  <li><a id="p2ptoday" href="https://bbs.shingetsu.info/thread.cgi/P2Ptoday">P2Ptoday</a></li>
+  <li><a id="devel" href="https://bbs.shingetsu.info/thread.cgi/%E6%96%B0%E6%9C%88%E9%96%8B%E7%99%BA%E4%BD%9C%E6%88%A6%E4%BC%9A%E8%AD%B0%E5%AE%A4">新月開発作戦会議室</a></li>
 </ul>
 
 <script type="text/javascript">

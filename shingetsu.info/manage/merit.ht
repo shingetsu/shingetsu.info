@@ -2,7 +2,7 @@
 >>>define DESCRIPTION   新月をインストールするといいことがありますよ。
 >>>include "head.ja.h"
 
-<p>新月は参加メンバーの運営する<a href="http://bbs.shingetsu.info/">ゲートウェイ</a>からも利用することができますが、
+<p>新月は参加メンバーの運営する<a href="https://bbs.shingetsu.info/">ゲートウェイ</a>からも利用することができますが、
 自分のPCにインストールして使うともっと便利なことがあります。
 ここでは新月の実装の1つ、<a href="http://shingetsu.info/saku/">朔</a>に絞って話をします。</p>
 
