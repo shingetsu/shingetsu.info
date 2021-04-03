@@ -3,7 +3,7 @@
 cd `dirname $0`
 del rss.rdf sitemap.txt recent.js news.js || true
 mkrss -h head.txt > rss.rdf
-mksitemap http://shingetsu.info/ . | sort > sitemap.txt
+mksitemap https://shingetsu.info/ . | sort > sitemap.txt
 rss2js rss.rdf > recent.js
 ./tool/mknews news/index.ht > news.js
 
