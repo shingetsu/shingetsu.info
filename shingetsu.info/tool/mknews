@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import re
 from time import time, strptime, mktime
@@ -25,12 +25,12 @@ def main():
             if (not links) or (now <= a.time + range):
                 links.append(a)
 
-    print "document.write('<ul class=\"news\">');"
+    print("document.write('<ul class=\"news\">');")
     for a in links:
-        print "document.write('%s');" % \
+        print("document.write('%s');" % \
               ("<li>%s <a href=\"/news/%s\">%s</a></li>" %
-               (a.date, a.link, a.title))
-    print "document.write('</ul>');"
+               (a.date, a.link, a.title)))
+    print("document.write('</ul>');")
 
 if __name__ == "__main__":
     main()

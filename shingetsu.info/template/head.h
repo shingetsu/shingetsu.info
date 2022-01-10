@@ -16,4 +16,5 @@
   <link rel="contents" href="/" />
   <link rel="license" type="application/rdf+xml" href="/license" />
   <link rel="alternate" type="application/rdf+xml" title="RSS" href="/rss" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script type="text/javascript" src="/shingetsu.js" charset="utf-8"></script>
