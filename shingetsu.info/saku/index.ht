@@ -46,6 +46,7 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
 <p>開発中の最新版を使いたい方や、テストに協力してくださる方はこちらをダウンロードしてください。</p>
 
 <ul>
+  <li><a href="saku-20220328-0140.tar.gz">2022-03-28</a> (Jinja2の同梱をやめてPipfileを導入する)</li>
   <li><a href="saku-20220113-0939.tar.gz">2022-01-13</a> (フロントのライブラリを更新)</li>
   <li><a href="saku-20220110-0747.tar.gz">2022-01-10</a> (Jinja2とmarkupsafeを更新)</li>
   <li><a href="saku-20210402-2355.tar.gz">2021-04-03</a> (ゲートウェイをHTTPSにできるようにする)</li>
@@ -86,6 +87,7 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
       saku.ini は /usr/local/etc/saku/saku.ini, /etc/saku/saku.ini, ~/.saku/saku.ini の順に読み込まれ、
       後のものが優先されます。
       起動スクリプトは saku.init で、これを /etc/init.d/saku のようにコピーしてください。
+      Supervisorを使う場合には init.sample ではなく supervisor.sample をインストールしてください。
       その他の設定ファイルは saku.ini で指定します。</li>
   <li>起動と終了は次のコマンドです。
       その後 <a href="http://localhost:8000/">http://localhost:8000/</a>
