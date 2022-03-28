@@ -9,9 +9,9 @@
 WindowsでもUnixでも動きます。</p>
 
 <ul>
-  <li>2020-12-25
-      <a href="https://github.com/shingetsu/saku/archive/release-4.9.1.tar.gz">Saku 4.9.1</a>
-      (<a href="saku-4.9.1.tar.gz">ミラー</a>)
+  <li>2022-03-28
+      <a href="https://github.com/shingetsu/saku/archive/release-4.10.0.tar.gz">Saku 4.10.0</a>
+      (<a href="saku-4.10.0.tar.gz">ミラー</a>)
   </li>
 </ul>
 
@@ -23,15 +23,17 @@ WindowsでもUnixでも動きます。</p>
 <h2 id="usage">簡単な使い方</h2>
 <ol>
   <li><a href="http://www.python.org/downloads/">Python3.xをダウンロード</a>して
-      インストールしておく(3.2以降)。</li>
-  <li>このページから朔のプログラムをダウンロードする。</li>
-  <li>アーカイブを展開する。
-      <a href="http://www.vector.co.jp/soft/win95/util/se169348.html">Lhaplus</a>がお薦め。</li>
+      インストールしておく(3.9以降)。</li>
+  <li>このページから朔のプログラムをダウンロードして展開する。</li>
   <li>モデム、ルータまたはファイアウォールを設定して8000/tcpを開ける。</li>
-  <li>saku.pyをダブルクリックするか、コマンドラインから <kbd>python saky.py -v</kbd> を実行する。</li>
+  <li>コマンドラインからライブラリをインストールして朔を実行する。
+<pre>
+pip install pipenv
+pipenv install
+pipenv run python3 saku.py -v</pre></li>
   <li><a href="http://localhost:8000/">http://localhost:8000/</a>を
       ブラウザで表示。</li>
-  <li>掲示板の使い方は<a href="http://shingetsu.info/wiki/?%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB">チュートリアル</a>を参照。</li>
+  <li>掲示板の使い方は<a href="https://github.com/shingetsu/docs/blob/master/tutorial.md">チュートリアル</a>を参照。</li>
   <li>設定方法は<a href="config">朔設定ガイド</a>を参照。</li>
   <li>テンプレートの設定方法は<a href="template">朔のテンプレート</a>を参照。</li>
 </ol>
@@ -46,11 +48,7 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
 <p>開発中の最新版を使いたい方や、テストに協力してくださる方はこちらをダウンロードしてください。</p>
 
 <ul>
-  <li><a href="saku-20220328-0140.tar.gz">2022-03-28</a> (Jinja2の同梱をやめてPipfileを導入する)</li>
-  <li><a href="saku-20220113-0939.tar.gz">2022-01-13</a> (フロントのライブラリを更新)</li>
-  <li><a href="saku-20220110-0747.tar.gz">2022-01-10</a> (Jinja2とmarkupsafeを更新)</li>
-  <li><a href="saku-20210402-2355.tar.gz">2021-04-03</a> (ゲートウェイをHTTPSにできるようにする)</li>
-  <li><a href="saku-20201225-0933.tar.gz">2020-12-25</a> (4.9.1相当)</li>
+  <li><a href="saku-20220328-0254.tar.gz">2022-03-28</a> (4.10.0相当)</li>
   <li><a href="rss">アップロード監視用RSS</a></li>
 </ul>
 
@@ -64,7 +62,7 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
 % git pull</pre></li>
 </ol>
 
-<h2>Unix等にインストールする場合の手順</h2>
+<h2>Linux等にインストールする場合の手順</h2>
 <ol>
   <li><a href="http://www.python.jp/download/">Python3.xをダウンロード</a>して
       インストールしておく(3.4以降)。</li>
@@ -94,7 +92,7 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
       を表示してください。
 <pre># /etc/init.d/saku start
 # /etc/init.d/saku stop</pre></li>
-  <li>掲示板の使い方は<a href="http://shingetsu.info/wiki/?%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB">チュートリアル</a>を参照。</li>
+  <li>掲示板の使い方は<a href="https://github.com/shingetsu/docs/blob/master/tutorial.md">チュートリアル</a>を参照。</li>
   <li>設定方法は<a href="config">朔設定ガイド</a>を参照。</li>
   <li>テンプレートの設定方法は<a href="template">朔のテンプレート</a>を参照。</li>
 </ol>
