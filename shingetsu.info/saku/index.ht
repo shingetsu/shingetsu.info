@@ -9,9 +9,9 @@
 WindowsでもUnixでも動きます。</p>
 
 <ul>
-  <li>2022-03-28
-      <a href="https://github.com/shingetsu/saku/archive/release-4.10.0.tar.gz">Saku 4.10.0</a>
-      (<a href="saku-4.10.0.tar.gz">ミラー</a>)
+  <li>2022-12-29
+      <a href="https://github.com/shingetsu/saku/archive/release-4.11.0.tar.gz">Saku 4.11.0</a>
+      (<a href="saku-4.11.0.tar.gz">ミラー</a>)
   </li>
 </ul>
 
@@ -48,11 +48,7 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
 <p>開発中の最新版を使いたい方や、テストに協力してくださる方はこちらをダウンロードしてください。</p>
 
 <ul>
-  <li><a href="saku-20221216-0926.tar.gz">2022-12-16</a> (dnsnameを設定しているときそれ以外でのserver.cgiへのアクセスを拒否する)</li>
-  <li><a href="saku-20221128-1126.tar.gz">2022-11-29</a> (server.cgiの応答にcharsetを追加。crondにステータスファイルを利用しないモードを追加)</li>
-  <li><a href="saku-20220519-0830.tar.gz">2022-05-19</a> (GzipFileの警告対応)</li>
-  <li><a href="saku-20220508-0658.tar.gz">2022-05-08</a> (書き込みフォーム用のdoPostフラグが削除フォームでも効いているのを修正)</li>
-  <li><a href="saku-20220328-0254.tar.gz">2022-03-28</a> (4.10.0相当)</li>
+  <li><a href="saku-20221229-0703.tar.gz">2022-12-29</a> (4.11.0相当)</li>
   <li><a href="rss">アップロード監視用RSS</a></li>
 </ul>
 

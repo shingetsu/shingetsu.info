@@ -2,7 +2,7 @@
 '''Gateway Guide.
 '''
 #
-# Copyright (c) 2007,2015 shinGETsu Project.
+# Copyright (c) 2007-2022 shinGETsu Project.
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -55,6 +55,8 @@ def public_gateway(uri):
     if 'fuktommy.com:8000' in uri:
         return False
     if 'shingetsu.info:8000' in uri:
+        return False
+    if '133.125.52.31:8000' in uri:
         return False
     try:
         for line in urlopen(uri):
