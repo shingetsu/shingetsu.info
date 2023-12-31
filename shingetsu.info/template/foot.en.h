@@ -56,6 +56,7 @@
 </script>
 
 >>>include "address.h"
+>>>include "adsfoot.h"
 
 </body>
 </html>

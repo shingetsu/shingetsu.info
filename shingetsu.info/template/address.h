@@ -1,4 +1,4 @@
-<div class="address">Copyright&copy; 2003-2022
+<div class="address">Copyright&copy; 2003-2024
 <a href="https://shingetsu.info/">shinGETsu Project</a>.
 All Rights Reserved.<br />
 <a href="mailto:webmaster@shingetsu.info">webmaster@shingetsu.info</a>
