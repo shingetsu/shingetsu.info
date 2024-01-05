@@ -10,7 +10,7 @@
 
 <h2>掲示板を利用する</h2>
 <ul>
-  <li><a href="https://bbs.shingetsu.info/">公開ゲートウェイ</a></li>
+  <li><a href="https://bbs.shingetsu.info/">サンプルゲートウェイ</a></li>
   <li><a href="https://bbs.shingetsu.info/gw">ランダムゲートウェイ</a></li>
 </ul>
 
