@@ -10,8 +10,17 @@
 
 <h2>掲示板を利用する</h2>
 <ul>
-  <li><a href="https://bbs.shingetsu.info/">サンプルゲートウェイ</a></li>
-  <li><a href="https://bbs.shingetsu.info/gw">ランダムゲートウェイ</a></li>
+  <li><a href="https://bbs.shingetsu.info/">サンプルゲートウェイ</a>
+    <ul>
+      <li>朔の動作確認と内容の見本のためのゲートウェイです</li>
+    </ul>
+  </li>
+  <li><a href="https://bbs.shingetsu.info/gw">ランダムゲートウェイ</a>
+    <ul>
+      <li>新月のユーザーが管理するゲートウェイです</li>
+      <li>内容については各ユーザーにお問い合わせください</li>
+    </ul>
+  </li>
 </ul>
 
 <h2>ノードを動かす</h2>
