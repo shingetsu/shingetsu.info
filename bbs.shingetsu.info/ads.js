@@ -6,6 +6,7 @@
         ["B0BZJJNY57", "天国大魔境Blu-ray BOX 上巻"],
         ["B0CCYQR1XZ", "グリッドマン ユニバース"],
         ["B0CK4QZWG3", "アンダーニンジャ"],
+        ["B0DGQD7Q6D", "ダンジョン飯 Blu-ray BOX"],
         ["B0B9S3CGTS", "トップガン マーヴェリック"],
         ["B08BGBZT16", "劇場版ハイスクール・フリート"],
         ["B07QMYTRR9", "ハイスクール・フリート 5.1ch Blu-ray Disc BOX"],
