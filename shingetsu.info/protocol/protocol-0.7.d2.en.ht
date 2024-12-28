@@ -1,14 +1,14 @@
->>>define TITLE         shinGETsu Protocol 0.7 draft #1
->>>define DESCRIPTION   Tagging.
->>>define BASE          protocol-0.7.d1
+>>>define TITLE         shinGETsu Protocol 0.7 draft #2
+>>>define DESCRIPTION   IPv6 address
+>>>define BASE          protocol-0.7.d2
 >>>define SECTION       Protocol
 >>>include "head.en.h"
 
-<p class="date">2007-01-15</p>
+<p class="date">2024-12-28</p>
 
 <h2>Introduction</h2>
 <p>This is a transration of
- <a href="protocol-0.7.d3.ja">the shinGETsu protocol 0.7 (Japanese version)</a>
+ <a href="protocol-0.7.d2.ja">the shinGETsu protocol 0.7 (Japanese version)</a>
  and the Japanese version supersedes any other language version.</p>
 
 <p>The protocol has 4 layers:</p>
@@ -37,7 +37,7 @@ Node name format is defined:</p>
 
 <pre>&lt;hostname&gt;:&lt;port number&gt;/&lt;path&gt;</pre>
 
-<p>where hostname is a DNS hostname or IP address (IPv4)
+<p>where hostname is a DNS hostname, IPv4 address or IPv6 address within square brackets
  and port number is a decimal number.</p>
 
 <h3>Message</h3>

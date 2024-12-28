@@ -1,10 +1,10 @@
->>>define TITLE         新月プロトコル 0.7 ドラフト#1
->>>define DESCRIPTION   タグ機能の追加
->>>define BASE          protocol-0.7.d1
+>>>define TITLE         新月プロトコル 0.7 ドラフト#2
+>>>define DESCRIPTION   IPv6アドレス
+>>>define BASE          protocol-0.7.d2
 >>>define SECTION       プロトコル
 >>>include "head.ja.h"
 
-<p class="date">2007-01-15</p>
+<p class="date">2024-12-28</p>
 
 <h2>はじめに</h2>
 <p>新月は複数のノードが協調して動作しており、
@@ -59,7 +59,7 @@ HTTP、URL の仕様も満たさなければならない。</p>
 
 <pre>ホスト名:ポート番号/パス名</pre>
 
-<p>ここでホスト名はDNS名またはIPv4のIPアドレスとする。
+<p>ここでホスト名はDNS名またはIPv4のIPアドレスまたは角括弧([])で囲まれたIPv6のIPアドレスとする。
 ポート番号は10進表現の整数である。</p>
 
 <p>新月プロトコルは、ノード名の構成要素であるポート番号を指定しない。
