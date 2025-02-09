@@ -48,6 +48,7 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
 <p>開発中の最新版を使いたい方や、テストに協力してくださる方はこちらをダウンロードしてください。</p>
 
 <ul>
+  <li><a href="saku-20250209-0056.tar.gz">2025-02-09</a> (IPアドレスが変わったときにネットワークに再接続する)</li>
   <li><a href="saku-20250128-1055.tar.gz">2025-01-28</a> (setuptoolsとpipをインストールの処理から削除)</li>
   <li><a href="saku-20250125-1749.tar.gz">2025-01-26</a> (cgiモジュールを削除)</li>
   <li><a href="saku-20241227-1454.tar.gz">2024-12-27</a> (5.0.0相当)</li>
@@ -78,11 +79,7 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
 <pre># make install
 あるいは
 # make install PREFIX=/path/to/insall/dir</pre>
-      デフォルトでは /usr/local にインストールしますが、
-      環境によってはここにインストールしたモジュールは読み込まれません。
-      その場合は
-<pre># ln -s /usr/local/lib/python3.3/site-packages/shingetsu /usr/lib/python3.3/site-packages</pre>
-      のようにリンクを張ってください。</li>
+      デフォルトでは /usr/local にインストールします。
   <li>設定ファイルの雛型は /usr/local/share/doc/saku/sample にインストールされています。
       saku.ini は /usr/local/etc/saku/saku.ini, /etc/saku/saku.ini, ~/.saku/saku.ini の順に読み込まれ、
       後のものが優先されます。
