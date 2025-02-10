@@ -2,7 +2,7 @@
 '''Gateway Guide.
 '''
 #
-# Copyright (c) 2007-2022 shinGETsu Project.
+# Copyright (c) 2007 shinGETsu Project.
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -58,6 +58,8 @@ def public_gateway(uri):
         return False
     if '133.125.52.31:8000' in uri:
         return False
+    if '133:125:52:31]:8000' in uri:
+        return False
     try:
         for line in urlopen(uri):
             if '<meta name="robots" content="NOINDEX" />' in line.decode('utf-8', 'ignore'):
@@ -72,7 +74,7 @@ def main():
             print('Location: %s' % n)
             print()
             sys.exit()
-    print('Location: http://bbs.shingetsu.info/')
+    print('Location: https://bbs.shingetsu.info/')
     print()
 
 if __name__ == '__main__':
