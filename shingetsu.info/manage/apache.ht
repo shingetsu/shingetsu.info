@@ -2,10 +2,10 @@
 >>>define DESCRIPTION   リバースプロキシ機能を使います。
 >>>include "head.ja.h"
 
-<p class="date">2005-11-25, 2007-01-05</p>
+<p class="date">2005-11-25, 2007-01-05, 2025-02-13</p>
 
 <p><a href="http://www.apache.jp/">Apache</a>のリバースプロキシ機能を使って、
-<a href="/saku/">朔</a>のURIからポート番号を消してかっこよくします。
+<a href="/saku/">朔</a>のゲートウェイのURIからポート番号を消してかっこよくします。
 RSSを静的生成するので負荷を低くする効果も期待できます。</p>
 
 <p>この例ではDNS名が bbs.shingetsu.info 、
@@ -33,6 +33,8 @@ LoadModule rewrite_module /usr/lib/apache2/modules/mod_rewrite.so</pre>
 <p>プロキシとリライトの設定はこんな感じ:</p>
 >>>textpre "apache.txt"
 
+<p>さらに詳しい<a href="https://github.com/shingetsu/saku/blob/master/doc/apache.sample">サンプルはこちら</a>。</p>
+
 <p>この例ではbbs.shingetsu.infoへのアクセスを朔に飛ばします。
 ただしRSSは飛ばしません。
 server.cgiは見せません。</p>
@@ -50,5 +52,15 @@ Deny from 192.168.0.0/16</pre>
 <p><a href="/saku/">朔</a>の2.0.0以降に同梱されている
 mkrss.pyをcronで定期的(1時間に1回くらい)に動かします。
 デフォルトでは /usr/local/lib/saku/mkrss にインストールされます。</p>
+
+<h2>server.cgiをApacheと組み合わせるときの設定</h2>
+<p>こちらはbbs.shingetsu.infoでは設定していないので正確なことはわかりませんが、
+以下の設定を用意しています。</p>
+<pre>[Network]
+dnsname: bbs.shingetsu.info
+use_x_forwarded_for: yes</pre>
+
+<p>X-FORWARDED-FOR を有効にするので、
+リバースプロキシ以外から直接繋がらないように設定してください。</p>
 
 >>>include "foot.ja.h"

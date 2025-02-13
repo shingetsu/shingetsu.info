@@ -3,14 +3,14 @@
 >>>include "head.ja.h"
 
 <p>主にUnixを想定した朔の設定ガイドです。
-<a href="/saku/">朔 2.3.0以降</a>に対応しています。
+<a href="/saku/">朔 5.2.0以降</a>に対応しています。
 簡単な使い方は<a href="/tutorial/">チュートリアル</a>をご覧ください。</p>
 
 <h2>設定ファイル</h2>
 <p>次の設定ファイルが順に読み込まれます。
 後で設定したものが優先されます。
 書式は同じです。
-doc/sample.iniをご覧ください。</p>
+<a href="https://github.com/shingetsu/saku/blob/master/doc/sample.ini">doc/sample.ini</a>をご覧ください。</p>
 
 <ol>
   <li>file/saku.ini</li>
@@ -22,7 +22,23 @@ doc/sample.iniをご覧ください。</p>
 <p>shingetsu/config.py で設定する項目もありますが、
 ほとんどの場合は変更する必要はないと思います。</p>
 
-<h2>Apacheと組み合わせるときの設定</h2>
+<h2>環境によっては設定したほうがよさそうな項目</h2>
+<pre>
+[Network]
+# ポート番号
+port: 8000
+
+# IPv6が来ているがIPv4のポート開放しかしていないときに有効にする
+# 設定しなくても困ることはあまりなさそうな気はする
+prefer_ipv4: no
+
+[Gateway]
+# 管理者・掲示板を作れるユーザー・そのほかの利用ができるユーザーの接続元(正規表現)
+admin: ^127
+friend: ^127
+visitor: .</pre>
+
+<h2>gateway.cgiをApacheと組み合わせるときの設定</h2>
 <p><a href="/manage/apache">Apacheと朔を組み合わせて使う方法</a>をご覧ください。
 Apacheの設定サンプル、各種スクリプトは朔に同梱されています。
 スクリプトは通常 /usr/local/lib/saku/mkrss です。</p>
@@ -32,8 +48,19 @@ server_name は bbs.shingetsu.info や bbs.shingetsu.info:8000 のように設�
 スクリプトを動かすにはさらに proxy_destination, apache_docroot の設定が必要です。</p>
 <pre>[Gateway]
 server_name: bbs.shingetsu.info
+proxy_destination: bbs.shingetsu.info:8000
 [Path]
 apache_docroot: %(var)s/www/shingetsu</pre>
+
+<h2>server.cgiをApacheと組み合わせるときの設定</h2>
+<p>こちらはbbs.shingetsu.infoでは設定していないので正確なことはわかりませんが、
+以下の設定を用意しています。</p>
+<pre>[Network]
+dnsname: bbs.shingetsu.info
+use_x_forwarded_for: yes</pre>
+
+<p>X-FORWARDED-FOR を有効にするので、
+リバースプロキシ以外から直接繋がらないように設定してください。</p>
 
 <h2>保管庫との連携</h2>
 <p>ここでいう<a href="/archive/">保管庫</a>はmkarchive.pyで生成された、
