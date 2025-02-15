@@ -6,6 +6,7 @@
   <li><a href="/saku/template">朔のテンプレート</a></li>
   <li><a href="/saku/config">朔設定ガイド</a></li>
   <li><a href="tag">タグ</a></li>
+  <li><a href="ipv6">IPv4/IPv6混在ネットワークで何が起こるか</a></li>
   <li><a href="/archive/">保管庫について</a></li>
   <li><a href="apache">Apacheと朔を組み合わせて使う方法</a></li>
   <li><a href="post">書き込みすると何が起こるのか</a></li>
