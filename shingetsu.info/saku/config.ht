@@ -34,8 +34,8 @@ prefer_ipv4: no
 
 [Gateway]
 # 管理者・掲示板を作れるユーザー・そのほかの利用ができるユーザーの接続元(正規表現)
-admin: ^127
-friend: ^127
+admin: ^127|^::1$
+friend: ^127|^::1$
 visitor: .</pre>
 
 <h2>gateway.cgiをApacheと組み合わせるときの設定</h2>
@@ -43,25 +43,18 @@ visitor: .</pre>
 Apacheの設定サンプル、各種スクリプトは朔に同梱されています。
 スクリプトは通常 /usr/local/lib/saku/mkrss です。</p>
 
-<p>Apacheと組み合わせるには server_name の設定が必要です。
-server_name は bbs.shingetsu.info や bbs.shingetsu.info:8000 のように設定します。
-スクリプトを動かすにはさらに proxy_destination, apache_docroot の設定が必要です。</p>
-<pre>[Gateway]
-server_name: bbs.shingetsu.info
-proxy_destination: bbs.shingetsu.info:8000
-[Path]
-apache_docroot: %(var)s/www/shingetsu</pre>
-
 <h2>server.cgiをApacheと組み合わせるときの設定</h2>
-<p>こちらはbbs.shingetsu.infoでは設定していないので正確なことはわかりませんが、
-以下の設定を用意しています。
-おそらく127.0.0.1で朔を動かし、グローバルIPアドレスの同じポートでApacheやnginxを動かすのだと思います。</p>
-<pre>[Network]
-bind_addr: 127.0.0.1
-use_x_forwarded_for: yes</pre>
+<p><a href="/manage/apache">Apacheと朔を組み合わせて使う方法</a>をご覧ください。</p>
 
-<p>X-FORWARDED-FOR を有効にするので、
-リバースプロキシ以外から直接繋がらないように設定してください。</p>
+<h2>ノードをDNS登録するときの設定</h2>
+<p>設定は必須ではありませんが、
+以下の設定をするとノードがIPアドレスでは認識されなくなり
+(通信できなくなり)
+DNS名とIPアドレスで二重に認識されることがなくなります。
+<a href="/manage/ipv6">特定の条件で繋がりにくくなる</a>ことがあります。
+どちらかというと設定した方がいいような気はしますがよくわかりません。</p>
+<pre>[Network]
+dnsname: node.shingetsu.info</pre>
 
 <h2>保管庫との連携</h2>
 <p>ここでいう<a href="/archive/">保管庫</a>はmkarchive.pyで生成された、
