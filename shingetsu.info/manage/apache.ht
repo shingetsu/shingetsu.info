@@ -55,9 +55,10 @@ mkrss.pyをcronで定期的(1時間に1回くらい)に動かします。
 
 <h2>server.cgiをApacheと組み合わせるときの設定</h2>
 <p>こちらはbbs.shingetsu.infoでは設定していないので正確なことはわかりませんが、
-以下の設定を用意しています。</p>
+以下の設定を用意しています。
+おそらく127.0.0.1で朔を動かし、グローバルIPアドレスの同じポートでApacheを動かすのだと思います。</p>
 <pre>[Network]
-dnsname: bbs.shingetsu.info
+bind_addr: 127.0.0.1
 use_x_forwarded_for: yes</pre>
 
 <p>X-FORWARDED-FOR を有効にするので、
