@@ -20,22 +20,85 @@ WindowsでもUnixでも動きます。</p>
   <li><a href="guideline">P2Pガイドラインに基く表示はこちら。</a></li>
 </ul>
 
-<h2 id="usage">簡単な使い方</h2>
+<h2 id="usage">使い方</h2>
 <ol>
-  <li><a href="http://www.python.org/downloads/">Python3.xをダウンロード</a>して
-      インストールしておく(3.9以降)。</li>
-  <li>このページから朔のプログラムをダウンロードして展開する。</li>
-  <li>モデム、ルータまたはファイアウォールを設定して8000/tcpを開ける。</li>
-  <li>コマンドラインからライブラリをインストールして朔を実行する。
-<pre>
-pip install pipenv
-pipenv install
-pipenv run python3 saku.py -v</pre></li>
-  <li><a href="http://localhost:8000/">http://localhost:8000/</a>を
-      ブラウザで表示。</li>
-  <li>掲示板の使い方は<a href="https://github.com/shingetsu/docs/blob/master/tutorial.md">チュートリアル</a>を参照。</li>
-  <li>設定方法は<a href="config">朔設定ガイド</a>を参照。</li>
-  <li>テンプレートの設定方法は<a href="template">朔のテンプレート</a>を参照。</li>
+  <li>Python3.9以降をインストールする。
+    <ul>
+      <li>例: <a href="http://www.python.org/downloads/">ダウンロードページ</a>から</li>
+      <li>例: Linux環境に最初から入っているものを利用</li>
+      <li>例: dockerを利用する</li>
+    </ul>
+  </li>
+  <li>朔をダウンロードして展開(解凍)する。
+    <ul>
+      <li>例: このページから<a href="#stable">安定板</a>を</li>
+      <li>例: このページから<a href="#unstable">不安定板</a>を</li>
+      <li>例: gitで最新版を
+        <pre>git clone git://github.com/shingetsu/saku.git</pre>
+      </li>
+    </ul>
+  </li>
+  <li>モデム、ルータまたはファイアウォールを設定して8000/tcpをポート開放する。
+    <ul>
+      <li>環境次第なのでここでは説明しきれません</li>
+      <li>IPv6対応環境では最初からポート開放されている場合があるようです</li>
+    </ul>
+  </li>
+  <li>ライブラリをインストールする
+    <ul>
+      <li>例: pipenvを使う場合
+        <pre>pip install pipenv
+pipenv install</pre>
+      </li>
+      <li>例: Debianのパッケージを使う場合 (pilはサムネイル画像生成用で必須ではありません)
+        <pre>apt install python3-jinja2 python3-pil</pre>
+      </li>
+      <li>例: Dockerを利用する場合は作業不要</li>
+    </ul>
+  </li>
+  <li>朔をシステムにインストールする(そうしたい人のみ)
+    <ul>
+      <li>例: /usr/local にインストールする場合
+        <pre>make install</pre>
+      </li>
+      <li>例: インストール先を指定する場合
+        <pre>make install PREFIX=/path/to/insall/dir</pre>
+      </li>
+    </ul>
+  </li>
+  <li>朔をシステムにインストールした場合は設定ファイルを配置する
+    <ul>
+      <li>設定ファイルの雛型は /usr/local/share/doc/saku/sample にインストールされています</li>
+      <li>saku.ini は /usr/local/etc/saku/saku.ini, /etc/saku/saku.ini, ~/.saku/saku.ini
+          の順に読み込まれ、後のものが優先されます</li>
+      <li>それ以外の設定ファイル(初期ノード一覧等)は saku.ini 内で指定します</li>
+      <li>自動起動するときは shingetsu ユーザーを作成してください(起動スクリプトのデフォルトがこの名前です)。また設定ファイルをみて cache, log, run の3つのフォルダに書き込み権限をつけてください</li>
+      <li>例: SysV Init 互換形式の方法で起動したい場合は saku.init を /etc/init.d/saku にコピーして自動起動するように設定する(ディストリビューションごとに異なっていた記憶)</li>
+      <li>例: Systemdで起動したい場合は saku.service.sample を /etc/systemd/system/saku.service にコピーして systemctl daemon-reload を実行</li>
+      <li>例: Supervisorで起動したい場合は supervisor.sample を /etc/supervisor/conf.d/saku.conf にコピーして systemctl reload supervisor を実行</li>
+    </ul>
+  </li>
+  <li>朔を起動する
+    <ul>
+      <li>例: pipenvを使う場合
+        <pre>pipenv run python3 saku.py -v</pre>
+      </li>
+      <li>例: Dockerを使う場合
+        <pre>docker compose up</pre>
+      </li>
+      <li>例: システムにインストールしており直に実行したい場合
+        <pre>/usr/local/bin/saku -v</pre>
+      </li>
+      <li>例: Sysv Init 形式の場合
+        <pre>/etc/init.d/saku start</pre>
+      </li>
+      <li>そのほか自動起動の設定(Supervisorなど)をしていれば自動で起動するでしょうし、停止や再起動の手順はそのシステムの方式に従ってください</li>
+    </ul>
+  </li>
+  <li><a href="http://localhost:8000/">http://localhost:8000/</a>をブラウザで表示</li>
+  <li>掲示板の使い方は<a href="https://github.com/shingetsu/docs/blob/master/tutorial.md">チュートリアル</a>を参照</li>
+  <li>設定方法は<a href="config">朔設定ガイド</a>を参照</li>
+  <li>テンプレートの設定方法は<a href="template">朔のテンプレート</a>を参照</li>
 </ol>
 
 <h2>アップデートの方法</h2>
@@ -53,47 +116,5 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
 </ul>
 
 <p><a href="https://github.com/shingetsu/saku">GitHub</a>から入手することもできます。</p>
-
-<ol>
-  <li>まずは次のコマンドを入力してください。
-<pre>%git clone git://github.com/shingetsu/saku.git</pre></li>
-  <li>2回目からは次のコマンドを入力してください。
-<pre>% cd saku
-% git pull</pre></li>
-</ol>
-
-<h2>Linux等にインストールする場合の手順</h2>
-<ol>
-  <li><a href="http://www.python.jp/download/">Python3.xをダウンロード</a>して
-      インストールしておく(3.4以降)。</li>
-  <li><a href="http://jinja.pocoo.org/">Jinja2</a>
-      をインストールしてください。
-      Linuxディストリビューションでパッケージを提供しているときは
-      それを使うのをお勧めします。</li>
-  <li>モデム、ルータまたはファイアウォールを設定して
-      8000/tcpを開けてください。</li>
-  <li>コンパイルとインストールをします。
-<pre># make install
-あるいは
-# make install PREFIX=/path/to/insall/dir</pre>
-      デフォルトでは /usr/local にインストールします。
-  <li>設定ファイルの雛型は /usr/local/share/doc/saku/sample にインストールされています。
-      saku.ini は /usr/local/etc/saku/saku.ini, /etc/saku/saku.ini, ~/.saku/saku.ini の順に読み込まれ、
-      後のものが優先されます。
-      起動スクリプトは saku.init で、これを /etc/init.d/saku のようにコピーしてください。
-      Supervisorを使う場合には init.sample ではなく supervisor.sample をインストールしてください。
-      その他の設定ファイルは saku.ini で指定します。</li>
-  <li>起動と終了は次のコマンドです。
-      その後 <a href="http://localhost:8000/">http://localhost:8000/</a>
-      を表示してください。
-<pre># /etc/init.d/saku start
-# /etc/init.d/saku stop</pre></li>
-  <li>掲示板の使い方は<a href="https://github.com/shingetsu/docs/blob/master/tutorial.md">チュートリアル</a>を参照。</li>
-  <li>設定方法は<a href="config">朔設定ガイド</a>を参照。</li>
-  <li>テンプレートの設定方法は<a href="template">朔のテンプレート</a>を参照。</li>
-</ol>
-
-<p>注: インストールしなくても使うことができます。
-<a href="#usage">簡単な使い方</a>をご覧ください。</p>
 
 >>>include "foot.ja.h"
