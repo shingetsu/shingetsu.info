@@ -34,7 +34,7 @@ WindowsでもUnixでも動きます。</p>
       <li>例: このページから<a href="#stable">安定板</a>を</li>
       <li>例: このページから<a href="#unstable">不安定板</a>を</li>
       <li>例: gitで最新版を
-        <pre>git clone git://github.com/shingetsu/saku.git</pre>
+        <pre>git clone --filter=blob:none git@github.com:shingetsu/saku.git</pre>
       </li>
     </ul>
   </li>
