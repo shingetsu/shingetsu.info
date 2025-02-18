@@ -45,11 +45,6 @@
     <td><a href="http://www.python.jp/Zope/">Python</a></td>
     <td></td>
   </tr>
-  <tr>
-    <td><a href="https://github.com/ha1t/sgphp">sgphp</a></td>
-    <td><a href="http://php.net/">PHP</a></td>
-    <td></td>
-  </tr>
 </table>
 
 <p>朔やその古いバージョン、PerlやJavaによる古い実装は
@@ -78,6 +73,9 @@
   <li><a href="/saku/extension">朔の拡張機能</a></li>
   <li><a href="/hoven/">Hoven</a> (参考までに)</li>
   <li><a href="/nanashi/">NanaSHI</a> (参考までに)</li>
+  <li><a href="https://github.com/ha1t/sgphp">sgphp</a> (参考までに)</li>
+  <li><a href="https://github.com/shingetsu-gou">合</a> (参考までに)</li>
+  <li><a href="https://github.com/meriken/ju">需</a> (参考までに)</li>
   <li><a href="/apollo/">署名モジュール</a> (参考までに)</li>
   <li><a href="/crescent/">Crescent</a> (参考までに)</li>
   <li><a href="/launch/">導入パッケージ</a> (参考までに)</li>
