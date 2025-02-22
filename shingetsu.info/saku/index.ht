@@ -9,9 +9,9 @@
 WindowsでもUnixでも動きます。</p>
 
 <ul>
-  <li>2025-02-18
-      <a href="https://github.com/shingetsu/saku/archive/release-5.2.1.tar.gz">Saku 5.2.1</a>
-      (<a href="saku-5.2.1.tar.gz">ミラー</a>)
+  <li>2025-02-22
+      <a href="https://github.com/shingetsu/saku/archive/release-5.2.2.tar.gz">Saku 5.2.2</a>
+      (<a href="saku-5.2.2.tar.gz">ミラー</a>)
   </li>
 </ul>
 
@@ -112,11 +112,7 @@ cache, log, runの3つのフォルダを新しいフォルダに移動してく�
 <p>開発中の最新版を使いたい方や、テストに協力してくださる方はこちらをダウンロードしてください。</p>
 
 <ul>
-  <li><a href="saku-20250222-0810.tar.gz">2025-02-22</a> (mchを修正したつもり)</li>
-  <li><a href="saku-20250221-1707.tar.gz">2025-02-22</a> (IPv6環境で最初の接続に失敗しやすいのを修正、自分自身のノードが隣接ノードや探索ノードに入るのを修正)</li>
-  <li><a href="saku-20250220-1143.tar.gz">2025-02-20</a> (サンプル設定のキャッシュのディレクトリを変更、jQueryによる画像の遅延読み込みを削除、jQueryを更新)</li>
-  <li><a href="saku-20250219-1509.tar.gz">2025-02-19</a> (ドキュメント修正)</li>
-  <li><a href="saku-20250218-0434.tar.gz">2025-02-18</a> (5.2.1相当)</li>
+  <li><a href="saku-20250222-1202.tar.gz">2025-02-22</a> (5.2.2相当)</li>
   <li><a href="rss">アップロード監視用RSS</a></li>
 </ul>
 
