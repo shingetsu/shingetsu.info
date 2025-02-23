@@ -2,7 +2,7 @@
 >>>define DESCRIPTION   リバースプロキシ機能を使います。
 >>>include "head.ja.h"
 
-<p class="date">2005-11-25, 2007-01-05, 2025-02-13</p>
+<p class="date">2005-11-25, 2007-01-05, 2025-02-24</p>
 
 <p><a href="/saku/config">設定ガイド</a>もご覧ください。</p>
 
@@ -16,12 +16,18 @@ LAN上のIPアドレスは 192.168.1.2 です。</p>
 
 <p>朔では server_name 等を設定してください。</p>
 <pre>[Gateway]
+admin: ^PRIVATE$
+friend: %(admin)s
+visitor: .
 server_name: bbs.shingetsu.info
-proxy_destination: 192.168.1.2:8000
+proxy_destination: [::1]:8000
+protocol: https
 
 [Path]
 apache_docroot: /srv/www/shingetsu</pre>
 
+<p>その他の設定項目:
+<a href="https://github.com/shingetsu/saku/blob/master/doc/sample_with_reverse_proxy.ini">サンプルはこちら</a>。</p>
 
 <h2>Apacheの設定</h2>
 <p>プロキシモジュールとリライトモジュールを読み込みます:</p>
@@ -32,21 +38,12 @@ LoadModule proxy_http_module /usr/lib/apache2/modules/mod_proxy_http.so
 
 LoadModule rewrite_module /usr/lib/apache2/modules/mod_rewrite.so</pre>
 
-<p>プロキシとリライトの設定はこんな感じ:</p>
->>>textpre "apache.txt"
-
-<p>さらに詳しい<a href="https://github.com/shingetsu/saku/blob/master/doc/apache.sample">サンプルはこちら</a>。</p>
+<p>プロキシとリライトの設定はこんな感じ:
+<a href="https://github.com/shingetsu/saku/blob/master/doc/apache.sample">サンプルはこちら</a>。</p>
 
 <p>この例ではbbs.shingetsu.infoへのアクセスを朔に飛ばします。
 ただしRSSは飛ばしません。
 server.cgiは見せません。</p>
-
-<p>aclというのは次のようなファイルです。
-Spamを送ってくる相手を手作業でブラックリストに入れます。</p>
-<pre>Order Allow,Deny
-Allow from All
-Deny from 10.0.0.0/8
-Deny from 192.168.0.0/16</pre>
 
 <p>これらの設定例は<a href="/saku/">朔</a>の2.0.0以降に同梱されています。</p>
 
@@ -56,14 +53,22 @@ mkrss.pyをcronで定期的(1時間に1回くらい)に動かします。
 デフォルトでは /usr/local/lib/saku/mkrss にインストールされます。</p>
 
 <h2>server.cgiをApacheと組み合わせるときの設定</h2>
-<p>こちらはbbs.shingetsu.infoでは設定していないので正確なことはわかりませんが、
-以下の設定を用意しています。
-おそらく127.0.0.1で朔を動かし、グローバルIPアドレスの同じポートでApacheを動かすのだと思います。</p>
+<p>あまりメリットは感じられないのですが、
+以下の設定を用意しています。(2025-02-24時点では一部設定項目はgitの最新版でのみ有効です)</p>
 <pre>[Network]
-bind_addr: 127.0.0.1
+bind_addr: ::1
+bind_port: 8002
+dnsname: node.shingetsu.info
+dnsname_should_match: no
 use_x_forwarded_for: yes</pre>
+
+<p>その他の設定項目:
+<a href="https://github.com/shingetsu/saku/blob/master/doc/sample_with_reverse_proxy.ini">サンプルはこちら</a>。</p>
 
 <p>X-FORWARDED-FOR を有効にするので、
 リバースプロキシ以外から直接繋がらないように設定してください。</p>
+
+<p>Apache側のプロキシとリライトの設定はこんな感じ:
+<a href="https://github.com/shingetsu/saku/blob/master/doc/apache.sample">サンプルはこちら</a>。</p>
 
 >>>include "foot.ja.h"

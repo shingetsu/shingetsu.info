@@ -55,7 +55,8 @@ DNS名とIPアドレスで二重に認識されることがなくなります。
 <a href="/manage/ipv6">特定の条件で繋がりにくくなる</a>ことがあります。
 どちらかというと設定した方がいいような気はしますがよくわかりません。</p>
 <pre>[Network]
-dnsname: node.shingetsu.info</pre>
+dnsname: node.shingetsu.info
+dnsname_should_match: yes</pre>
 
 <h2>保管庫との連携</h2>
 <p>ここでいう<a href="/archive/">保管庫</a>はmkarchive.pyで生成された、
