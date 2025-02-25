@@ -16,5 +16,8 @@
   <link rel="contents" href="/" />
   <link rel="license" type="application/rdf+xml" href="/license" />
   <link rel="alternate" type="application/rdf+xml" title="RSS" href="/rss" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" href="/android-chrome.png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script type="text/javascript" src="/shingetsu.js" charset="utf-8"></script>
