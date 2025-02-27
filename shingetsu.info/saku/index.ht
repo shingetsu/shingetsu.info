@@ -2,14 +2,14 @@
 >>>define DESCRIPTION   新月のPython向けの実装「朔」の配布ページです。
 >>>include "head.ja.h"
 
-<p>朔は<a href="/">新月</a>の<a href="http://www.python.jp/Zope/">Python</a>用の新月の実装です。</p>
+<p>朔は<a href="/">新月</a>の<a href="http://www.python.jp/">Python</a>用の新月の実装です。</p>
 
 <h2 id="stable">ダウンロード(安定版)</h2>
 <p>通常はこちらをダウンロードしてください。
 WindowsでもUnixでも動きます。</p>
 
 <ul>
-  <li>2025-02-26
+  <li>2025-02-27
       <a href="https://github.com/shingetsu/saku/archive/release-5.3.0.tar.gz">Saku 5.3.0</a>
       (<a href="saku-5.3.0.tar.gz">ミラー</a>)
   </li>
