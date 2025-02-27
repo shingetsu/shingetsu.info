@@ -9,9 +9,9 @@
 WindowsでもUnixでも動きます。</p>
 
 <ul>
-  <li>2025-02-24
-      <a href="https://github.com/shingetsu/saku/archive/release-5.2.3.tar.gz">Saku 5.2.3</a>
-      (<a href="saku-5.2.3.tar.gz">ミラー</a>)
+  <li>2025-02-26
+      <a href="https://github.com/shingetsu/saku/archive/release-5.3.0.tar.gz">Saku 5.3.0</a>
+      (<a href="saku-5.3.0.tar.gz">ミラー</a>)
   </li>
 </ul>
 
@@ -32,8 +32,7 @@ WindowsでもUnixでも動きます。</p>
   <li>朔をダウンロードして展開(解凍)する。
     <ul>
       <li>例: このページから<a href="#stable">安定板</a>を</li>
-      <li>例: このページから<a href="#unstable">不安定板</a>を</li>
-      <li>例: gitで最新版を
+      <li>例: gitで<a href="https://github.com/shingetsu/saku">最新版</a>を
         <pre>git clone --filter=blob:none git@github.com:shingetsu/saku.git</pre>
       </li>
     </ul>
@@ -60,10 +59,12 @@ pipenv install</pre>
   <li>朔をシステムにインストールする(そうしたい人のみ)
     <ul>
       <li>例: /usr/local にインストールする場合
-        <pre>make install</pre>
+        <pre>make
+sudo make install</pre>
       </li>
       <li>例: インストール先を指定する場合
-        <pre>make install PREFIX=/path/to/insall/dir</pre>
+        <pre>make
+make install PREFIX=/path/to/insall/dir</pre>
       </li>
     </ul>
   </li>
@@ -107,19 +108,5 @@ pipenv install</pre>
 アップデートの際には、特に告知がなければ以前のフォルダにある
 cache, log, runの3つのフォルダを新しいフォルダに移動してください。
 以前のデータを引き継ぐことができます。</p>
-
-<h2 id="unstable">不安定版</h2>
-<p>開発中の最新版を使いたい方や、テストに協力してくださる方はこちらをダウンロードしてください。</p>
-
-<ul>
-  <li><a href="saku-20250225-2336.tar.gz">2025-02-26</a> (新規作成フォームの修正)</li>
-  <li><a href="saku-20250225-0405.tar.gz">2025-02-25</a> (Android,Apple用のfavicon、テスト整理)</li>
-  <li><a href="saku-20250224-1244.tar.gz">2025-02-24</a> (正規表現ではなくIPアドレスやCIDRでアクセス制限設定ができるようにする)</li>
-  <li><a href="saku-20250224-0156.tar.gz">2025-02-24</a> (wsgirefを利用する)</li>
-  <li><a href="saku-20250224-0148.tar.gz">2025-02-24</a> (5.2.3相当)</li>
-  <li><a href="rss">アップロード監視用RSS</a></li>
-</ul>
-
-<p><a href="https://github.com/shingetsu/saku">GitHub</a>から入手することもできます。</p>
 
 >>>include "foot.ja.h"

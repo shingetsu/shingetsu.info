@@ -1,5 +1,7 @@
 (function () {
     var asins = [
+        ["B0CN38M1S9", "機動武闘伝Gガンダム 石破天驚 Blu-ray Box"],
+        ["B07VPNZWRV", "ダーティペア COMPLETE Blu-ray BOX"],
         ["B0C941XZ3W", "「私、能力は平均値でって言ったよね！」Blu-ray BOX"],
         ["B08KPXXTH6", "くまクマ熊ベアー 第1巻"],
         ["B0B5DFG6ZP", "リコリス・リコイル 1"],
@@ -22,9 +24,9 @@
     ads.appendChild(notice);
 
     function shuffle(a) {
-        for (var i=a.length; i>0; i--) {
-            var j = Math.floor(Math.random() * i);
-            [a[i-1], a[j]] = [a[j], a[i-1]];
+        for (var i=a.length-1; i>0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            [a[i], a[j]] = [a[j], a[i]];
         }
         return a;
     }

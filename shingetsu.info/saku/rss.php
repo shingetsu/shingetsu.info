@@ -2,6 +2,9 @@
 /* -*- coding: utf-8 -*- */
 /* Copyright (c) 2007 Satoshi Fukutomi <info@fuktommy.com>. */
 
+header('Location: https://github.com/shingetsu/saku/commits.atom');
+return;
+
 require_once('RSS.class.php');
 
 $rss = new RSS('SAKU snapshot',

@@ -34,10 +34,10 @@ port: 8000
 prefer_ipv4: no
 
 [Gateway]
-# 管理者・掲示板を作れるユーザー・そのほかの利用ができるユーザーの接続元(正規表現)
-admin: ^127|^::1$
-friend: ^127|^::1$
-visitor: .</pre>
+# 管理者・掲示板を作れるユーザー・そのほかの利用ができるユーザーの接続元
+admin_net: ::1, 127.0.0.1
+friend_net: %(admin_net)s
+visitor_net: ::0/0, 0.0.0.0/0</pre>
 
 <h2>gateway.cgiをApacheと組み合わせるときの設定</h2>
 <p><a href="/manage/apache">Apacheと朔を組み合わせて使う方法</a>をご覧ください。
