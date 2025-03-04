@@ -87,7 +87,7 @@ make install PREFIX=/path/to/insall/dir</pre>
         <pre>pipenv run python3 saku.py -v</pre>
       </li>
       <li>例: Dockerを使う場合
-        <pre>docker compose up</pre>
+        <pre>docker compose up --build</pre>
       </li>
       <li>例: システムにインストールしており直に実行したい場合
         <pre>/usr/local/bin/saku -v</pre>
