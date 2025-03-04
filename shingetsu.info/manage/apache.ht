@@ -26,7 +26,7 @@ protocol: https
 apache_docroot: /srv/www/shingetsu</pre>
 
 <p>その他の設定項目:
-<a href="https://github.com/shingetsu/saku/blob/master/doc/sample_with_reverse_proxy.ini">サンプルはこちら</a>。</p>
+<a href="https://github.com/shingetsu/saku/blob/master/doc/sample.reverse_proxy.ini">サンプルはこちら</a>。</p>
 
 <h2>Apacheの設定</h2>
 <p>プロキシモジュールとリライトモジュールを読み込みます:</p>
@@ -74,7 +74,7 @@ dnsname_should_match: no
 use_x_forwarded_for: yes</pre>
 
 <p>その他の設定項目:
-<a href="https://github.com/shingetsu/saku/blob/master/doc/sample_with_reverse_proxy.ini">サンプルはこちら</a>。</p>
+<a href="https://github.com/shingetsu/saku/blob/master/doc/sample.reverse_proxy.ini">サンプルはこちら</a>。</p>
 
 <p>X-FORWARDED-FOR を有効にするので、
 リバースプロキシ以外から直接繋がらないように設定してください。</p>
