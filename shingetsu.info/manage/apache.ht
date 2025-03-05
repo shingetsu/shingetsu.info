@@ -26,7 +26,7 @@ protocol: https
 apache_docroot: /srv/www/shingetsu</pre>
 
 <p>その他の設定項目:
-<a href="https://github.com/shingetsu/saku/blob/master/doc/sample.reverse_proxy.ini">サンプルはこちら</a>。</p>
+<a href="https://github.com/shingetsu/saku/blob/master/doc/sample/saku.proxy.ini">サンプルはこちら</a>。</p>
 
 <h2>Apacheの設定</h2>
 <p>プロキシモジュールとリライトモジュールを読み込みます:</p>
@@ -38,7 +38,7 @@ LoadModule proxy_http_module /usr/lib/apache2/modules/mod_proxy_http.so
 LoadModule rewrite_module /usr/lib/apache2/modules/mod_rewrite.so</pre>
 
 <p>プロキシとリライトの設定はこんな感じ:
-<a href="https://github.com/shingetsu/saku/blob/master/doc/apache.sample">サンプルはこちら</a>。</p>
+<a href="https://github.com/shingetsu/saku/blob/master/doc/sample/apache.conf">サンプルはこちら</a>。</p>
 
 <p>この例ではbbs.shingetsu.infoへのアクセスを朔に飛ばします。
 ただしRSSは飛ばしません。
@@ -74,7 +74,7 @@ dnsname_should_match: no
 use_x_forwarded_for: yes</pre>
 
 <p>その他の設定項目:
-<a href="https://github.com/shingetsu/saku/blob/master/doc/sample.reverse_proxy.ini">サンプルはこちら</a>。</p>
+<a href="https://github.com/shingetsu/saku/blob/master/doc/sample/saku.proxy.ini">サンプルはこちら</a>。</p>
 
 <p>X-FORWARDED-FOR を有効にするので、
 リバースプロキシ以外から直接繋がらないように設定してください。</p>
@@ -82,6 +82,6 @@ use_x_forwarded_for: yes</pre>
 <p>また use_x_forwarded_for の設定はゲートウェイにも影響し、リモートホストを X-FORWARDED-FOR で認識するようになります。</p>
 
 <p>Apache側のプロキシとリライトの設定はこんな感じ:
-<a href="https://github.com/shingetsu/saku/blob/master/doc/apache.sample">サンプルはこちら</a>。</p>
+<a href="https://github.com/shingetsu/saku/blob/master/doc/sample/apache.conf">サンプルはこちら</a>。</p>
 
 >>>include "foot.ja.h"

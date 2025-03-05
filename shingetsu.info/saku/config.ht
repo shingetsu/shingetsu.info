@@ -10,7 +10,7 @@
 <p>次の設定ファイルが順に読み込まれます。
 後で設定したものが優先されます。
 書式は同じです。
-<a href="https://github.com/shingetsu/saku/blob/master/doc/sample.ini">doc/sample.ini</a>をご覧ください。</p>
+<a href="https://github.com/shingetsu/saku/blob/master/doc/sample/saku.ini">doc/sample/saku.ini</a>をご覧ください。</p>
 
 <ol>
   <li>file/saku.ini</li>
