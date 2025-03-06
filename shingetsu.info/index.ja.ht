@@ -30,6 +30,15 @@
 <p><a href="https://github.com/shingetsu/saku">朔 @ GitHub</a> で入手してください。
 コミュニティとして開発しているバージョンです。</p>
 
+<h2>使い方</h2>
+<p><a href="/tutorial/">チュートリアル</a>はこちら。</p>
+
+<h2>設定</h2>
+<ul>
+  <li><a href="/saku/config">朔設定ガイド</a></li>
+  <li><a href="/manage/apache">Apacheと朔を組み合わせて使う方法</a></li>
+</ul>
+
 <h2>ほかの情報</h2>
 <p><a href="/wiki/">Wiki</a>や<a href="docs">ドキュメント</a>をご覧ください。</p>
 

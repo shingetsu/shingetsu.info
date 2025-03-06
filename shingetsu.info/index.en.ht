@@ -21,6 +21,15 @@ You can download the software to manage your server.</p>
 <p>Clone repository from <a href="https://github.com/shingetsu/saku">saku at GitHub</a>.
 This is developping in our community.</p>
 
+<h2>How to Use</h2>
+<p><a href="/tutorial/">Tutorial(ja)</a> is here.</p>
+
+<h2>How to Configure</h2>
+<ul>
+  <li><a href="/saku/config">Configuration Guide (ja)</a></li>
+  <li><a href="/manage/apache">How to use with Apache (ja)</a></li>
+</ul>
+
 <h2>More Information</h2>
 <p>Read <a href="/wiki/">Wiki(ja)</a> and <a href="docs">Documents</a>.</p>
 
