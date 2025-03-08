@@ -52,6 +52,7 @@ pipenv install</pre>
         <pre>apt install python3-jinja2 python3-pil</pre>
       </li>
       <li>例: Dockerを利用する場合は作業不要</li>
+      <li>例: ansible-playbook を利用する場合は doc/sample/ansible.yml を見てください</li>
     </ul>
   </li>
   <li>朔をシステムにインストールする(そうしたい人のみ)
@@ -64,6 +65,7 @@ sudo make install</pre>
         <pre>make
 make install PREFIX=/path/to/insall/dir</pre>
       </li>
+      <li>例: ansible-playbook を利用する場合は doc/sample/ansible.yml を見てください</li>
     </ul>
   </li>
   <li>朔をシステムにインストールした場合は設定ファイルを配置する
