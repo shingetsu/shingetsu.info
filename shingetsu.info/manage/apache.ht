@@ -6,7 +6,7 @@
 
 <p><a href="/saku/config">設定ガイド</a>もご覧ください。</p>
 
-<p><a href="http://www.apache.jp/">Apache</a>のリバースプロキシ機能を使って、
+<p><a href="https://httpd.apache.org/">Apache httpd</a>のリバースプロキシ機能を使って、
 <a href="/saku/">朔</a>のゲートウェイのURIからポート番号を消してかっこよくします。
 RSSを静的生成するので負荷を低くする効果も期待できます。
 server.cgi, gateway.cgi の両方をプロキシ経由にする設定と、
