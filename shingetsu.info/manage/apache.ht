@@ -2,86 +2,162 @@
 >>>define DESCRIPTION   リバースプロキシ機能を使います。
 >>>include "head.ja.h"
 
-<p class="date">2005-11-25, 2007-01-05, 2025-02-27</p>
+<p class="date">2005-11-25, 2007-01-05, 2025-03-10</p>
 
 <p><a href="/saku/config">設定ガイド</a>もご覧ください。</p>
 
 <p><a href="http://www.apache.jp/">Apache</a>のリバースプロキシ機能を使って、
 <a href="/saku/">朔</a>のゲートウェイのURIからポート番号を消してかっこよくします。
-RSSを静的生成するので負荷を低くする効果も期待できます。</p>
+RSSを静的生成するので負荷を低くする効果も期待できます。
+server.cgi, gateway.cgi の両方をプロキシ経由にする設定と、
+gatewat.cgi のみをプロキシ経由にする設定があります。</p>
 
-<p>この例ではDNS名が bbs.shingetsu.info 、
-Apacheでのドキュメントルートが /srv/www/shingetsu です。</p>
+<h2 id="with-xff">server.cgi, gateway.cgi の両方をプロキシ経由にする設定</h2>
+<p>node.shingetsu.info, bbs.shingetsu.info はこの設定です。
+あまりメリットは感じていません。</p>
 
-<p>朔では server_name 等を設定してください。</p>
-<pre>[Gateway]
+<p>saku.ini:</p>
+<pre>[Network]
+# X-Forwaded-For(XFF)を有効にするので外部からアクセスできないアドレス(FireWallもあるが)
+bind_addr: ::1
+
+# 8000をApacheが使えるように
+bind_port: 8002
+
+# ApacheのVirtualHost用の名前を/joinなどで名乗る
+dnsname: node.shingetsu.info
+
+# Apacheからアクセスが来るときはdnsnameの値ではないため
+dnsname_should_match: no
+
+# Apacheの設定するXFFを利用する(他の経路からアクセスされないよう注意)
+use_x_forwarded_for: yes
+
+[Gateway]
+# bind_addrがIPv6なのでApache経由のアクセスのみを許可
+# RSSの静的生成では::1を使うのでadmin扱いされないことも狙っている
 admin_net: 127.0.0.1
+
+# admin_netと同じ値
 friend_net: %(admin_net)s
-visitor_net: ::0/0, 0.0.0.0/0
+
+# アクセス制限なし
+visitor_net: ::/0, 0.0.0.0/0
+
+# ApacheのVirtualHost用の名前をRSSなどで利用
 server_name: bbs.shingetsu.info
+
+# Apacheを迂回してアクセスするときのホストとポート
 proxy_destination: [::1]:8002
+
+# RSS等で利用するプロトコル
 protocol: https
 
 [Path]
+# RSSなどの静的生成ファイル置き場
 apache_docroot: /srv/www/shingetsu</pre>
 
-<p>その他の設定項目:
-<a href="https://github.com/shingetsu/saku/blob/master/doc/sample/saku.proxy.ini">サンプルはこちら</a>。</p>
+<p>apache.conf</p>
+<pre># Apacheからは::1でアクセス
+RewriteRule ^server.cgi(.*) http://[::1]:8002/server.cgi${escape:$1} [P,NE]
+RewriteRule ^(gateway|thread).cgi(.*) http://[::1]:8002/$1.cgi${escape:$2} [P,NE]
 
-<h2>Apacheの設定</h2>
-<p>プロキシモジュールとリライトモジュールを読み込みます:</p>
-<pre>LoadModule cache_module /usr/lib/apache2/modules/mod_cache.so
-LoadModule disk_cache_module /usr/lib/apache2/modules/mod_disk_cache.so
-LoadModule proxy_module /usr/lib/apache2/modules/mod_proxy.so
-LoadModule proxy_http_module /usr/lib/apache2/modules/mod_proxy_http.so
+# 管理アクセス用の設定を別のところに書く
+# 127.0.0.1 を詐称することでadminとしてアクセスできるようにする
+ProxyAddHeaders Off
+RewriteCond %{REMOTE_ADDR} ^(.*)$
+RewriteRule . - [env=remoteaddr:%1]
+RequestHeader set X-Forwarded-For "%{remoteaddr}e, 127.0.0.1"
+RewriteRule ^(admin|gateway|thread).cgi(.*) http://[::1]:8002/$1.cgi${escape:$2} [P,NE]</pre>
 
-LoadModule rewrite_module /usr/lib/apache2/modules/mod_rewrite.so</pre>
+<p>設定全体はこちら:</p>
+<ul>
+  <li><a href="https://github.com/shingetsu/saku/blob/master/doc/sample/saku.proxy.ini">saku.ini</a></li>
+  <li><a href="https://github.com/shingetsu/saku/blob/master/doc/sample/apache.conf">apache.conf</a></li>
+</ul>
 
-<p>プロキシとリライトの設定はこんな感じ:
-<a href="https://github.com/shingetsu/saku/blob/master/doc/sample/apache.conf">サンプルはこちら</a>。</p>
+<p>Apacheでは以下のモジュールを有効にしておきます。</p>
+<ul>
+  <li>proxy</li>
+  <li>proxy_http</li>
+  <li>rewrite</li>
+</ul>
 
-<p>この例ではbbs.shingetsu.infoへのアクセスを朔に飛ばします。
-ただしRSSは飛ばしません。
-server.cgiは見せません。</p>
+<p>上の設定例ではApache経由でしか管理できないようにしていますが、
+bind_addrを指定せずadmin_netにプライベートIPアドレスを入れる方法もあります。
+その場合はApacheの設定で管理用のXFFを設定する必要はありません。
+RSSの静的生成をするならばadmin扱いされないように注意が必要です。</p>
 
-<p>これらの設定例は<a href="/saku/">朔</a>の2.0.0以降に同梱されています。</p>
+<p>上の設定例では静的ファイルはプロキシしないようにRewriteRuleを使っていますが
+ProxyPassを使って全部プロキシすることも可能です。</p>
 
-<p>上の例は server.cgi もリバースプロキシ環境で実行するためのものです。
-ゲートウェイだけをリバースプロキシ環境で実行する場合には次のようにしてループバックやプライベートIPアドレスを管理用、ApacheのグローバルIPアドレスを利用者用に設定します。
-あるいはIPv4アドレス(127.0.0.1)とIPv6アドレス(::1)を使い分けてもよいかもしれません。</p>
 
+<h2 id="without-xff">gateway.cgi のみをプロキシ経由にする設定</h2>
+<p>node.shingetsu.info, bbs.shingetsu.info で以前使っていたのがこの設定です。
+設定サンプルを作るためにserver.cgiも対象にしてそのままになっています。</p>
+
+<p>saku.ini:</p>
 <pre>[Gateway]
-admin_net: 127.0.0.1
+# 管理できるのはApache経由のアクセスと、直にアクセスした場合
+admin_net: ::1, 127.0.0.1
+
+# admin_netと同じ値
 friend_net: %(admin_net)s
-visitor_net: 192.0.2.1</pre>
 
-<pre>RewriteRule ^(gateway|thread).cgi(.*) \
-    http://192.0.2.1:8000/$1.cgi${escape:$2} [P,NE]</pre>
+# サーバーのグローバルIPアドレスを設定
+visitor_net: ::2001:db8::1, 192.0.2.1
 
-<h2>RSSとサイトマップの静的生成</h2>
+# ApacheのVirtualHost用の名前をRSSなどで利用
+server_name: bbs.shingetsu.info
+
+# Apacheを迂回してアクセスするときのホストとポート
+proxy_destination: bbs.shingetsu.info:8000
+
+# RSS等で利用するプロトコル
+protocol: https
+
+[Path]
+# RSSなどの静的生成ファイル置き場
+apache_docroot: /srv/www/shingetsu</pre>
+
+<p>apache.conf</p>
+<pre># ApacheからはグローバルIPアドレスでアクセス
+RewriteRule ^(gateway|thread).cgi(.*) http://bbs.shingetsu.info:8000/$1.cgi${escape:$2} [P,NE]
+
+# 管理アクセス用の設定を別のところに書く
+RewriteRule ^(admin|gateway|thread).cgi(.*) http://[::1]:8000/$1.cgi${escape:$2} [P,NE]</pre>
+
+<p>server.cgiもプロキシ経由にする設定ですが参考までに:</p>
+<ul>
+  <li><a href="https://github.com/shingetsu/saku/blob/master/doc/sample/saku.proxy.ini">saku.ini</a></li>
+  <li><a href="https://github.com/shingetsu/saku/blob/master/doc/sample/apache.conf">apache.conf</a></li>
+</ul>
+
+<p>Apacheでは以下のモジュールを有効にしておきます。</p>
+<ul>
+  <li>proxy</li>
+  <li>proxy_http</li>
+  <li>rewrite</li>
+</ul>
+
+<p>X-Forwarded-For(XFF)を利用しないことに注目してください。
+thread.cgiへのアクセスはサーバーのグローバルIPアドレスになります。
+朔のアクセスログにはXFFの値も記録されます。</p>
+
+<p>上の設定例ではApache経由でも管理できるようにしていますが、
+localhostからアクセスする方法や、
+admin_netにプライベートIPアドレスを入れて直接アクセスする方法もあります。
+その場合はApacheの設定で管理用のRewriteRuleを設定する必要はありません。
+RSSの静的生成をするならばadmin扱いされないように注意が必要です。</p>
+
+<p>上の設定例では静的ファイルはプロキシしないようにRewriteRuleを使っていますが
+ProxyPassを使って全部プロキシすることも可能です。</p>
+
+
+<h2 id="mkrss">RSSとサイトマップの静的生成</h2>
 <p><a href="/saku/">朔</a>の2.0.0以降に同梱されている
 mkrss.pyをcronで定期的(1時間に1回くらい)に動かします。
-デフォルトでは /usr/local/lib/saku/mkrss にインストールされます。</p>
-
-<h2>server.cgiをApacheと組み合わせるときの設定</h2>
-<p>あまりメリットは感じられないのですが、
-以下の設定を用意しています。</p>
-<pre>[Network]
-bind_addr: ::1
-bind_port: 8002
-dnsname: node.shingetsu.info
-dnsname_should_match: no
-use_x_forwarded_for: yes</pre>
-
-<p>その他の設定項目:
-<a href="https://github.com/shingetsu/saku/blob/master/doc/sample/saku.proxy.ini">サンプルはこちら</a>。</p>
-
-<p>X-FORWARDED-FOR を有効にするので、
-リバースプロキシ以外から直接繋がらないように設定してください。</p>
-
-<p>また use_x_forwarded_for の設定はゲートウェイにも影響し、リモートホストを X-FORWARDED-FOR で認識するようになります。</p>
-
-<p>Apache側のプロキシとリライトの設定はこんな感じ:
-<a href="https://github.com/shingetsu/saku/blob/master/doc/sample/apache.conf">サンプルはこちら</a>。</p>
+デフォルトでは /usr/local/lib/saku/mkrss にインストールされます。
+設定例は<a href="https://github.com/shingetsu/saku/blob/master/doc/sample/ansible.yml">Ansibleの設定ファイル</a>をご覧ください。</p>
 
 >>>include "foot.ja.h"
