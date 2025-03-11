@@ -1,4 +1,4 @@
-body {
+5ody {
     padding: 20px;
 }
 
@@ -82,3 +82,10 @@ td {
     border: 1px solid #ccc;
     padding: 5px;
 }
+
+pre.code {
+    border: 1px solid #66f;
+    padding: 1ex;
+    margin-bottom: 1ex;
+}
+

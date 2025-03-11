@@ -23,8 +23,7 @@
 ほとんどの場合は変更する必要はないと思います。</p>
 
 <h2>環境によっては設定したほうがよさそうな項目</h2>
-<pre>
-[Network]
+<pre class="code">[Network]
 # ポート番号
 port: 8000
 
@@ -36,7 +35,7 @@ prefer_ipv4: no
 # 管理者・掲示板を作れるユーザー・そのほかの利用ができるユーザーの接続元
 admin_net: ::1, 127.0.0.1
 friend_net: %(admin_net)s
-visitor_net: ::0/0, 0.0.0.0/0</pre>
+visitor_net: ::/0, 0.0.0.0/0</pre>
 
 <h2>gateway.cgiをApacheと組み合わせるときの設定</h2>
 <p><a href="/manage/apache">Apacheと朔を組み合わせて使う方法</a>をご覧ください。
@@ -48,7 +47,7 @@ Apacheの設定サンプル、各種スクリプトは朔に同梱されてい�
 
 <h2>ノードをDNS登録するときの設定</h2>
 <p>以下の設定をするとノードがDNS名とIPアドレスで二重に認識されなくなります。</p>
-<pre>[Network]
+<pre class="code">[Network]
 dnsname: node.shingetsu.info
 dnsname_should_match: yes</pre>
 
@@ -64,8 +63,9 @@ dnsname_should_match: yes</pre>
 
 <p>朔では次のような設定が必要です。
 Apacheで archive_dir をドキュメントルートとするような archive_uri を設定してください。</p>
-<pre>[Path]
+<pre class="code">[Path]
 archive_dir: %(var)s/www/archive
+
 [Gateway]
 archive_uri: http://archive.shingetsu.info/</pre>
 
@@ -76,7 +76,7 @@ save_size の値を整数で指定してください。
 save_record の時間が経過し、
 最近の save_size 件には含まれないレコードが削除されます。
 例の2678400は1ヶ月の秒数です。</p>
-<pre>[Application Thread]
+<pre class="code">[Application Thread]
 save_record: 2678400
 save_size: 100</pre>
 
@@ -88,7 +88,7 @@ save_size: 100</pre>
 <p>get_range は初回取得時、sync_rangeは定期的な取得時の条件です。
 指定した秒数が経っていない書き込みだけを取得します。
 0を指定すると無限大を意味します。</p>
-<pre>[Application Thread]
+<pre class="code">[Application Thread]
 get_range: 0
 sync_range: 0</pre>
 

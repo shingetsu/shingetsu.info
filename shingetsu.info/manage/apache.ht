@@ -17,7 +17,7 @@ gatewat.cgi のみをプロキシ経由にする設定があります。</p>
 あまりメリットは感じていません。</p>
 
 <p>saku.ini:</p>
-<pre>[Network]
+<pre class="code">[Network]
 # X-Forwaded-For(XFF)を有効にするので外部からアクセスできないアドレス(FireWallもあるが)
 bind_addr: ::1
 
@@ -57,8 +57,8 @@ protocol: https
 # RSSなどの静的生成ファイル置き場
 apache_docroot: /srv/www/shingetsu</pre>
 
-<p>apache.conf</p>
-<pre># Apacheからは::1でアクセス
+<p>apache.conf:</p>
+<pre class="code"># Apacheからは::1でアクセス
 RewriteRule ^server.cgi(.*) http://[::1]:8002/server.cgi${escape:$1} [P,NE]
 RewriteRule ^(gateway|thread).cgi(.*) http://[::1]:8002/$1.cgi${escape:$2} [P,NE]
 
@@ -97,7 +97,7 @@ ProxyPassを使って全部プロキシすることも可能です。</p>
 設定サンプルを作るためにserver.cgiも対象にしてそのままになっています。</p>
 
 <p>saku.ini:</p>
-<pre>[Gateway]
+<pre class="code">[Gateway]
 # 管理できるのはApache経由のアクセスと、直にアクセスした場合
 admin_net: ::1, 127.0.0.1
 
@@ -120,8 +120,8 @@ protocol: https
 # RSSなどの静的生成ファイル置き場
 apache_docroot: /srv/www/shingetsu</pre>
 
-<p>apache.conf</p>
-<pre># ApacheからはグローバルIPアドレスでアクセス
+<p>apache.conf:</p>
+<pre class="code"># ApacheからはグローバルIPアドレスでアクセス
 RewriteRule ^(gateway|thread).cgi(.*) http://bbs.shingetsu.info:8000/$1.cgi${escape:$2} [P,NE]
 
 # 管理アクセス用の設定を別のところに書く
