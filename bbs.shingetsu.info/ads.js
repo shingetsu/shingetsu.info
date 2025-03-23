@@ -2,6 +2,7 @@
     var asins = [
         ["B0CN38M1S9", "機動武闘伝Gガンダム 石破天驚 Blu-ray Box"],
         ["B07VPNZWRV", "ダーティペア COMPLETE Blu-ray BOX"],
+        ["B091ZXLX9G", "スライム倒して300年、知らないうちにレベルMAXになってました"],
         ["B0C941XZ3W", "「私、能力は平均値でって言ったよね！」Blu-ray BOX"],
         ["B08KPXXTH6", "くまクマ熊ベアー 第1巻"],
         ["B0B5DFG6ZP", "リコリス・リコイル 1"],
