@@ -1,10 +1,15 @@
->>>define TITLE         朔 5.5.1 リリース
+>>>define TITLE         朔 5.5.2 リリース
 >>>define DESCRIPTION   朔はP2P掲示板「新月」のPythonによる実装です。
 >>>include "head.ja.h"
 
-<p class="date">2025-03-23</p>
+<p class="date">2025-04-11</p>
 
-<p>朔 5.5.1 をリリースします。</p>
+<p>朔 5.5.2 をリリースします。</p>
+
+<h2>5.5.1 からの変更点</h2>
+<ul>
+  <li>投稿フォームから拡張子のプルダウンを削除。</li>
+</ul>
 
 <h2>5.5.0 からの変更点</h2>
 <ul>
