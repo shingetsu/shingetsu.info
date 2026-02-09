@@ -1,5 +1,9 @@
 (function () {
     var asins = [
+        ["B0GBV23G3L", "メディアミックス＊ガールズ　１巻"],
+        ["B0FTQGZDFK", "こんづくし 1"],
+        ["B0FTFLTRWL", "機動戦士Gundam GQuuuuuuX vol.1 (特装限定版) [Blu-ray]"],
+        ["B0FNRCNDZL", "タコピーの原罪　豪華版 Blu-ray BOX"],
         ["B0CN38M1S9", "機動武闘伝Gガンダム 石破天驚 Blu-ray Box"],
         ["B07VPNZWRV", "ダーティペア COMPLETE Blu-ray BOX"],
         ["B091ZXLX9G", "スライム倒して300年、知らないうちにレベルMAXになってました"],
