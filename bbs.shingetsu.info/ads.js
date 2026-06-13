@@ -1,5 +1,6 @@
 (function () {
     var asins = [
+        ["B0H1H88LXL", "超かぐや姫！ (Blu-ray)"],
         ["B0GBV23G3L", "メディアミックス＊ガールズ　１巻"],
         ["B0FTQGZDFK", "こんづくし 1"],
         ["B0FTFLTRWL", "機動戦士Gundam GQuuuuuuX vol.1 (特装限定版) [Blu-ray]"],
