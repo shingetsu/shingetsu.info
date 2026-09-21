@@ -1,5 +1,6 @@
 (function () {
     var asins = [
+        ["B0HJ78LJJN", "「鉄鍋のジャン!」BD-BOX"],
         ["B0HHMJFYPQ", "攻殻機動隊 THE GHOST IN THE SHELL　Blu-ray BOX"],
         ["B0HJ17JYT5", "天幕のジャードゥーガル Blu-ray BOX"],
         ["B0H1H88LXL", "超かぐや姫！ (Blu-ray)"],
