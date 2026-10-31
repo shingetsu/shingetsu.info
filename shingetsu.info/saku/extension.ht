@@ -14,7 +14,6 @@
   <li>shingetsu.uiLang 変数で出力の言語がわかる。en, jaなど。</li>
   <li>拡張機能全体で使いたい関数はshingetsu.pluginsの下に、shingetsu.plugins.fooのような名前で作る。</li>
   <li>ファイルの文字コードはUTF-8とする。</li>
-  <li>jQuery (バージョンは適当に変わる) が使える。</li>
 </ul>
 
 <p>ダウンロードはこちら: <a href="/extension/">拡張機能</a></p>
