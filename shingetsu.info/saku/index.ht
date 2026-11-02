@@ -6,9 +6,9 @@
 
 <h2 id="stable">ダウンロード(安定版)</h2>
 <ul>
-  <li>2026-11-01
-      <a href="https://github.com/shingetsu/saku/archive/v6.0.0.tar.gz">Saku 6.0.0</a>
-      (<a href="saku-6.0.0.tar.gz">ミラー</a>)
+  <li>2026-11-02
+      <a href="https://github.com/shingetsu/saku/archive/v6.0.1.tar.gz">Saku 6.0.1</a>
+      (<a href="saku-6.0.1.tar.gz">ミラー</a>)
   </li>
 </ul>
 
@@ -19,7 +19,7 @@
 
 <h2 id="usage">使い方</h2>
 <ol>
-  <li>Python3.11以降をインストールする。
+  <li>Python3をインストールする。
     <ul>
       <li>例: <a href="http://www.python.org/downloads/">ダウンロードページ</a>から</li>
       <li>例: Linux環境に最初から入っているものを利用</li>
