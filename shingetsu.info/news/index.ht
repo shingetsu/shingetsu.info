@@ -3,6 +3,7 @@
 >>>include "head.ja.h"
 
 <ul>
+  <li>2026-11-03 <a href="saku-6.0.3">朔 6.0.3 リリース</a></li>
   <li>2026-11-03 <a href="saku-6.0.2">朔 6.0.2 リリース</a></li>
   <li>2026-11-03 <a href="main-branch">開発ブランチをmainに変更しました</a></li>
   <li>2026-11-02 <a href="saku-6.0.1">朔 6.0.1 リリース</a></li>
